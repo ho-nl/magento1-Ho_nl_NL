@@ -1,0 +1,13 @@
+<!--@subject {{var store.getFrontendName()}}: {{var subject}} @-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+.awrma-datatable { border-collapse: collapse; }
+.awrma-datatable th { font-size: 12px; }
+.awrma-datatable td, .awrma-datatable th { padding: 3px; }
+@-->
+{{var content}}
+{{depend request.getNotifyHasComment()}}
+{{var request.getCustomerName()}} leave a comment:<br />
+{{var request.getNotifyCommentText()}}
+{{/depend}}
+<p>You can manage request following the <a href="{{var request.getAdminUrl()}}">{{var request.getAdminUrl()}}</a></p>
