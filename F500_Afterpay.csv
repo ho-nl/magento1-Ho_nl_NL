@@ -1,9 +1,4 @@
-;FRONTEND
-
-; Controllers checkoutcontroller.php
 "De betaling via AfterPay is geweigerd, probeer anders af te rekenen.","De betaling via AfterPay is geweigerd, probeer anders af te rekenen."
-
-; form.phtml
 "Voor Afterpay zijn extra gegevens noodzakelijk.","Voor AfterPay zijn extra gegevens noodzakelijk."
 "Start Procedure","Start Procedure"
 "Afterpay - de veilige achteraf betaal methode","AfterPay - de veilige achteraf betaal methode"
@@ -14,8 +9,6 @@
 "Wijze van betalen","Wijze van betalen"
 "Na het plaatsen van de bestelling zal om uw rekening nummer en geboortedatum worden gevraagd.","Na het plaatsen van de bestelling zal om uw rekening nummer en geboortedatum worden gevraagd."
 "Voor het gebruik van AfterPay zal %1$s in rekening worden gebracht.","Voor het gebruik van AfterPay zal %1$s in rekening worden gebracht."
-
-; order.phtml
 "Naam","Naam"
 "Email","Email"
 "Telefoon","Vast telefoonnummer"
@@ -32,26 +25,16 @@
 "U ontvangt van AfterPay een digitale factuur op de door u opgegeven e-mail adres.","U ontvangt van AfterPay een digitale factuur op de door u opgegeven e-mail adres."
 "Ik ga akkoord met de Algemene Voorwaarden van AfterPay &copy;","Ik ga akkoord met de Algemene Voorwaarden van AfterPay &copy;"
 "Afterpay kosten","AfterPay kosten"
-
-; goedkeuring.phtml
 "Uw aanvraag om op rekening te betalen is door AfterPay B.V. geaccepteerd.","Uw aanvraag om op rekening te betalen is door AfterPay B.V. geaccepteerd."
 "Voltooi nu de bestelling om met Afterpay af te rekenen.","Voltooi nu de bestelling om met AfterPay af te rekenen."
 "U kunt dit venster nu <a href="%1$s">sluiten</a>.","'U kunt dit venster nu <a href="%1$s">sluiten</a>.'"
-
-; afwijzing.phtml
 "U kunt de bestelling alleen afronden door een andere betaalmethode te selecteren.","U kunt de bestelling alleen afronden door een andere betaalmethode te selecteren."
 "Het spijt ons u te moeten mededelen dat uw aanvraag om uw bestelling op rekening te betalen niet door AfterPay is geaccepteerd.","Het spijt ons u te moeten mededelen dat uw aanvraag om uw bestelling op rekening te betalen niet door AfterPay is geaccepteerd."
 "Het kan zijn dat u onjuiste gegevens heeft ingevoerd of dat u nog een of meerdere vorderingen heeft uitstaan bij AfterPay.","Het kan zijn dat u onjuiste gegevens heeft ingevoerd of dat u nog een of meerdere vorderingen heeft uitstaan bij AfterPay."
 "Voor vragen over uw afwijzing kunt u (2 uur na uw afwijzing) contact opnemen met de Klantenservice van AfterPay,","Voor vragen over uw afwijzing kunt u (2 uur na uw afwijzing) contact opnemen met de Klantenservice van AfterPay,"
 "via telefoonnummer 0900 - 25 26 27 5 (15ct p/m) of via klantenservice@afterpay.nl.","via telefoonnummer 0900 - 25 26 27 5 (15ct p/m) of via klantenservice@afterpay.nl."
 "Desgewenst kunt u voor een andere betaalmethode kiezen om uw bestelling af te ronden.","Desgewenst kunt u voor een andere betaalmethode kiezen om uw bestelling af te ronden."
-
-; algemenevoorwaarden.phtml
 "terug naar de Bestel Procedure","terug naar de Bestel Procedure"
-
-
-;BACKEND
-; etc/system.xml
 "Omgeving","Omgeving"
 "Relatie Id","Relatie Id"
 "Portfolio Id","Portfolio Id"
@@ -68,10 +51,6 @@
 "Fixedcost heading","Instellingen voor extra kosten"
 "Order heading","Order instellingen"
 "Rest heading","Overige instellingen"
-
-
-
-; Adminhtml admin/form.phtml
 "Order #%1$s (%2$s)","Order #%1$s (%2$s)"
 "Order datum","Order datum"
 "Order status","Order status"
@@ -109,8 +88,6 @@
 "Btw laag","Btw laag"
 "Btw totaal","Btw totaal"
 "Totaal","Totaal"
-
-; Blocks admin/orders/grid.php
 "Nr","Nr"
 "Bestelling","Bestelling"
 "Email","Email"
@@ -128,16 +105,10 @@
 "Weet u het zeker?","Weet u het zeker?"
 "Status wijzigen","Status wijzigen"
 "Status","Status"
-
-; Blocks admin/orders/view.php
 "Afwijzen","Afwijzen"
 "Vrijgeven","Vrijgeven"
 "Verwijderen","Verwijderen"
-
-; Blocks admin/orders.php
 "Afterpay Orders","AfterPay Orders"
-
-; Controllers admin/ordercontroller.php
 "Sales","Sales"
 "Afterpay","AfterPay"
 "Deze bestelling is verwijderd.","Deze bestelling is verwijderd."
@@ -150,17 +121,11 @@
 "De status van de aanvraag is aangepast naar Afgewezen.","De status van de aanvraag is aangepast naar Afgewezen."
 "De status van de aanvraag is aangepast naar Vrijgegeven.","De status van de aanvraag is aangepast naar Vrijgegeven."
 "De aanvraag is verwijderd.","De aanvraag is verwijderd."
-
-; Model system/environment.php
 "Test","Test"
 "Acceptatie","Acceptatie"
 "Productie","Productie"
-
-; Model system/procedure.php
 "Direct","Direct"
 "Achteraf","Achteraf"
-
-; Model api.php
 "INITIAL","Nieuw"
 "ACCEPTED","Geaccepteerd"
 "WAITING_FOR_RELEASE","Wacht op vrijgeven"
