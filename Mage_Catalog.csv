@@ -226,7 +226,7 @@
 "Delete product","Product verwijderen"
 "Depends on design theme","Afhankelijk van design theme"
 "Design","Ontwerp"
-"Details","Details"
+"Details","In het kort"
 "Disabled","Uitgeschakeld"
 "Disallowed file type.","Bestandstype niet toegestaan"
 "Display Actual Price",""
@@ -492,7 +492,7 @@
 "Qty:","Aantal:"
 "Quantity","Aantal:"
 "Quick Create","Snel aanmaken"
-"Quick Overview","Snel overzicht"
+"Quick Overview","Beschrijving"
 "Quick simple product creation","Snel een simpel product aanmaken"
 "Records for ""","Records voor """
 "Redirect","Doorsturen"
@@ -775,4 +775,4 @@
 "You cannot send more than %d emails at a time.","U kunt niet meer dan %d e-mails per keer versturen"
 "You have exceeded limit of %d sends in an hour.","U hebt de limiet van %d e-mails per uur overschreden"
 "You have to specify at least one recipient.","U moet tenminste 1 ontvanger selecteren"
-
+"",""
