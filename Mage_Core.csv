@@ -10,7 +10,7 @@
 "Admin","Admin"
 "Admin Base URL","Admin Base URL"
 "Admin User Emails","Admin Gebruiker e-mails"
-"Advanced","Gevorderd"
+"Advanced","Geavanceerd"
 "After selecting a new media storage location, press the Synchronize button
                                 to transfer all media to that location. Media will not be available in the new
                                 location until the synchronization process is complete.","Na het selecteren van een nieuwe media opslagplaats, druk op de synchronisatiekonp om alle media naar die locatie te brengen. Media is pas beschikbaar op de nieuwe locatie als het synchronisatieproces voltooid is."
@@ -112,7 +112,7 @@
 "Empty identifier field name","Lege identificeerder veldnaam"
 "Empty main table name","Lege basis tabel naam."
 "Enable Charts","Stel lijsten in"
-"Enabled","Werkzaam gemaakt"
+"Enabled","Ingeschakeld"
 "Enabled for Admin","Ingesteld voor administrateur"
 "Enabled for Frontend","Ingesteld voor voorkant"
 "Environment Update Time","Milieu update tijd"
