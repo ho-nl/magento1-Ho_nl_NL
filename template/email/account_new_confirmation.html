@@ -29,13 +29,13 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                     <tr>
                         <td valign="top">
                             <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;">Beste {{htmlescape var=$customer.name}},</h1>
-                            <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Voordat u kunt inloggen op onze webshop, dient uw emailadres {{var customer.email}} te worden bevestigd.</p>
-                            <p style="font-size:12px; line-height:16px; margin:0 0 8px 0;"> Om te bevestigen klikt u op <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">Deze bevestigingslink</a>. U wordt vervolgens direct ingelogd op de webshop. Het bevestigen van uw emailadres hoeft u slechts één keer te doen.</p>
+                            <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Voordat u kunt inloggen op onze webshop, dient uw e-mailadres {{var customer.email}} te worden bevestigd.</p>
+                            <p style="font-size:12px; line-height:16px; margin:0 0 8px 0;"> Om te bevestigen klikt u op <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}" style="color:#1E7EC8;">Deze bevestigingslink</a>. U wordt vervolgens direct ingelogd op de webshop. Het bevestigen van uw e-mailadres hoeft u slechts één keer te doen.</p>
                             <p style="border:1px solid #E0E0E0; font-size:12px; line-height:16px; margin:0 0 16px 0; padding:13px 18px; background:#f9f9f9;">
-                                Na het bevestigen van uw emailadres, kunt u in het vervolg inloggen met deze gegevens:<br/>
+                                Na het bevestigen van uw e-mailadres, kunt u in het vervolg inloggen met deze gegevens:<br/>
                                 <strong>E-mail:</strong> {{var customer.email}}<br/>
                                 <strong>Wachtwoord:</strong> {{htmlescape var=$customer.password}}<p>
-                            <p style="font-size:12px; line-height:16px; margin:0;">Wanneer u vragen heeft, kunt u per email contact met ons opnemen door een bericht te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a> of ons per telefoon bereiken: {{config path='general/store_information/phone'}}.</p>
+                            <p style="font-size:12px; line-height:16px; margin:0;">Wanneer u vragen heeft, kunt u per e-mail contact met ons opnemen door een bericht te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a> of ons per telefoon bereiken: {{config path='general/store_information/phone'}}.</p>
                         </td>
                     </tr>
                     <tr>
