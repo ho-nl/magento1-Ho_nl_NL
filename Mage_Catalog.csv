@@ -173,7 +173,7 @@
 "Category URL Suffix","Categorie URL Achtervoegsel"
 "Category attributes API","Categorie attributen API"
 "Category move error","Categorie verplaatsfout"
-"Category move operation is not possible: parent category is equal to child category.","Categorie verplaatsoperatie is niet mogelijk: broncategorie is gelijk aan kindcategorie."
+"Category move operation is not possible: parent category is equal to child category.","Categorie verplaatsoperatie is niet mogelijk: broncategorie is gelijk aan diepere categorie."
 "Category move operation is not possible: the current category was not found.","Categorie verplaatsoperatie is niet mogelijk: de huidige categorie werd niet gevonden."
 "Category move operation is not possible: the new parent category was not found.","Categorie verplaatsoperatie is niet mogelijk: de nieuwe broncategorie werd niet gevonden."
 "Category must be an instance of Mage_Catalog_Model_Category.","Categorie moet een instantie zijn van Mage_Catalog_Model_Category."

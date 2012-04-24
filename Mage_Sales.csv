@@ -477,7 +477,7 @@
 "Packingslip # ","Packingslip #"
 "Paid","Betaald"
 "Paid Amount","Betaald bedrag"
-"Parent Transaction ID","Ouderlijke Transactie-ID"
+"Parent Transaction ID","Overkoepelend Transactie-ID"
 "Parent transaction ID must have a transaction ID.","Bovenliggende transactie-ID moeten beschikken over een transactie-ID."
 "Partial","Gedeeltelijke"
 "Payment Failed","Betaling mislukt"
