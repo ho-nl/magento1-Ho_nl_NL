@@ -810,7 +810,7 @@
 "Total(ex)","Totaal (excl.)"
 "Total(inc)","Totaal (incl.)"
 "Tracking Number(s)","Tracking-nummer(s)"
-"separate by ",""
+"separate by ","gesplitst op"
 "%s coupon code is not valid.","%s kortingscode is niet geldig."
 "Invalid draw line data. Please define lines array.","Invalid draw line data. Please define lines array."
 "The Order State %s must not be set manually.","Orderstatus %s mag niet handmatig ingesteld worden."
