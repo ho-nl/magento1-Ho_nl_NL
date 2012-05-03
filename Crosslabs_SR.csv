@@ -1,0 +1,50 @@
+HTML","HTML
+CSV","CSV
+Complete Report","Compleet rapport
+Report From Last Report Until Now","Laatste rapportage tm heden
+All Products","Alle producten
+Only Active Products","Alleen actieve producten
+Only Inactive Products","Alleen inactieve producten
+Sunday","Zondag
+Monday","Maandag
+Tuesday","Dinsdag
+Wednesday","Woensdag
+Thursday","Donderdag
+Friday","Vrijdag
+Saturday","Zaterdag
+first","Eerste
+last","Laatste
+Daily","Dagelijks
+Weekly","Wekelijks
+Monthly","Maandelijks
+Minuts Interval","Minuten interval
+Every Time Magento Cron Run","Met de reguliere cron mee
+"Individual Configuration","Individuele configuratie"
+"Stock Report","Voorraad rapportage"
+"Product Option","Productopties"
+"Productattributes To Send","Productattributen die meegestuurd worden"
+"Truncate Long Texts After X Characters","Tekst beperken tot X karakters"
+"Product Status","Productstatus"
+"Report Option","Report Optionen"
+"Report Format","Formaat rapport"
+"CSV Delimiter","CSV scheidingsteken"
+"Report Amount","Rapport waarde"
+"Send Report Email","Verstuur rapportage per e-mail"
+"Export Report CSV","Exporteer rapportage als CSV"
+"Mail","E-mail"
+"Sender Mail","E-mailadres afzender"
+"Sender Name","Naam afzender"
+"Receiver Mail","E-mailadres ontvanger"
+"Receiver Name","Naam ontvanger"
+"Subject","Onderwerp"
+"Cronjob","Cronjob"
+"Activate Report","Rapportage activeren"
+"Cron","Cron"
+"Period","Periode"
+"Minuts","Minuten"
+"Day Weekly","Wekelijkse dag"
+"Day Monthly","Maandelijkse dag"
+"Export Report","Rapport exporteren"
+"Send Report","Rapport versturen"
+"The Mail Was Send","De e-mail is verzonden."
+"Unable to save the cron expression.","Het is niet mogelijk de cronjob op te slaan"
