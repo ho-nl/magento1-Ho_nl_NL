@@ -89,6 +89,8 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                     {{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
                     {{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}
                     <p style="font-size:12px; margin:0 10px 10px 0">{{var comment}}</p>
+                    <p style="font-size:12px; margin:0 10px 10px 0">U kunt bovenstaand tracking-nummer invullen op de <a href="http://www.postnlpakketten.nl/klantenservice/tracktrace/">website van PostNL</a> (http://www.postnlpakketten.nl/klantenservice/tracktrace/) om uw pakket te volgen. Indien u als verzendadres een PostNL Pakjegemak afhaaladres heeft gekozen, vergeet dan niet uw legitimatie mee te nemen bij het afhalen van uw bestelling.</p>
+
                 </td>
             </tr>
             <tr>
