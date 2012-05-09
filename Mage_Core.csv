@@ -381,7 +381,7 @@
 "Invalid messages storage %s for layout messages initialization","Ongeldige berichtenopslag %s voor initialisatie layout berichten"
 "Module %1$s cannot depend on ""%2$s"".","Module %1$s"" vereist module ""%2$s"
 "Module %1$s requires module ""%2$s"".","Module %1$s"" vereist module ""%2$s"
-"Please enter a valid URL Key. For example example-page"",Voer a.u.b. een geldige URL-sleutel in. Bijvoorbeeld ""voorbeeld-pagina"".",""
+"Please enter a valid URL Key. For example example-page"","Voer a.u.b. een geldige URL-sleutel in. Bijvoorbeeld ""voorbeeld-pagina""."
 "Specified date/time %1$s do not match format ""%2$s"".","Gespecificeerde datum/tijd %1$s is niet in het formaat ""%2$s""."
 "The %s you entered is invalid. Please make sure that it follows http://domain.com/ format.","Opgegeven %s is ongeldig. Zorg dat het voldoet aan het formaat http://domain.com/."
 "Unknown scope %s.","Onbekende focus: %s"

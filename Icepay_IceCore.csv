@@ -24,8 +24,8 @@
 "Step 2.","Stap 2."
 "This configuration section is for implementing ICEPAY, please do not change these settings after saving.","Deze configuratie is voor het koppelen aan uw <a href="https://www.icepay.com/NL/Login?origin=magento_admin" target="blank">ICEPAY Merchant website</a>. Pas deze instellingen niet meer aan nadat alles correct is opgeslagen."
 "Configuration Information","Informatie over de configuratie"
-"This is an overview of installed ICEPAY modules",""
-"Have Magento create the invoice automatically when payment has been completed.",""
+"This is an overview of installed ICEPAY modules","Dit is een overzicht van geinstalleerde ICEPAY modules"
+"Have Magento create the invoice automatically when payment has been completed.","Zorg er voor dat Magento automatisch een factuur aanmaakt als de betaling voltooid is."
 
 /*notifications*/
 "Merchant ID is properly configured","Merchant ID is goed ingesteld"

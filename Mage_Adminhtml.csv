@@ -598,7 +598,7 @@
 "Order ID","Ordernummer"
 "Order Totals","Bestelling totalen"
 "Order Created Date","Orderdatum"
-"Only attributes with scope Global"",input type ""Dropdown"" and Use To Create Configurable Product ""Yes"" are available.",""
+"Only attributes with scope Global"",input type ""Dropdown"" and Use To Create Configurable Product ""Yes"" are available.","Enkel attributen met de scope Globaal"",input type ""Dropdown"" and Gebruik voor configureerbaar product ""Ja"" zijn beschikbaar."
 "Order #%s (%s)","Bestelling #%s (%s)"
 "Order #%s","Bestelling #%s"
 "Options","Opties"
