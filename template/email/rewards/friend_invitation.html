@@ -1,4 +1,15 @@
-<!--@subject Uitschrijving nieuwsbrief succesvol @-->
+<!--@subject {{var customer_name}} heeft u uitgenodigd op {{var store_name}}@-->
+<!--
+<pre>
+[[ help ]]
+store url : {{store url}}
+customer_name : {{var customer_name}}
+customer_email : {{var customer_email}}
+friend_email : {{var friend_email}}
+store_name : {{var store_name}}
+points_transfered : {{var points_transfered}}
+</pre>
+-->
 <body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
@@ -14,7 +25,9 @@
                 <!-- [ middle starts here] -->
                 <tr>
                     <td valign="top">
-                        <p style="font-size:12px; line-height:16px; margin:0;">U heeft zich uitgeschreven voor onze nieuwsbrief.<br />
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Hallo!</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Een vriend van je, {{var customer_name}}, probeerde je zojuist een gift te doen van <b>{{var points_transfered}}</b> op <a href="{{store url=""}}">{{var store_name}}</a>, maar kon dit niet doen omdat je geen account hebt op de website.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0;">Vergezelschap hem nu door <a href="{{store url="customer/account/create"}}">een account aan te maken op {{var store_name}}</a> en mis deze kans niet meer in de toekomst.</p>
                     </td>
                 </tr>
                 <tr>

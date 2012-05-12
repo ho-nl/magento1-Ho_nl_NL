@@ -1,4 +1,4 @@
-<!--@subject Uitschrijving nieuwsbrief succesvol @-->
+<!--@subject U heeft punten verdiend! @-->
 <body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
@@ -14,7 +14,9 @@
                 <!-- [ middle starts here] -->
                 <tr>
                     <td valign="top">
-                        <p style="font-size:12px; line-height:16px; margin:0;">U heeft zich uitgeschreven voor onze nieuwsbrief.<br />
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Gefeliciteerd {{var affiliate.name}}!</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">{{var referral.referral_name}} ({{var referral.referral_email}}) die u naar onze website heeft doorverwezen, heeft iets op {{var store_name}} gedaan waardoor u punten heeft verdient.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0;"><a href="{{store url="customer/account/login"}}">Log in op {{var store_name}}</a> om uw punten direct in te zien!</p>
                     </td>
                 </tr>
                 <tr>

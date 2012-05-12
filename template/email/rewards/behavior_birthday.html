@@ -1,5 +1,5 @@
-<!--@subject Happy Birthday Points from {{var store_name}}!@-->
-<!-- 
+<!--@subject Gefeliciteerd met uw verjaardag namens {{var store_name}}!@-->
+<!--
 <pre>
 [[ help ]]
 store url : {{store url}}
@@ -10,35 +10,33 @@ points_transfered : {{var points_transfered}}
 points_balance : {{var points_balance}}
 </pre>
 -->
-<style type="text/css">
-    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
-</style>
-
-<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
-    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
-        <tr>
-            <td align="center" valign="top">
-                <table cellspacing="0" cellpadding="0" border="0" width="650">
-                    <tr>
-                        <td valign="top">
-                            <a href="{{store url=""}}">
-                               <img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt=""  
-                                 style="margin-bottom:10px;" border="0"/>
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-                <table cellspacing="0" cellpadding="0" border="0" width="650">
-                    <tr>
-                        <td valign="top">
-                            <p>Dear {{var customer_name}},</p>
-                            <p>Happy birthday from the team here at {{var store_name}}!</p>
-                            <p>Here are {{var points_transfered}} which you can spend at <a href="{{store url=""}}">{{var store_name}}.</a>.</p>
-                            <p>Happy Birthday!</p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    </table>
+<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
+    <tr>
+        <td align="center" valign="top" style="padding:20px 0 20px 0">
+            <!-- [ header starts here] -->
+            <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
+                <tr>
+                    <td valign="top">
+                        <a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}" border="0"/></a>
+                    </td>
+                </tr>
+                <!-- [ middle starts here] -->
+                <tr>
+                    <td valign="top">
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Beste {{var customer_name}},</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Van harte gefeliciteerd, namen het hele {{var store_name}} team!</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Hier zijn {{var points_transfered}} welke u kunt spenderen op<a href="{{store url=""}}">{{var store_name}}.</a>.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0;">Fijne verjaardag!</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 </div>
+</body>

@@ -1,39 +1,35 @@
-<!--@subject Your points at {{var store_name}} are about to expire@-->
-<style type="text/css">
-    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
-</style>
+<!--@subject Uw punten op {{var store_name}} zullen binnenkort verlopene@-->
+<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
+    <tr>
+        <td align="center" valign="top" style="padding:20px 0 20px 0">
+            <!-- [ header starts here] -->
+            <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
+                <tr>
+                    <td valign="top">
+                        <a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}" border="0"/></a>
+                    </td>
+                </tr>
+                <!-- [ middle starts here] -->
+                <tr>
+                    <td valign="top">
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Beste {{var customer_name}},</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Bij deze willen wij u melden dat uw punten ({{var points_balance}}) op <a href="{{store url=""}}">{{var store_name}}</a> zal verlopen over <b>{{var days_left}} dagen</b>. </p>
 
-<div style="font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;">
-    <table cellspacing="0" cellpadding="0" border="0" width="98%" style="margin-top:10px; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; margin-bottom:10px;">
-        <tr>
-            <td align="center" valign="top">
-                <table cellspacing="0" cellpadding="0" border="0" width="650">
-                    <tr>
-                        <td valign="top"><a href="{{store url=""}}">
-                                            <img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt=""  
-                                 style="margin-bottom:10px;" border="0"/>
-                            </a></td>
-                    </tr>
-                </table>
-                <table cellspacing="0" cellpadding="0" border="0" width="650">
-                    <tr>
-                        <td valign="top">
-                            <p>Dear {{var customer_name}},</p>
-                            <p>This is a courtesy notice that your points balance of {{var points_balance}} 
-                                at <a href="{{store url=""}}">{{var store_name}}</a>
-                                may expire in <b>{{var days_left}} day(s)</b>. </p>
-                            <p>You can stop the points from expiring by <a href="{{store url="customer/account/login"}}">
-                                                                           logging in to your account</a> and either:
-                            <ul>
-                                <li>Spending your points towards a product or promotion, or</li>
-                                <li>Earning more points on the site. </li>
-                            </ul>    
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-
-            </td>
-        </tr>
-    </table>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 8px 0;">U kunt voorkomen dat deze punten verlopen door <a href="{{store url="customer/account/login"}}">in te loggen op uw account</a> en of:</p>
+                        <ul style="font-size:12px; line-height:16px; margin:0 0 16px 0; padding:0;">
+                            <li style="list-style:none inside; padding:0 0 0 10px;">&middot; Geeft de punten uit aan een product of actie óf</li>
+                            <li style="list-style:none inside; padding:0 0 0 10px;">&middot; Verdien meer punten op de website. </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
 </div>
+</body>
