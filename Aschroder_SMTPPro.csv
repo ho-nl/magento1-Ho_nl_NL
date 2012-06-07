@@ -7,7 +7,7 @@
 "Development Mode disabled","Testmodus uitgeschakeld"
 "Redirect to contact form email","Naar contactformulier omleiden"
 "Supress all emails","Alle e-mails tegenhouden"
-"These options can be used during development and testing to control the destination of all emails, or to stop Magento emails sending. (Note: if extensions do not send emails 'the magento way' then they will not be supressed)","Diese Optionen können während Entwicklung und Testphase genutzt werden, um das Mail-Ziel zu steuern oder alle Magento-E-Mails abzufangen. (Hinweis: Wenn eine Erweiterung Mails am Magento-Standard vorbei sendet, können sie nicht beeinflusst werden)"
+"These options can be used during development and testing to control the destination of all emails, or to stop Magento emails sending. (Note: if extensions do not send emails 'the magento way' then they will not be supressed)","Deze opties kunnen worden gebruikt tijdens de ontwikkeling en testfase om het adres van alle emails aan te passen of Magento helemaal geen emails meer te laten verzenden (Notite: Als de extensie geen emails verstuurd 'op de magento manier' dan worden deze niet onderdrukt."
 "Log all messages","Alle berichten loggen"
 "Email Log","E-mail historie"
 "This will log all outbound emails to the table smtppro_email_log and allow viewing within the admin interface from System->Tools->Email Log.","Alle uitgaande e-mails worden opgeslagen. U kunt deze terugvinden onder Systeem > Hulpmiddelen > E-mail historie"
