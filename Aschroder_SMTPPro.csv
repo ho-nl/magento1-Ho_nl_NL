@@ -5,7 +5,7 @@
 "Use Store Email Addresses for Reply-to","Toon als afzender het e-mailadres zoals geconfigureerd in Magento"
 "Development Mode options","Testmodus"
 "Development Mode disabled","Testmodus uitgeschakeld"
-"Redirect to contact form email","Naar contactformulier omleiden"
+"Redirect to contact form email","Naar contactformulier-emailadres omleiden"
 "Supress all emails","Alle e-mails tegenhouden"
 "These options can be used during development and testing to control the destination of all emails, or to stop Magento emails sending. (Note: if extensions do not send emails 'the magento way' then they will not be supressed)","Deze opties kunnen worden gebruikt tijdens de ontwikkeling en testfase om het adres van alle emails aan te passen of Magento helemaal geen emails meer te laten verzenden (Notite: Als de extensie geen emails verstuurd 'op de magento manier' dan worden deze niet onderdrukt."
 "Log all messages","Alle berichten loggen"
