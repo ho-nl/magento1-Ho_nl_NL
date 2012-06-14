@@ -35,7 +35,7 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                                 Na het bevestigen van uw e-mailadres, kunt u in het vervolg inloggen met deze gegevens:<br/>
                                 <strong>E-mail:</strong> {{var customer.email}}<br/>
                                 <strong>Wachtwoord:</strong> {{htmlescape var=$customer.password}}<p>
-                            <p style="font-size:12px; line-height:16px; margin:0;">Wanneer u vragen heeft, kunt u per e-mail contact met ons opnemen door een bericht te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a> of ons per telefoon bereiken: {{config path='general/store_information/phone'}}.</p>
+                            <p style="font-size:12px; line-height:16px; margin:0;">Wanneer u vragen heeft, kunt u per e-mail contact met ons opnemen door een bericht te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a>{{configFlag general/store_information/phone}} of ons per telefoon bereiken: {{config path='general/store_information/phone'}}{{/configFlag}}.</p>
                         </td>
                     </tr>
                     <tr>
