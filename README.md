@@ -9,5 +9,6 @@ Verbeteringen ten opzichte van de standaard nederlandse vertalingen:
 - Bij verzendingen worden de factuurgegevens niet meer meegestuurd.
 - Bij facturen en creditfactureren worden de verzendgegevens niet meer meegestuurd.
 
-## Todo
-Voor de geoptimaliseerde vertalingen moeten de teksten van de facturen, verzendingen en creditfacturen nog worden aangepast.
+# Tools
+- index.php: Eenvoudig bestanden vertalen.
+- MTA: http://code.google.com/p/mta-project/ gebruikt voor het importeren van andere vertalingen.
