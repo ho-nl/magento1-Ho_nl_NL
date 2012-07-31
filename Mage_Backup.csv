@@ -22,7 +22,7 @@
 "Database was successfuly backed up.","Databasebackup is met succes gemaakt"
 "Download","Download"
 "Error write to Backup file %s","Fout tijdens het schrijven naar backup-bestand %s"
-"File compressed with Zlib, but this extension is not installed on server","Bestand gecomprimeerd met Zlib, maar deze extensie is niet ge&iuml;nstalleerd op de server"
+"File compressed with Zlib, but this extension is not installed on server","Bestand gecomprimeerd met Zlib, maar deze extensie is niet geïnstalleerd op de server"
 "Size, Bytes","Maat, Bytes"
 "Size, byte","Grootte, byte"
 "The file was compressed with Zlib, but this extension is not installed on server.","Het bestand is samengebracht met Zlib, maar deze extensie is niet geinstalleerd op de server."
