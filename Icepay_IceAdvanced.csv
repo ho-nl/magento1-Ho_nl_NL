@@ -1,4 +1,3 @@
-/*adminhtml*/
 "Paymentmethods","Betaalmethoden"
 "Filter paymentmethods on customer billing country","Filter de betaalmethoden op het betaaladres van de klant"
 "Configure ICEPAY paymentmethods [STORE VIEW]","Configureer ICEPAY Betaalmethoden, dit kunt u doen per Store View (winkel overzicht)"
@@ -25,8 +24,6 @@
 "Cancel","Annuleer"
 "Use CTRL to activate/deactivate specific issuers","Gebruik CTRL om specifieke issuers aan- of uit te schakelen. Minimaal 1 issuer dient geselecteerd te zijn."
 "Use CTRL to select specific countries","Gebruik CTRL om specifieke landen te selecteren."
-
-/*frontend*/
 "Please select an issuer","Maak uw keuze"
 "Please select a country","Maak uw keuze uit"
 
