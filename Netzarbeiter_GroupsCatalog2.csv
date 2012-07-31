@@ -40,4 +40,3 @@
 "Auto refresh CATEGORY cache","Auto-ververs CATEGORIE-cache"
 "Automatically refresh the CATEGORY BLOCK HTML cache to update the category navigation when the visibility setting for a category is changed.","Ververs automatisch de CATEGORY BLOCK HTML cache en werk de categorie navigatie bij wanneer de zichbaarheids-instelling voor een categorie is veranderd."
 "Format: [route]/[controller]/[action]","Format: [route]/[controller]/[action]"
-

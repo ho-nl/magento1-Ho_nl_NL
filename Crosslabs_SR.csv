@@ -1,24 +1,24 @@
-HTML","HTML
-CSV","CSV
-Complete Report","Compleet rapport
-Report From Last Report Until Now","Laatste rapportage tm heden
-All Products","Alle producten
-Only Active Products","Alleen actieve producten
-Only Inactive Products","Alleen inactieve producten
-Sunday","Zondag
-Monday","Maandag
-Tuesday","Dinsdag
-Wednesday","Woensdag
-Thursday","Donderdag
-Friday","Vrijdag
-Saturday","Zaterdag
-first","Eerste
-last","Laatste
-Daily","Dagelijks
-Weekly","Wekelijks
-Monthly","Maandelijks
-Minuts Interval","Minuten interval
-Every Time Magento Cron Run","Met de reguliere cron mee
+"HTML","HTML"
+"CSV","CSV"
+"Complete Report","Compleet rapport"
+"Report From Last Report Until Now","Laatste rapportage t/m heden"
+"All Products","Alle producten"
+"Only Active Products","Alleen actieve producten"
+"Only Inactive Products","Alleen inactieve producten"
+"Sunday","Zondag"
+"Monday","Maandag"
+"Tuesday","Dinsdag"
+"Wednesday","Woensdag"
+"Thursday","Donderdag"
+"Friday","Vrijdag"
+"Saturday","Zaterdag"
+"first","Eerste"
+"last","Laatste"
+"Daily","Dagelijks"
+"Weekly","Wekelijks"
+"Monthly","Maandelijks"
+"Minuts Interval","Minuten interval"
+"Every Time Magento Cron Run","Met de reguliere cron mee"
 "Individual Configuration","Individuele configuratie"
 "Stock Report","Voorraad rapportage"
 "Product Option","Productopties"

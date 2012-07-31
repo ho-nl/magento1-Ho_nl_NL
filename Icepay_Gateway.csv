@@ -12,12 +12,12 @@
 "This payment method is not activated.","Deze betaalmethode is niet actief."
 "fee","toeslag"
 "Contacting payment gateway","Contact maken met betaal platform..."
-"Select the country of your account","Kies het land van uw account",
-"Select your iDeal bank","Kies uw iDeal bank",
-"Select your CreditCard","Kies uw CreditCard",
-"Description in checkout","Omschrijving in Checkout",
-"User country select","Landkeuze door gebruiker",
-"Add fee (Flat Rate - Fixed)","Toeslag (Vast bedrag, Flat Rate)",
+"Select the country of your account","Kies het land van uw account"
+"Select your iDeal bank","Kies uw iDeal bank"
+"Select your CreditCard","Kies uw CreditCard"
+"Description in checkout","Omschrijving in Checkout"
+"User country select","Landkeuze door gebruiker"
+"Add fee (Flat Rate - Fixed)","Toeslag (Vast bedrag, Flat Rate)"
 "You will be redirected to the payment page after completing the order.","U wordt verwezen naar de betaalpagina na het plaatsen van de order."
 "You will be charged an extra fee of %s.","Er wordt een toeslag bijgerekend van %s."
 "Error","Foutmelding"
