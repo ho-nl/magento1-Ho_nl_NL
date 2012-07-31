@@ -25,7 +25,7 @@
 "Payment authorization error.","Betaalfout"
 "Payment authorization error. Transacion id is empty.","Betaalfout. Het transactie id is leeg."
 "Payment error. Order was not found.","Betaalfout. De bestelling is niet gevonden."
-"Payment error. Paid amount doesn\'t match the order amount.","Betaalfout. Het betaalde bedrag komt niet overeen met de bestelwaarde."
+"Payment error. Paid amount doesn't match the order amount.","Betaalfout. Het betaalde bedrag komt niet overeen met de bestelwaarde."
 "Payment from Applicable Countries","Betaling vanuit alle landen"
 "Payment from Specific Countries","Betaling vanuit specifieke landen"
 "Please, choose payment method","Kies een betaalmethode"

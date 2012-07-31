@@ -76,7 +76,7 @@
 "dpd_dpd","DPD Pakketdienst"
 "gls_gls","GLS Pakketdienst"
 "handtekeningvoorontvangst_handtekeningvoorontvangst","PostNL Handtekening voor Ontvangst"
-"or type %s: %s","Ongeldig code in CSV bestand: %s""Activated"
+"or type %s: %s","Ongeldig code in CSV bestand: ""%s""Activated"
 "ostNL Handtekening voor Ontvangst""gls_gls","GLS Pakketdienst""dpd_dpd"
 "phaalpunt""click to change","ophaalpunt wijzigen""Street Address"
 "tnt_tnt","PostNL Basic"

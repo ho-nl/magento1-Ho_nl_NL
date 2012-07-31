@@ -44,7 +44,7 @@
 "Strikeiron Email Update Warnings","Meldingen van Strikeiron (adrescontrole USA)"
 "Unable to initialize import model","Kan geen import-model initialiseren"
 "Unable to initialize the import model.","Niet mogelijk om het import model te initialiseren"
-"Undefined rate from %s-%s","Ongedefinieerde koers van “%s-%s”"
+"Undefined rate from %s-%s","Ongedefinieerde koers van ""%s-%s"""
 "Undefined rate from %s-%s"".","Undefined rate from %s-%s""."
 "Undefined rate from %s-%s.","Ongeldige waarde voor %s-%s"
 "WARNING:","WAARSCHUWING:"
