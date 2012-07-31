@@ -214,6 +214,9 @@ if (isset($_GET["translate-file"])){
 	$fp = fopen($file, 'w');
 	foreach($_POST['strings'] as $data)
 	{
+        $data['input'] = stripslashes($data['input']);
+        $data['output'] = stripcslashes($data['output']);
+
 		$row = array('"'.$data['input'].'"','"'.$data['output'].'"');
 		fwrite($fp, implode(',',$row) . "\n");
 	}
@@ -235,7 +238,7 @@ if ($file && ($handle = fopen($file, "r")) !== FALSE) {
     <tr><td>&nbsp;</td><td class="a-right"><button type="submit" class="button">Opslaan</button></td></tr>
 
 <?php
-    while (($data = fgets($handle, 1000)) !== FALSE) {
+    while (($data = fgets($handle)) !== FALSE) {
 
         $data = trim($data,' ');
         $data = str_replace("\n", "", $data);
