@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl">
 <head>
     <title>Simple Translator</title>
-
+    <meta charset='utf-8'>
     <link rel="stylesheet" href="" type="text/css" />
     <script type="text/javascript" src=""></script>
 
@@ -256,24 +256,24 @@ if ($file && ($handle = fopen($file, "r")) !== FALSE) {
 
             <?php if($c==0):?>
             <td>
-                <input type="hidden" name='strings[<?php echo $row; ?>][input]' value='<?php echo htmlentities($data[0],ENT_QUOTES); ?>' />
-                <div class="label"><?php echo htmlentities($data[0],ENT_QUOTES); ?>
+                <input type="hidden" name='strings[<?php echo $row; ?>][input]' value='<?php echo htmlentities($data[0],ENT_QUOTES,$encoding = 'UTF-8'); ?>' />
+                <div class="label"><?php echo htmlentities($data[0],ENT_QUOTES,$encoding = 'UTF-8'); ?>
             </td>
             <?php elseif (isset($_GET['ou']) && $_GET['ou'] == '1'): ?>
                 <?php if ($data[0] == $data[1]): ?>
 
                     <td>
-                        <input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES); ?>' />
+                        <input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES,$encoding = 'UTF-8'); ?>' />
                     </td>
                 <?php else: ?>
                     <td>
-                        <input type="hidden" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES); ?>' />
-                        <div class="label" style="text-align: left;"><?php echo htmlentities($data[1],ENT_QUOTES); ?></div>
+                        <input type="hidden" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES,$encoding = 'UTF-8'); ?>' />
+                        <div class="label" style="text-align: left;"><?php echo htmlentities($data[1],ENT_QUOTES,$encoding = 'UTF-8'); ?></div>
                     </td>
                 <?php endif; ?>
 
             <?php else: ?>
-            <td><input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES); ?>' /></td>
+            <td><input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES,$encoding = 'UTF-8'); ?>' /></td>
             <?php endif; ?>
             <?php
         }
