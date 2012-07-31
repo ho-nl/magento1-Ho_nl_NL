@@ -1,4 +1,4 @@
-"<a href="%s" target="_blank">Link</a>","<a href="%s"">Link</a>"
+"<a href=""%s"" target=""_blank"">Link</a>","<a href=""%s"" target=""_blank"">Link</a>"
 "Access denied to destination folder "%s".","Geen toegang tot doelmap “%s”"
 "An error occurred while opening file: "%s".","Er is iets fout gegaan bij het openen van het bestand: "%s""
 "Could not load file: "%s".","Kan bestand "%s" niet laden"
