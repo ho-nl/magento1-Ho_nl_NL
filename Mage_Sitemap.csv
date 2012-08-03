@@ -9,7 +9,7 @@
 "Error Email Recipient","Fout e-mail ontvanger"
 "Error Email Sender","Fout e-mail afzender"
 "Error Email Template","Fout e-mail template"
-"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server."."Bestand ""%s"" kan niet worden opgeslagen. Zorg dat folder ""%s"" schrijfbaar is door de server."
+"File ""%s"" cannot be saved. Please, make sure the directory ""%s"" is writeable by web server.","Bestand ""%s"" kan niet worden opgeslagen. Zorg dat folder ""%s"" schrijfbaar is door de server."
 "Filename","Bestandsnaam"
 "Frequency","Frequentie"
 "Generate","Genereren"
