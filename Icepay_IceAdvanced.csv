@@ -10,7 +10,7 @@
 "Paymentmethod","Betaalmethode"
 "Paymentmethods","Betaalmethoden"
 "Please read the advanced manual","<a href=""http://www.icepay.com/downloads/pdf/manuals/magento/icepay-manual-magento-advanced.pdf"" target=""blank"" class=""btn-manual""></a> <a href=""http://www.icepay.nl/webshop-modules/ideal-voor-magento-advanced"" target=""blank"" class=""btn-movie""></a><BR/><BR/><BR/><span class=""manual-comment"">Heeft u hulp nodig bij het instellen? Raadpleeg onze handleiding of installatie video.</span>
-"Some payment methods allow customized descriptions on the transaction statement. If left empty the Magento Order ID is used. (Max 100 char.)","Enkele betaalmethoden ondersteunen een omschrijving in het transactie overzicht van de klant. Indien leeg gelaten wordt het Magento Bestel ID gebruikt."
+"Some payment methods allow customized descriptions on the transaction statement. If left empty the Magento Order ID is used. (Max 100 char.)","Enkele betaalmethoden ondersteunen een omschrijving in het transactie overzicht van de klant. Indien leeg gelaten wordt het Magento Bestelling-ID gebruikt."
 "Description displayed in checkout","Omschrijving tijdens het afrekenen."
 "Save settings","Instellingen opslaan"
 "Cancel","Annuleer"

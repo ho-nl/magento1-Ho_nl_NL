@@ -24,7 +24,7 @@
 "Issuer: %s","Opdrachtgever: %s"
 "Language","Taal"
 "Leave empty for default value.","Laat leeg voor de standaard waarde."
-"Merchant ID","Merchant ID"
+"Merchant ID","Merchant-ID"
 "Merchant Key","Merchant sleutel"
 "New Order Status","Nieuwe status van de order"
 "Notification from iDEAL was received with status %s.","Een mededeling is van Ideal ontvangen met de status %s."

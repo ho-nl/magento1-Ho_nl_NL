@@ -31,7 +31,7 @@
 "Status check end","Status check einde"
 "Test mode","Testmodus"
 "The iDEAL system could not process your payment. Please try again","Uw betaling kon niet door iDEAL verwerkt worden, probeer het nogmaals"
-"Transaction ID","Transactie ID"
+"Transaction ID","Transactie-ID"
 "Transaction Status Update: canceled by customer.","Transactie Status Update: geanulleerd door klant."
 "Transaction Status Update: finished successfully.","Transactie Status Update: betaald."
 "Transaction Status Update: rejected by iDEAL.","Transactie Status Update: geweigerd door iDEAL."
