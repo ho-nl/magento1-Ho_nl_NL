@@ -10,7 +10,7 @@
 "Consumer City","Klant woonplaats"
 "Consumer Name","Klant naam"
 "Customer canceled payment.","Klant anulleerde betaling."
-"Customer declined by iDEAL.","Klant geweigerd door idEAL."
+"Customer declined by iDEAL.","Klant geweigerd door iDEAL."
 "Customer successfully returned from iDEAL.","Klant succesvol teruggekeerd van iDEAL."
 "Don't check transaction status if order older than {N} days","Controleer geen statussen van orders ouder dan {N} dagen geleden"
 "Error","Fout"
