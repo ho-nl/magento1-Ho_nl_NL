@@ -6,6 +6,6 @@
 "External full page cache.","Externe Pagina Cache."
 "Failed to load external cache control","Het is niet gelukt om de externe cache te laden"
 "Flush External Page Cache","Leeg Externe Pagina Cache"
-"If empty, default value will be used.","If empty, default value will be used."
+"If empty, default value will be used.","als leeg, wordt de standaardwaarde gebruikt"
 "The external full page cache has been cleaned.","De externe cache is opgeschoond."
 "Zend Full Page Cache","Zend Pagina Cache"
