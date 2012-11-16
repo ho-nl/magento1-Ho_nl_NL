@@ -107,7 +107,7 @@
 
     <?php
 
-    $dir = './';
+    $dir = './app/locale/nl_NL/';
     $di = new RecursiveDirectoryIterator($dir);
     $count = 0;
     $matches = array();
@@ -211,7 +211,7 @@ if (isset($_GET["translate-file"])){
 <?php if($_SERVER['REQUEST_METHOD'] == "POST"): ?>
 	<?php
 
-	$fp = fopen($file, 'w');
+	$fp = fopen($dir.$file, 'w');
 	foreach($_POST['strings'] as $data)
 	{
         $data['input'] = stripslashes($data['input']);
@@ -229,7 +229,8 @@ if (isset($_GET["translate-file"])){
 <form method="post" name="translation" >
 <?php
 $row = 1;
-if ($file && ($handle = fopen($file, "r")) !== FALSE) {
+
+if ($file && ($handle = fopen($dir.$file, "r")) !== FALSE) {
 ?>
 
 
