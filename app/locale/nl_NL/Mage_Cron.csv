@@ -5,7 +5,7 @@
 "Generate Schedules Every","Maak planningen elke"
 "History Cleanup Every","Geschiedenis opruimen elke"
 "Invalid callback: %s::%s does not exist","Ongeldige callback: %s::%s bestaat niet"
-"Invalid model/method definition, expecting ""model/class::method"".","Invalid model/method definition, expecting ""model/class::method""."
+"Invalid model/method definition, expecting ""model/class::method"".","Ongeldig model/method definitie, verwacht ""model/class::method"" format."
 "Missed if Not Run Within","Gemist als niet uitgevoerd binnen"
 "Monthly","Maandelijks"
 "No callbacks found","Geen callbacks gevonden"
