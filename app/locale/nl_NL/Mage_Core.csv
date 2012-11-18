@@ -312,7 +312,7 @@
 "Template Variables","Templatevariabelen"
 "Templates","Sjablonen"
 "Text length does not satisfy specified text range.","Tekstlengte komt niet overeen met de gespecificeerde lengte."
-"The %s you entered is invalid. Please make sure that it follows ""http://domain.com/"" format.","De %s welke u heeft ingevuld is ongeldig. Zorg er voor dat het overeenkomt met het format ""http://domein.com/""."
+"The %s you entered is invalid. Please make sure that it follows ""http://domain.com/"" format.","De %s welke u hebt ingevuld is ongeldig. Zorg er voor dat het overeenkomt met het format ""http://domein.com/""."
 "The store code may contain only letters (a-z), numbers (0-9) or underscore(_), the first character must be a letter","De winkelcode mag alleen letters (a-z), cijfers (0-9) of een underscore (_) bevatten. Het eerste teken moet een letter zijn."
 "The store does not exist","De winkel bestaat niet"
 "The store has been deleted.","De winkel is verwijderd."
