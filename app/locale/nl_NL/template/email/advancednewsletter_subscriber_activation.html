@@ -1,7 +1,7 @@
 <!--@subject Newsletter subscription confirmation @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
-"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"var logo_url":"Email Logo Image Url",
 "htmlescape var=$subscriber.first_name":"Subscriber First Name",
 "htmlescape var=$subscriber.last_name":"Subscriber Last Name",
 "var subscriber.getConfirmationLink()":"Subscriber Confirmation Url"}
@@ -18,7 +18,7 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                 <table cellspacing="0" cellpadding="0" border="0" width="650">
                     <tr>
                         <td valign="top">
-                            <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}" border="0"/></a></p></td>
+                            <p><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{var logo_url}}" alt="{{var logo_alt}}" border="0"/></a></p></td>
                     </tr>
                 </table>
 
