@@ -1,8 +1,0 @@
-"Advanced","Advanced"
-"Advanced Display Settings","Advanced Display Settings"
-"Enable Advanced Display Features","Enable Advanced Display Features"
-"If enabled, manapro/filteradvanced/view.phtml file is used instead of catalog/layer/view.phtml which comes with your theme. Depending on your theme, this file may need to be adapted to your theme.","If enabled, manapro/filteradvanced/view.phtml file is used instead of catalog/layer/view.phtml which comes with your theme. Depending on your theme, this file may need to be adapted to your theme."
-"Settings from this tab will not be applied until you set %s->%s->%s->%s->%s->%s to %s.","Settings from this tab will not be applied until you set %s->%s->%s->%s->%s->%s to %s."
-"Expanded, not collapseable","Expanded, not collapseable"
-"Collapseable, initially collapsed","Collapseable, initially collapsed"
-"Collapseable, initially expanded","Collapseable, initially expanded"
