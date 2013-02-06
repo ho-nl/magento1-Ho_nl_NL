@@ -1,5 +1,5 @@
 "Available after subscription only","Beschikbaar op basis van abonnement"
-"Host","POP3 hostnaam"
+"Host","Hostnaam"
 "Mindstretch Track and Trace","Track & Trace"
 "Password","Wachtwoord"
 "Secured Connection","Beveiligde verbinding"
@@ -20,5 +20,5 @@
 "Secured connection (SSL) to mail server","Beveiligde SSL verbinding"
 "This is the Unique Key preventing other emails from beeing imported in your shop","Deze Unieke Key voorkomt dat andere e-mails geimporteerd worden in uw webwinkel"
 "If your mail does not get imported, probably it will be encoded using Base64. You can activate decoding option","Als uw mail niet verwerkt wordt, dan is deze zeer waarschijnlijk Bas64 gecodeerd. Hiermee kunt u het decoderen"
-"When enabling Test Mode, we will import only one email at a time","Indien Test Modus is aangezet, zullen wij slecht één e-mail per keer importeren"
+"When enabling Test Mode, we will import only one email at a time","Indien Test Modus is aangezet, zullen wij slecht Ã©Ã©n e-mail per keer importeren"
 "After processing the emails, we will remote them from your mailserver","Na het verwerken van de e-mails, zullen deze van de mailserver verwijderd worden"

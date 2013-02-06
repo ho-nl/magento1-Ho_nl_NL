@@ -144,7 +144,7 @@
 "HTML Head","HTML head"
 "HTML tags are not allowed","HTML-code is niet toegestaand"
 "Header","Header"
-"Host","POP3 hostnaam"
+"Host","Hostnaam"
 "How many links to display at once.","Geef aan hoeveel links tegelijkertijd getoond mogen worden."
 "ID Path for Specified Store","ID-pad voor opgegeven winkel"
 "If the current frame position does not cover utmost pages, will render link to current position plus/minus this value.","Als de huidige positie van het frame niet de uiterste pagina's bevat, zal de render verwijzen naar de huidige positie plus/min deze waarde."
