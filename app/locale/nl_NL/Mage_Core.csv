@@ -372,7 +372,7 @@
 "Validation has failed.","Validatie is mislukt."
 "Values less than 60 are ignored. Note that changes will apply after logout.","Waardes onder 60 seconden worden genegeerd. Wijzigingen worden actief na uitloggen."
 "Variable Code must be unique.","Variabele code moet uniek zijn"
-"Warning! Enabling this feature is not recommended on production environments because it represents a potential security risk.","Waarschuwing! Het activeren van deze functionaliteit wordt niet aanbevolen in productieomgevingen. Het bevat momenteel mogelijk een beveiligsingsrisico."
+"Warning! Enabling this feature is not recommended on production environments because it represents a potential security risk.","Waarschuwing! Het activeren van deze functionaliteit wordt niet aanbevolen in productieomgevingen, vormt mogelijk een beveiligsingsrisico."
 "Web","Web"
 "Website","Website"
 "Website Information","Websitegegevens"
