@@ -8,8 +8,24 @@ Compatible met Magento 1.7.x+, voor 1.6.x zie https://github.com/ho-nl/magento-n
 Op dit moment is het niet mogelijk om te installeren via Magento Connect.
 
 ### Installatie standaard:
-- Download het de bestanden: https://github.com/ho-nl/Ho_nl_NL/archive/master.zip
-- Kopieer de map `/app/locale/nl_NL` naar je Magento installatie (als je al een eerdere vertaling hebt geinstalleerd via Magento connect, verwijder deze eerst).
+1. Download het de bestanden: https://github.com/ho-nl/Ho_nl_NL/archive/master.zip
+2. Kopieer de map `/app/locale/nl_NL` naar je Magento installatie (als je al een eerdere vertaling hebt geinstalleerd via Magento connect, verwijder deze eerst).
+3. Cache even legen en zorgen dat je de Nederlandse taal hebt ingesteld.
 
 ### Installatie via [modman](https://github.com/colinmollenhour/modman):
 - Navigeer naar je magento root via de shell en draai: `modman clone git@github.com:ho-nl/Ho_nl_NL.git`.
+
+## Eigen vertalingen toevoegen
+Vertalingen welke specifiek voor jouw webshop zijn en geen vertalingen zijn voor iedereen kan je beter niet direct aanpassen in de module (dus niet in app/locale/nl_NL), hiervoor kun je beter de Inline translator gebruiken of template vertalingen toevoegen.
+
+- [Inline Translator Tutorial](http://www.magentowebshop.org/magento-webshop/magento-webshop-translate-inline/)
+- [Template vertalingen](http://tomrobertshaw.net/2010/03/magento-themes-using-locales-with-translate-csv/)
+
+## Help mee
+Samen werken is beter dan alleen. Betere vertalingen zorgen voor een betere conversie, zorgen voor minder onduidelijkheid en voor minder support. Wil je mee helpen met de vertalingen dan wordt dat zeer gewaardeerd.
+
+Het meeste is al vertaald, maar er zijn ongetwijfeld vertalingen vergeten, modules nog niet ondersteund of simpelweg stomme vertalingen.
+
+### Hoe?
+- [Fork A Repo](https://help.github.com/articles/fork-a-repo)
+- Open het bestand en klik rechtsboven op edit, maak je wijzigingen, vul een goede omschrijving in met wat je hebt gedaan. Er wordt nu een pullrequest aangemaakt.
