@@ -28,4 +28,4 @@ Het meeste is al vertaald, maar er zijn ongetwijfeld vertalingen vergeten, modul
 
 ### Hoe?
 - [Fork A Repo](https://help.github.com/articles/fork-a-repo)
-- Open het bestand en klik rechtsboven op edit, maak je wijzigingen, vul een goede omschrijving in met wat je hebt gedaan. Er wordt nu een pullrequest aangemaakt.
+- [Wijzig het bestand onlie](https://github.com/blog/905-edit-like-an-ace)
