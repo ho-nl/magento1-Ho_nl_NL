@@ -1,6 +1,6 @@
 # Nederlandse Magento Vertalingen
 
-Binnen H&O worden de Nederlandse vertalingen aandachtig bijgehouden zodat niet alleen websites er zo netjes uit zien, maar ook dat alles zo duidelijk mogelijk is in het Magento Admin Panel.
+Binnen [H&O](http://www.h-o.nl/) worden de Nederlandse vertalingen aandachtig bijgehouden zodat niet alleen websites er zo netjes uit zien, maar ook zodat alles zo duidelijk mogelijk is in het Magento Admin Panel.
 
 Compatible met Magento 1.7.x+, voor 1.6.x zie https://github.com/ho-nl/magento-nl_NL (wordt niet meer geupdate).
 
