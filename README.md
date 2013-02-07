@@ -26,6 +26,6 @@ Samen werken is beter dan alleen. Betere vertalingen zorgen voor een betere conv
 
 Het meeste is al vertaald, maar er zijn ongetwijfeld vertalingen vergeten, modules nog niet ondersteund of simpelweg stomme vertalingen.
 
-### Hoe?
+Kom je een probleem tegen, maak een issue aan via de [Issue tracker](https://github.com/ho-nl/Ho_nl_NL/issues) of maak een pull request:
 - [Fork A Repo](https://help.github.com/articles/fork-a-repo)
-- [Wijzig het bestand onlie](https://github.com/blog/905-edit-like-an-ace)
+- [Wijzig het bestand online](https://github.com/blog/905-edit-like-an-ace)
