@@ -34,7 +34,7 @@
 "Enter your email address","Voer uw e-mailadres in"
 "Error Code","Foutcode"
 "Error Text","Fouttekst"
-"Follow this link to unsubscribe <!-- This tag is for unsubscribe link  --><a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>","Klink op deze link om u uit te schrijven <a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>"
+"Follow this link to unsubscribe <!-- This tag is for unsubscribe link  --><a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>","Klik op deze link om u uit te schrijven <a href=""{{var subscriber.getUnsubscriptionLink()}}"">{{var subscriber.getUnsubscriptionLink()}}</a>"
 "Guest","Gast"
 "ID","Id"
 "Invalid queue selected.","Ongeldige wachtrij geselecteerd"
