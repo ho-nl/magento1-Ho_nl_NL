@@ -30,7 +30,7 @@ Kom je een probleem tegen, maak een issue aan via de [Issue tracker](https://git
 - [Fork A Repo](https://help.github.com/articles/fork-a-repo)
 - [Wijzig het bestand online](https://github.com/blog/905-edit-like-an-ace)
 
-## Over H&O
+## Over de auteurs
 
 ![Over H&O](http://www.h-o.nl/skin/frontend/h-o/images/logo.png)
 
