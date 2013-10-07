@@ -17,7 +17,7 @@
 "Email address already registered. Please <a href=""#"" onclick=""login_popup.show(); return false;"">login now</a> or use a different email address.","Dit e-mail adres heeft al een account. <a href=""#"" onclick=""login_popup.show(); return false;"">Log in</a> of gebruik een ander adres."
 "Enter your email below and we'll send you a new password by email.","Vul uw e-mail adres in en wij sturen u een nieuw wachtwoord per e-mail."
 "First Name","Voornaam"
-"Forgotten your password?","Wachtwoord vergeten?"
+"Forgotten your password?","Uw wachtwoord vergeten?"
 "Grand total","Te Betalen"
 "How did you hear about us?","Hoe heeft u van ons gehoord?"
 "I accept the <a id=""onestepcheckout-toc-link"" target=""_blank"" href=""#"">Terms and Conditions</a>","Ik accepteer de <a id=""onestepcheckout-toc-link"" target=""_blank"" href=""#"">Algemene voorwaarden</a>"
