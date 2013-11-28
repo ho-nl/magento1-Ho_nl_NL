@@ -59,7 +59,7 @@
 "Checkout with Multiple Addresses","Afrekenen met meerdere adressen"
 "City","Plaats"
 "Clear Shopping Cart","Leeg winkelwagen"
-"Click <a href=""%s"" onclick=""this.target=\'_blank\'"">here to print</a> a copy of your order confirmation.","<a href=""%s"" onclick=""this.target=\'_blank\'"">Druk een kopie af</a> van uw bestelbevestiging."
+"Click <a href=""%s"" onclick=""this.target='_blank'"">here to print</a> a copy of your order confirmation.","<a href=""%s"" onclick=""this.target='_blank'"">Druk een kopie af</a> van uw bestelbevestiging."
 "Click <a href=""%s"">here</a> to continue shopping.","Klik <a href=""%s"">hier</a> om verder te gaan met winkelen."
 "Close","Sluiten"
 "Company","Bedrijf"
