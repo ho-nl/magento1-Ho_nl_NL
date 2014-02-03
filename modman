@@ -33,7 +33,6 @@ app/locale/nl_NL/template/email/webforms_results.html app/locale/nl_NL/template/
 app/locale/nl_NL/template/email/webforms_results_customer.html app/locale/nl_NL/template/email/webforms_results_customer.html
 app/locale/nl_NL/template/email/webshopapps_log_email.html app/locale/nl_NL/template/email/webshopapps_log_email.html
 app/locale/nl_NL/template/email/wishlist_share.html app/locale/nl_NL/template/email/wishlist_share.html
-app/locale/nl_NL/template/email/wishlist_stock_alert.html app/locale/nl_NL/template/email/wishlist_stock_alert.html
 app/locale/nl_NL/AW_Advancednewsletter.csv app/locale/nl_NL/AW_Advancednewsletter.csv
 app/locale/nl_NL/AW_Ajaxcartpro.csv app/locale/nl_NL/AW_Ajaxcartpro.csv
 app/locale/nl_NL/AW_Checkoutpromo.csv app/locale/nl_NL/AW_Checkoutpromo.csv
