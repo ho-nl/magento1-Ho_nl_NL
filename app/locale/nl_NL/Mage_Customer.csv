@@ -209,6 +209,7 @@
 "Manage Addresses","Beheer adressen"
 "Manage Customers","Beheer klanten"
 "Maximum length must be less then %s symbols","Maximale lengte moet minder zijn dan  %s tekens."
+"Middle Name/Initial","Tussenvoegsel"
 "Missing email, skipping the record, line: %s","E-mailadres ontbreekt, record wordt overgeslagen, regel %s"
 "Missing email, skipping the record.","E-mailadres ontbreekt. Record wordt overgeslagen."
 "Missing first name, skipping the record, line: %s","Voornaam ontbreekt, record wordt overgeslagen, regel %s"
