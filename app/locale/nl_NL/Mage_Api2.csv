@@ -233,3 +233,6 @@
 "Web services","Webservices"
 "Write","Schrijf"
 "ZIP/Postal Code","Postcode"
+"%s role is a special one and can\'t be changed.",""
+"%s role is a special one and can\'t be deleted.",""
+"%s role is protected.",""

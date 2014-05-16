@@ -63,3 +63,4 @@
 "refund","refund"
 "successful","successful"
 "void","void"
+"Parent Authorize.Net transaction (ID %s) expired",""
