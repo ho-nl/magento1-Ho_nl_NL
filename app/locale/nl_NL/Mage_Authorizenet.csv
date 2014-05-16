@@ -38,3 +38,4 @@
 "Transaction Key","Transactiecode"
 "What is this?","Wat is dit?"
 "You will be required to enter your payment details before you place an order.","U moet uw betaalgegevens invullen bij het plaatsen van een bestelling"
+"Amount of %s approved by payment gateway. Transaction ID: ""%s"".",""

@@ -830,3 +830,4 @@
 "Some of the selected item options are not currently available.",""
 "The From Date value should be less than or equal to the To Date value.",""
 "The attribute code \'%s\' is reserved by system. Please try another attribute code",""
+"Attribute group with the \""/name/\"" name already exists",""

@@ -392,3 +392,4 @@
 "Request path length exceeds allowed %s symbols.",""
 "Requested file may not include parent directory traversal (""../"", ""..\\ notation)""",""
 "The From Date value should be less than or equal to the To Date value.",""
+"Invalid date",""

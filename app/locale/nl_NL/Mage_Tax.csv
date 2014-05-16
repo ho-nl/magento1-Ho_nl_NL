@@ -160,3 +160,4 @@
 "Warning tax discount configuration might result in different discounts than a customer might expect",""
 "Zip code should not contain characters other than digits.",""
 "for store(s)",""
+"Warning tax configuration can result in unexpected FPT prices on applicable devices",""
