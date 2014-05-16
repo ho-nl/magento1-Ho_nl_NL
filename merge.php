@@ -31,7 +31,7 @@ class Merge_Translations {
 
             while (($line = fgetcsv($fromHandle)) !== false) {
                 if (isset($line[0]) && isset($line[1]) && !isset($csvContent[$line[0]])) {
-                     $csvContent[$line[0]] = '';
+                     $csvContent[$line[0]] = $line[1];
                 }
             }
 
