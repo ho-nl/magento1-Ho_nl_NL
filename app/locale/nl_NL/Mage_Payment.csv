@@ -134,3 +134,8 @@
 "Wrong or empty billing amount specified.","Verkeerd of geen orderwaarde opgegeven"
 "Year","Jaar"
 "Zero Subtotal Checkout","Nul subtotaal afrekenen"
+"Credit Card Number: xxxx-%s",""
+"Credit Card Type: %s",""
+"Expiration Date: %s/%s",""
+"Name on the Card: %s",""
+"Payment ID: %s",""

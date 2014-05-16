@@ -95,3 +95,6 @@
 "You have no items in your wishlist.","U hebt niets op uw verlanglijst staan"
 "Your Wishlist has been shared.","Uw verlanglijstje is opgeslagen."
 "User Description",""
+"Cannot add the following product(s) to shopping cart: %s.",""
+"Could not find such wishlist",""
+"Product(s) %s have required options. Each product can only be added individually.",""
