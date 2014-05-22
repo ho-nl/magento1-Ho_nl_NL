@@ -879,7 +879,7 @@
 "There are no shipping labels related to selected orders.",""
 "There are no shipping labels related to selected shipments.",""
 "Go to Home Page",""
-"Home",""
+"Home","Home"
 "Invalid value(s) for Qty to Ship",""
 "You don\'t have permissions to manage this order because of one or more products are not permitted for your website.",""
 "Create Order",""
