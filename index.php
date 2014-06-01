@@ -261,8 +261,7 @@ if ($file && ($handle = fopen($dir.$file, "r")) !== FALSE) {
                 <div class="label"><?php echo htmlentities($data[0],ENT_QUOTES,$encoding = 'UTF-8'); ?>
             </td>
             <?php elseif (isset($_GET['ou']) && $_GET['ou'] == '1'): ?>
-                <?php if ($data[0] == $data[1]): ?>
-
+                <?php if ($data[0] == $data[1] || $data[1] == ''): ?>
                     <td>
                         <input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES,$encoding = 'UTF-8'); ?>' />
                     </td>
