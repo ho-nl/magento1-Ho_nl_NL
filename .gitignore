@@ -5,3 +5,6 @@ Thumbs.db
 
 Enterprise_*
 app/locale/en_US
+
+/app/locale/nl_NL/TIG_PostNL.csv
+/app/locale/nl_NL/template/email/TIG/PostNL
