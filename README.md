@@ -1,8 +1,11 @@
-# Nederlandse Magento Vertalingen
+# Nederlandse Magento vertalingen (1.7.x, 1.8.x en 1.9.x)
 
 Binnen [H&O](http://www.h-o.nl/) worden de Nederlandse vertalingen aandachtig bijgehouden zodat niet alleen websites er zo netjes uit zien, maar ook zodat alles zo duidelijk mogelijk is in het Magento Admin Panel.
 
-Compatible met Magento 1.7.x+, voor 1.6.x zie https://github.com/ho-nl/magento-nl_NL (wordt niet meer geupdate).
+Compatible met Magento 1.7.x, 1.8.x en 1.9.x, voor 1.6.x zie https://github.com/ho-nl/magento-nl_NL (wordt niet meer geupdate).
+
+# Dutch Magento translations (1.7.x, 1.8.x and 1.9.x)
+Compatible with Magento 1.7.x, 1.8.x and 1.9.x.
 
 ## Installatie
 Op dit moment is het niet mogelijk om te installeren via Magento Connect.
