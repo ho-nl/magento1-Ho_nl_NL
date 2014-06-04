@@ -63,5 +63,5 @@
 "refund","refund"
 "successful","successful"
 "void","void"
-"Parent Authorize.Net transaction (ID %s) expired",""
-"Invalid transaction ID.",""
+"Parent Authorize.Net transaction (ID %s) expired","Bovenliggende authorize.net transactie (ID %s) is verlopen."
+"Invalid transaction ID.","Ongeldige transactie ID."
