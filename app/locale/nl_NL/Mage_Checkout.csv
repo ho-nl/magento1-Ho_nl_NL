@@ -143,6 +143,8 @@
 "Invalid method: %s","Ongeldige methode: %s"
 "Invalid shipping method.","Ongeldige verzendmethode"
 "Item not found or already ordered","Artikel niet gevonden of reeds besteld"
+"Item was removed successfully.","Artikel is verwijderd."
+"Item was updated successfully.","Artikel is bijgewerkt."
 "Items","Artikelen"
 "Items After","Artikelen na"
 "Items Before","Artikelen voor"
