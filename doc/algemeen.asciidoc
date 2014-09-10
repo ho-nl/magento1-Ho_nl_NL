@@ -1,0 +1,112 @@
+
+= Magento NL vertalingen
+:author: Rob Jentzema <rob.jentzema@wellnessbon.nl>
+:project: Magento Nederlandse vertalingen (Ho_NL)
+:repo: https://github.com/greenwellness/Ho_nl_NL
+:branch: feature-refactor
+:revnumber: 0.1.0
+:status: draft
+:toc:
+:numbered:
+
+1e herziening
+
+== Doel
+
+Doel van dit document is het begeleiden en toelichten evenals het registreren
+van aantal keuzes die gemaakt zijn tijdens het herzien van de eerste serie
+vertalingen Magento zoals uitgevoerd door https://github.com/ho-nl/Ho_nl_NL[Ho
+NL].
+
+Het dient als naslagwerk voor mijzelf (Rob Jentzema in dienst van Green
+Wellness) en alle overige betrokken deelnemers in dit proces, om discussie over
+te voeren, besluiten te nemen en deze vast te leggen. Het heeft dan met name het
+voordeel dat de motivatie achter bepaalde keuzes voor het nageslacht
+inzichtelijk zijn en (toekomstige) vertalers niet telkens dezelfde vragen hoeven
+te stellen of massa's teksten te doorzoeken om er achter te komen welke van de
+vele mogelijke synoniemen zijn voor vertalingen moeten gebruiken.
+
+Enerzijds dient dit document dus als lexicon voor terminologie gebruikt in de
+elektronische winkelomgeving(en) van het Magento systeem en daaruit voort
+komende applicaties. Met andere woorden: het maakt ondubbezinnig duidelijk voor
+welke variant gekozen moet worden. Dit geldt voor zowel de woordkeuze, als de
+correcte schrijfwijze, de vorm en gewenste zinsbouw afhankelijk voor context.
+
+Daar waar het mogelijk is en veel voorkomende termen betreft dient dit document
+een eerste aanzet te geven tot formalisatie van het gebruikte Nederlands in de
+(technische) teksten: het is allerminst een compleet stuk en toekomstige lezers
+worden aangemoedigd bijdragen te leveren daar waar zij dit nodig achten. Ook
+niet alle termen hoeven toegevoegd te worden maar je zal zien dat een aantal
+natuurlijkerwijze discussie uitlokken. Soms omdat er gewoon meerdere goede (goed
+klinkende) keuzes zijn, soms omdat het gebruik in het Nederlands al niet correct
+is (volksmond, lekentaal) maar soms ook vanwege het uitermate hoge aantal vormen
+van barbarisme dat de Nederlandse taak kent.
+
+== Probleemgebieden
+
+barbarisme::
+de Nederlandse taal kende de afgelopen jaren vooral dankzij de opkomst van
+internet en de globalisatie, maar ook daarvoor al, een lange geschiedenis en
+lijst met woorden die onder de noemen barbarisme zouden vallen. Het is mijn
+stellige overtuiging en mening dat, indien er een goede Nederlandse variant
+aanwezig is, deze gebruikt zou moeten worden - hoe 'ongewoon' ook.
+
+.Een voorbeeld
+===================================================
+* link
+* snelkoppeling
+* bladwijzer
+* of URL/URI?
+===================================================
+
+Link is iemand die nijdig is en kookt van woede. Die pitbull van de buurman, die
+is link. Een snelkoppeling lijkt juist maar is wellicht meer van toepassing op
+een `shortcut`? Een bladwijzer is wat we zouden noemen een `bookmark`. Correct
+gebruik zou de term `URI` of `URL` zijn: dit is immers een afkorting zoals
+officieel in de W3C standaarden zijn vastgelegd. Dit verhoogt echter wel de
+drempel voor leken (al lijkt de afko URL to wel degelijk algemeen bekend te
+zijn).
+
+Eindconclusie? Lastig vind ik deze - denk dat ik miereneuk (of mierenneuk :P)
+over de `link` maar vooralsnog vermijd ik liever het gebruik helemaal als het
+kan.
+
+Overigens is het woord `record` bijvoorbeeld, een juist en gewenst gebruik ook
+in het Nederlands terwijl dit ook zijn oorsprong in het buitenland kent en men
+eerder van `dossier` of `archief` zou spreken vroeger, hebben deze tegenwoordig
+vooral meer een algemeen karakter en worden deze minder gebruikt om ovebr
+individuele invoer (`entries`) te spreken.
+
+
+werkwoordkeuze:: Een goed voorbeeld van ogenschijnlijk conflict met werkwoorden
+is daar waar het de activiteit `sending` betreft. In eerste aanleg zou je
+genegen zijn om `verzenden` te gebruiken. Het is echter meer gebruikelijk om (in
+de context van een brief aan iemand toezenden, dus ook een e-mail) om te spreken
+van `versturen`. Denk maar na over wat je zou zeggen tegen een contactpersoon
+die je over een paar minuten ... Bijna altijd zul je zeggen "Ik stuur je die ..
+morgen wel". Toch is ook `zenden` niet foutief en kan het in de vertaling
+gebruikt worden maar dat moet het vooral op `transmissie` betrekking hebben. Een
+voorbeeld:
+
+Een knop met "Verzenden" tekst en het gevolg:
+
+> E-mailbericht versturen ... mislukt!
+
+De twee werkwoorden zijn vrijwel synoniem maar, niet helemaal.
+
+
+
+.Woorden van gelijke strekking
+================================================
+Keuzelijst
+Selectielijst
+Keuzeoverzicht
+Selectieoverzicht
+================================================
+
+Deze vier voorbeelden van termen zouden ongeveer allemaal dezelfde strekking
+kunnen hebben. Dit document zal je vertellen dat de eerste keuze gebruikt moet
+worden wanneer we spreken over het <<besturingelement>> officeel genaamd `select
+field` maar algemeen bekend onder de naam `drop-down` (al geeft dit meer het
+soort of de klasse (orde, familie) van besturingselementen aan en heeft `select
+field` betrekking op waarschijnlijk het specifieke HTML element).

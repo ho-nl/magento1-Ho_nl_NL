@@ -1,0 +1,20 @@
+ 13 dashboard = instrumentenpaneel
+ 12 dropdown = keuzelijst
+ 11 ID = kenmerk
+ 10 store view = winkelzicht
+  9 scope = bereik
+  8 confirmation link = ??????????????/ ik zeg bevestigingssleutel
+  7
+  6 send = versturen of verzenden (e-mail bijvoorbeeld) voorkeur verzenden (verzend emailbericht ipv verstuur?)
+  5
+  4
+  3 sturen (ww) :   doen toekomen, expediëren, insturen, inzenden, opsturen, overseinen, seinen, toesturen, versturen, verzenden, zenden
+  2 verzenden (ww) :    afzenden, expediëren, opsturen, overbrengen, transporteren, versturen, vervoeren, vervrachten
+  1 afzenden (ww) : doorsturen, expediëren, opsturen, versturen, verzenden
+14  posten (ww) :   versturen, verzenden
+  1
+  2
+  3 e-mailadres
+  4 klantaccount
+  5 klantgroep
+ 
