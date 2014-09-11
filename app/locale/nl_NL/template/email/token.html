@@ -1,11 +1,11 @@
-{* This is a comment block
+{* Dit is een opmerkingenblok
 
-Available vars in this template:
-  - $userName           User name
-  - $applicationName    Application name
-  - $status             Token new status
+Beschikbare variabelen in dit sjabloon:
+  - $userName           Gebruikersnaam
+  - $applicationName    Naam applicatie
+  - $status             Nieuwe status token
 
-Use vars: {{var var_name}}
+Gebruik variabelen: {{var var_name}}
 *}<!--@subject Welcome, {{var name}} @-->
 <!--@vars
 {"htmlescape var=$userName":"User name",
@@ -13,5 +13,6 @@ Use vars: {{var var_name}}
 "var $status":"Token new status"}
 @-->
 
-Hello, {{htmlescape var=$userName}}<br /><br />
-Your authorization to <b>{{htmlescape var=$applicationName}}</b> has been changed to <b>{{htmlescape var=$status}}</b> by Admin team.<br /><br />
+Hallo, {{htmlescape var=$userName}}<br /><br />
+De authorisatie voor <b>{{htmlescape var=$applicationName}}</b> is door de beheerder gewijzigd naar <b>{{htmlescape var=$status}}</b>.<br /><br />
+

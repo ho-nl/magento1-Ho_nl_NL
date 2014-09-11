@@ -94,6 +94,7 @@ Een knop met "Verzenden" tekst en het gevolg:
 
 De twee werkwoorden zijn vrijwel synoniem maar, niet helemaal.
 
+include::http://synoniemen.net/grafisch_js.php?zoekterm=versturen[]
 
 
 .Woorden van gelijke strekking
@@ -110,3 +111,18 @@ worden wanneer we spreken over het <<besturingelement>> officeel genaamd `select
 field` maar algemeen bekend onder de naam `drop-down` (al geeft dit meer het
 soort of de klasse (orde, familie) van besturingselementen aan en heeft `select
 field` betrekking op waarschijnlijk het specifieke HTML element).
+
+Dutch verb overkill:: Er zijn van die NL taal constructies mogelijk zoals: "Had
+ik jou wel eens willen zien staan blijven lachen." welke correct Nederlands
+zijn. Hier worden dus **5 werkwoorden* achter elkaar gebruikt. Het mag voor zich
+spreken dat, wanneer mogelijke dit soort zinnen vaak drastisch ingekort worden
+(zonder teveel of enigszins aan betekenis te verliezen).
+
+Pleonasme::
+Dubbele ontkenningen of bevestigingen, dubbel gebruik van woorden van dezelfde strekking:
+
+> Automatisch gegenereerd wachtwoord
+
+Sinds wanneer is een gegenereerd wachtwoord *NIET* automatisch? Spreekt
+impliciet al uit de term 'generatie'. Automatisch aanmaken of genereren is
+allebei wel correct.
