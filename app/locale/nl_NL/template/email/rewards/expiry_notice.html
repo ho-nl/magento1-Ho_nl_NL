@@ -1,4 +1,4 @@
-<!--@subject Uw punten op {{var store_name}} zullen binnenkort verlopene@-->
+<!--@subject Punten bij {{var store_name}} zullen binnenkort verlopen @-->
 <body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
 <table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
@@ -15,9 +15,9 @@
                 <tr>
                     <td valign="top">
                         <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Beste {{var customer_name}},</p>
-                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Bij deze willen wij u melden dat uw punten ({{var points_balance}}) op <a href="{{store url=""}}">{{var store_name}}</a> zal verlopen over <b>{{var days_left}} dagen</b>. </p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Bij deze willen wij nog even aangeven dat de punten ({{var points_balance}}) op <a href="{{store url=""}}">{{var store_name}}</a> zullen verlopen, en wel over <b>{{var days_left}} dagen</b>. </p>
 
-                        <p style="font-size:12px; line-height:16px; margin:0 0 8px 0;">U kunt voorkomen dat deze punten verlopen door <a href="{{store url="customer/account/login"}}">in te loggen op uw account</a> en of:</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 8px 0;">Voorkom dat deze punten verlopen door <a href="{{store url="customer/account/login"}}">in te loggen op uw account</a> en of:</p>
                         <ul style="font-size:12px; line-height:16px; margin:0 0 16px 0; padding:0;">
                             <li style="list-style:none inside; padding:0 0 0 10px;">&middot; Geeft de punten uit aan een product of actie óf</li>
                             <li style="list-style:none inside; padding:0 0 0 10px;">&middot; Verdien meer punten op de website. </li>
@@ -25,7 +25,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;">
+                        <center>
+                            <p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong>
+                            </p>
+                        </center>
+                    </td>
                 </tr>
             </table>
         </td>
@@ -33,3 +38,4 @@
 </table>
 </div>
 </body>
+
