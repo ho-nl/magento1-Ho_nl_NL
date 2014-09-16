@@ -9,6 +9,8 @@ Emails::
 * Uniformiteit van "Vragen? Neem contact op <email> of <telefoonnummer>" zinnen. Verschillende varianten gemaakt op dezelfde toonzetting in vragende of gebiedendewijs.
 * Is er een openingstijden veld? Anders deze wellicht gebruiken in de emails of anders overal over 'kantooruren' spreken?
 
+Admin::
+* Order => Order of bestelling?
+* Tag => Etiket of label of tag?
 
-
-
+Adminhtml: 1125+ vreemde misvormde zinnen
