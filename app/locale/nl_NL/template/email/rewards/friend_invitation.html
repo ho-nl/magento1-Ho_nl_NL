@@ -1,4 +1,4 @@
-<!--@subject {{var customer_name}} heeft u uitgenodigd op {{var store_name}}@-->
+<!--@subject Uitnodiging van {{var customer_name}} voor {{var store_name}} ontvangen @-->
 <!--
 <pre>
 [[ help ]]
@@ -26,12 +26,20 @@ points_transfered : {{var points_transfered}}
                 <tr>
                     <td valign="top">
                         <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Hallo!</p>
-                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Een vriend van je, {{var customer_name}}, probeerde je zojuist een gift te doen van <b>{{var points_transfered}}</b> op <a href="{{store url=""}}">{{var store_name}}</a>, maar kon dit niet doen omdat je geen account hebt op de website.</p>
-                        <p style="font-size:12px; line-height:16px; margin:0;">Vergezelschap hem nu door <a href="{{store url="customer/account/create"}}">een account aan te maken op {{var store_name}}</a> en mis deze kans niet meer in de toekomst.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">
+                        Een vriend van je, {{var customer_name}}, probeerde zojuist een gift te doen van <b>{{var points_transfered}}</b> op <a href="{{store url=""}}">
+                            {{var store_name}}</a> maar kon dit niet doen omdat er geen account geregistreerd staat op de website.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0;">Vergezel hem of haar nu door
+                        <a href="{{store url="customer/account/create"}}">een account aan te maken op {{var store_name}}</a> en mis de kans op toekomstige aanbiedingen niet meer.</p>
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;">
+                        <center>
+                            <p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong>
+                            </p>
+                        </center>
+                    </td>
                 </tr>
             </table>
         </td>
@@ -39,3 +47,4 @@ points_transfered : {{var points_transfered}}
 </table>
 </div>
 </body>
+

@@ -1,4 +1,4 @@
-<!--@subject Your Scheduled Post is Now Live @-->
+<!--@subject Gepland bericht live publicatie @-->
 
 <!--@styles
 body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
@@ -13,18 +13,26 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                 <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
                     <tr>
                         <td valign="top">
-                            <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}"  style="margin-bottom:10px;" border="0"/></a>
+                            <a href="{{store url=""}}"><img src="{{skin url="images/logo_email.gif" _area='frontend'}}" alt="{{var store.getFrontendName()}}"
+                               style="margin-bottom:10px;" border="0"/></a>
                         </td>
                     </tr>
                 <!-- [ middle starts here] -->
                     <tr>
                         <td valign="top">
-                            <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 10px 0;">Your Scheduled Post is Now Live</h1>
-                            <p style="font-size:12px; line-height:16px; margin:0;">A new post &quot;{{var post.getTitle()}}&quot; that was scheduled for release on {{var post.getScheduledDate()}} is now live.</p>
+                            <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 10px 0;">Een gepland bericht is zojuist live gegaan</h1>
+                            <p style="font-size:12px; line-height:16px; margin:0;">
+                            Een nieuw bericht met de titel &quot;{{var post.getTitle()}}&quot;, welke gepland stond voor publicatie
+                            op {{var post.getScheduledDate()}} is zojuist live gegaan.</p>
                         </td>
                     </tr>
                     <tr>
-                        <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">With best regards, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                        <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;">
+                            <center>
+                                <p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong>
+                                </p>
+                            </center>
+                        </td>
                     </tr>
                 </table>
             </td>
@@ -32,3 +40,4 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
     </table>
 </div>
 </body>
+

@@ -31,13 +31,22 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                         Bestelling # {{var order.increment_id}} is<br/>
                         <strong>{{var order.getStatusLabel()}}</strong>.
                     </p>
-                    <p style="font-size:12px; line-height:16px; margin:0 0 10px 0;">U kunt de status van uw bestelling op ieder gewenst moment inzien wanneer u <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">inlogt</a> op onze webshop.</p>
+                    <p style="font-size:12px; line-height:16px; margin:0 0 10px 0;">
+                    De status van de bestelling is op ieder gewenst moment in te zien.
+                    <a href="{{store url="customer/account/"}}" style="color:#1E7EC8;">Log</a> hiervoor in met de account van onze online winkel.</p>
                     {{depend comment}}<p style="font-size:12px; line-height:16px; margin:0 0 10px 0;">{{var comment}}</p>{{/depend}}
-                    <p style="font-size:12px; line-height:16px; margin:0;">Indien u vragen heeft kunt u contact met ons opnemen door een email te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a> of ons per telefoon bereiken: {{config path='general/store_information/phone'}}.</p>
+                    <p style="font-size:12px; line-height:16px; margin:0;">
+                    Bij vragen, opmerkingen of suggesties vragen wij een e-mail te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}"
+                        style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a>. Ook zijn we telefonisch te bereiken, ons telefoonnummer is {{config path='general/store_information/phone'}}.</p>
                 </td>
             </tr>
             <tr>
-                <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;">
+                    <center>
+                        <p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong>
+                        </p>
+                    </center>
+                </td>
             </tr>
         </table>
     </td>
@@ -45,3 +54,4 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
 </table>
 </div>
 </body>
+

@@ -1,4 +1,4 @@
-<!--@subject Een cadeau'tje van een vriend, {{var customer_name}}@-->
+<!--@subject Een cadeautje van {{var customer_name}}@-->
 <!-- 
 <pre>
 [[ help ]]
@@ -28,15 +28,21 @@ comment : {{var comment}}
                 <tr>
                     <td valign="top">
                         <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Beste {{var friend_name}},</p>
-                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">U heeft zojuist <b>{{var points_transfered}}</b> van uw vriend, {{var customer_name}} ({{var customer_email}}) ontvangen, welke u kunt uitgeven op <a href="{{store url=""}}">{{var store_name}}</a>.</p>
-                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">U kunt eenvoudig <a href="{{store url="customer/account/login"}}">inloggen op uw accountt</a> en direct producten aanschaffen met uw punten.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Zojuist heeft een vriend {{var customer_name}} ({{var customer_email}}), <b>{{var points_transfered}}</b> punten ontvangen. Deze zijn te besteden op <a href="{{store url=""}}">{{var store_name}}</a>.</p>
+                        <p style="font-size:12px; line-height:16px; margin:0 0 16px 0;">Maak eenvoudig <a href="{{store url="customer/account/login"}}">een account aan</a> en begin direct met producten voor de punten verzilveren.</p>
                         <p style="font-size:12px; line-height:16px; margin:0;">{{var customer_name}}'s persoonlijke bericht: <br />
                             <i>{{var comment}}</i>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;">
+                        <center>
+                            <p style="font-size:12px; margin:0;">
+                            Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong>
+                            </p>
+                        </center>
+                    </td>
                 </tr>
             </table>
         </td>

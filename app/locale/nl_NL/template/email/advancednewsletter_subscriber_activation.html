@@ -26,13 +26,16 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                 <table cellspacing="0" cellpadding="0" border="0" width="650">
                     <tr>
                         <td valign="top">
-                            <p><strong>Dear {{htmlescape var=$subscriber.last_name}} {{htmlescape var=$subscriber.first_name}}</strong>,<br/>
-                            Thank you for subscribing to our newsletter.</p>
-                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">To begin receiving the newsletter, you must first confirm your subscription by clicking on the following link:<br />
-                            <a href="{{var subscriber.getConfirmationLink()}}" style="color:#1E7EC8;">{{var subscriber.getConfirmationLink()}}</a><p>
+                            <p><strong>Beste {{htmlescape var=$subscriber.last_name}} {{htmlescape var=$subscriber.first_name}}</strong>,<br/>
+                            Bedankt voor de abonnering op onze nieuwsbrief.</p>
+                            <p style="border:1px solid #BEBCB7; padding:13px 18px; background:#F8F7F5; ">
+                            Om de aanmelding definitief te maken, dient deze eerst nog even bevestigd te worden door op de volgende snelkoppeling te klikken:
+                            <br />
+                            <a href="{{var subscriber.getConfirmationLink()}}" style="color:#1E7EC8;">{{var subscriber.getConfirmationLink()}}</a>
+                            </p>
 
-                            <p>Thank you again,<br/><strong>Demo Store</strong></p>
-
+                            <br/>
+                                <p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p>
 
                         </td>
                     </tr>
