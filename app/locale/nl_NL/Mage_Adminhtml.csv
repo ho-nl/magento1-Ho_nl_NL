@@ -406,7 +406,7 @@
 "HTTP (unsecure)","HTTP (onveilig)"
 "HTTPS (SSL)","HTTPS (SSL)"
 "Help Us Keep Magento Healthy - Report All Bugs","Help Magento gezond te houden. Rapporteer alle bugs."
-"Helper attributes should not be used in custom layout updates.","Helper attributes should not be used in custom layout updates."
+"Helper attributes should not be used in custom layout updates.","Helper attributen mogen niet gebruik worden in custom lay-out update"
 "Helper for options rendering doesn't implement required interface.","Helper for options rendering doesn't implement required interface."
 "Home","Home"
 "ID","Id"
