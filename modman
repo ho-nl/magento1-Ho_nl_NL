@@ -153,13 +153,6 @@ app/locale/nl_NL/Mana_Ajax.csv app/locale/nl_NL/Mana_Ajax.csv
 app/locale/nl_NL/Mana_Core.csv app/locale/nl_NL/Mana_Core.csv
 app/locale/nl_NL/Mana_Db.csv app/locale/nl_NL/Mana_Db.csv
 app/locale/nl_NL/Mana_Filters.csv app/locale/nl_NL/Mana_Filters.csv
-app/locale/nl_NL/Mindstretch_Backend.csv app/locale/nl_NL/Mindstretch_Backend.csv
-app/locale/nl_NL/Mindstretch_BetterInvoice.csv app/locale/nl_NL/Mindstretch_BetterInvoice.csv
-app/locale/nl_NL/Mindstretch_Betteraddress.csv app/locale/nl_NL/Mindstretch_Betteraddress.csv
-app/locale/nl_NL/Mindstretch_Exportlogistics.csv app/locale/nl_NL/Mindstretch_Exportlogistics.csv
-app/locale/nl_NL/Mindstretch_Tntpakjegemak.csv app/locale/nl_NL/Mindstretch_Tntpakjegemak.csv
-app/locale/nl_NL/Mindstretch_Track.csv app/locale/nl_NL/Mindstretch_Track.csv
-app/locale/nl_NL/Mindstretch_Trackandtrace.csv app/locale/nl_NL/Mindstretch_Trackandtrace.csv
 app/locale/nl_NL/Morningtime_IdealAdvanced.csv app/locale/nl_NL/Morningtime_IdealAdvanced.csv
 app/locale/nl_NL/Morningtime_Internetkassa.csv app/locale/nl_NL/Morningtime_Internetkassa.csv
 app/locale/nl_NL/Morningtime_Ogone.csv app/locale/nl_NL/Morningtime_Ogone.csv
@@ -196,3 +189,4 @@ app/locale/nl_NL/Xib_Zipcodevalidator.csv app/locale/nl_NL/Xib_Zipcodevalidator.
 app/locale/nl_NL/Xtento_GridActions.csv app/locale/nl_NL/Xtento_GridActions.csv
 app/locale/nl_NL/Yireo_DeleteAnyOrder.csv app/locale/nl_NL/Yireo_DeleteAnyOrder.csv
 app/locale/nl_NL/Zen_Galerie.csv app/locale/nl_NL/Zen_Galerie.csv
+
