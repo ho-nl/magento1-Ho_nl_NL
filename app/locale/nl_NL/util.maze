@@ -1,0 +1,117 @@
+#!/usr/bin/env zsh
+
+emulate -L zsh || return 1
+
+setopt localoptions
+
+: ${(AA)=this:= file "${0:A}" path "{0:A:h}" data '$(print "${this[path]}/$storage")' }
+: ${(AA)=fns:= all-csv 'ls -1 ./**/*.csv(N)' die 'kill -INT $$' }
+for fn (${(@k)fns[@]}) { eval "function $fn () { ${fns[$fn]} }" }
+
+lang=nl_NL:dutch
+wordlist=/usr/share/dict/words.dutch
+storage=".data"
+
+
+#
+# Generic command wrapper/pprinter
+#
+function cmd ()
+{
+    clause=${2:-script}:${3:-running}:${4:-task}
+
+    function $0/pre ()
+    {
+        test -d $storage || mkdir $storage
+    }
+
+    function $0/msg ()
+    {
+        unset result arr
+        : ${(A)=arr:=${(@ws.:.)1}}
+        tag=${arr[1]} color=${arr[2]} icon=${arr[3]}
+        obj=${arr[4]} verb=${arr[5]} subj=${arr[6]}
+        zformat -f result "%F{%c}%I%f %o %v %s '%F{magenta}%x%f' ... [%F{%c}%t%f]" \
+        "t:$tag" "c:$color" "I:$icon" "x:$2" \
+        "o:$obj" "v:$verb" "s:$subj"
+    }
+    cmd/pre
+    cmd/msg hold:yellow:؟:$clause $1
+    print -nP $result\\r
+    cmd/msg fail:red:✗:$clause $1
+    eval ${(e)1} || print -nP $result\\n
+    cmd/msg good:green:✓:$clause $1
+    print -nP $result\\n
+}
+
+
+
+
+# subcommands
+
+case "$1" in
+
+
+    (a) # all csv files made to dictionaries       
+        all-csv | xargs -L 1 ${0:A} d
+
+        ;;
+
+
+    (b) # manufacture wordlist to $storage/filename.ext_woorden.txt
+        cmd '$(${0:A} v '"$2"' 2 | tr "[:upper:]" "[:lower:]" |\
+                         sed -r "s/[_.,:;]]]+/ /g" |\
+              tr -d "}{][)(_\/|*@%,.;:$#^=\`!><?\"" |\
+                                tr ' ' '\n' | sort |\
+                                uniq > $storage/${2}_words.txt)'
+        ;;
+
+    (d) # DUH! for dictionary of course
+        ${0:A} b $2
+        cmd '$(fgrep -v -w -f $wordlist $storage/'${2}'_words.txt > '$storage/${2}'_nondict.txt)'
+
+        ;;
+    
+    (u) # find unusual constructions as not starting sentence with capitals, no closing periods etc
+
+        condition=$storage/${2}_unusual_sentence_start.txt
+        sed -rn 's/^"(.*)","[a-z](.*)"/&/p' ${2} > $condition
+        print -- "Open with vimdiff? y/n" && answer=
+        read answer
+        [[ $answer == "y" ]] && vimdiff $condition ${2} 
+
+        ;;
+
+    (l) all-csv
+
+
+        ;;
+
+    (v) # v-split 1st or 2nd column
+        sed -rn 's/^"(.*)","(.*)"$/\2/p' $2
+        ;;
+
+    (w) # wordlist line counts
+        zargs ls ./**/*.csv -- wc -l | sort -n
+        ;;
+
+
+    (h) >&2 <<-Help
+
+
+Help
+
+        ;;
+
+
+    (*) ${0:A} h
+        ;;
+
+
+esac
+
+unset this fns fn msg dmsg
+
+
+
+

@@ -1,0 +1,11 @@
+aub
+betalingswijze
+buckaroo
+dd
+dhr
+geboortedatum
+mevr
+mm
+verstuurdbrwanneer
+website
+yyyy

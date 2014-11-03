@@ -1,0 +1,4 @@
+betalingswijze
+buckaroo
+rekeningnummer
+website

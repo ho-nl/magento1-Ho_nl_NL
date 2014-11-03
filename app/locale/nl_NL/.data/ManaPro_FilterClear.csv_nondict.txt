@@ -1,0 +1,7 @@
+action
+appears
+applied
+'clear'
+if
+near
+the

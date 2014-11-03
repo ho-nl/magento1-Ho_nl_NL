@@ -1,0 +1,13 @@
+
+categorieën
+categorienaam
+categorienummer
+faq
+faq-categorieën
+html
+nr
+paginastatus
+publicatiedatum
+veelgestelde
+views
+winkelzicht

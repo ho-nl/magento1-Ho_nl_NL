@@ -1,0 +1,14 @@
+1-4
+2
+aantal
+adres
+bedrijfsnaam
+faxnummer
+geldige
+opties
+regels
+standaard
+telefoonnummer
+toevoeging
+tonen
+voor

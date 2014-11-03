@@ -1,0 +1,13 @@
+action
+appears
+applied
+'clear'
+filter
+if
+name
+near
+of
+set
+show
+the
+verwijderen

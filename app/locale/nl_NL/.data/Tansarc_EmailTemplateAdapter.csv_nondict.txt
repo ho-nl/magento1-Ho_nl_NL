@@ -1,0 +1,14 @@
+1
+2
+3
+4
+5
+adapter
+configuratiewaarden
+emailtemplateadaptertransemailidentgeneralemail'
+footer
+header
+html
+inschakenen
+templates
+'transemailidentgeneralemail'

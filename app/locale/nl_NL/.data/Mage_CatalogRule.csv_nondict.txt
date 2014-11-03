@@ -1,0 +1,14 @@
+attributenset
+begindatum
+id
+klantgroepen
+kortingsbedrag
+oorspronkeljke
+prijsregel
+prijsregels
+regelgegevens
+regelnaam
+startdatum
+verloopdatum
+website
+websites

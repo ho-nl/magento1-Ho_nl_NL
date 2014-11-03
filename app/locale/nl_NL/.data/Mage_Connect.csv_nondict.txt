@@ -1,0 +1,14 @@
+&
+1500
+connect
+connectmanager
+inhoudspad
+magento
+max
+pakketafhankelijkheid
+pakketgegevens
+pakketinfo
+php
+pre-1500
+uitbreidingspakket
+uri

@@ -1,0 +1,14 @@
+-
+account
+api
+compliance
+core
+gebruikersnaam
+gedeactiveerd
+karakterset
+klantsessie
+magento
+soapxml-rpc
+webservice
+webservice-adapter
+webservices

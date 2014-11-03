@@ -1,0 +1,11 @@
+
+add
+and
+change
+color
+hover
+image
+mouse
+options
+picker
+remove

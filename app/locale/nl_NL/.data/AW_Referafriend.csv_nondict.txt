@@ -1,0 +1,17 @@
+
+aankoopbedrag
+aankoophoeveelheid
+besteltotaal
+doelbedrag
+doeltype
+gebruikslimiet
+hoi
+id
+kortingbedrag
+kortingsbedrag
+referentieaankopen
+totaalin
+triggers
+uitzendlink
+uzelf
+verwijzende

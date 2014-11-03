@@ -1,0 +1,6 @@
+cookie
+external
+lifetime
+opgeschoond
+opschonen
+standaardwaarde

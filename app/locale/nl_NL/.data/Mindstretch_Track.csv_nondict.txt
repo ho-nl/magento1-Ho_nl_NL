@@ -1,0 +1,17 @@
+&
+account
+bas64
+base64
+decoderen
+één
+emails
+gebruikersnaam
+hostnaam
+key
+mailaccount
+mailserver
+pop3uwdomeinnaamnl
+sms
+ssl
+track
+webwinkel

@@ -1,0 +1,17 @@
+achternaam
+afbreken
+bedrijfsnaam
+faxnr
+land
+ok
+opslaan
+plaats
+postcode
+provincie
+straat
+telefoonnr
+toevoeging
+tussenvoegsel
+voornaam
+voorvoegsel
+wijzigen

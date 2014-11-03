@@ -1,0 +1,7 @@
+aub
+banknaam
+bic
+iban
+nederland
+rekeningnummer
+sort

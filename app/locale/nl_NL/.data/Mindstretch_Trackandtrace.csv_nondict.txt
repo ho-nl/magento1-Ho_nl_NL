@@ -1,0 +1,10 @@
+&
+gebruikersnaam
+hostnaam
+key
+mailaccount
+mailserver
+mailuwdomeincom
+sms
+ssl
+track

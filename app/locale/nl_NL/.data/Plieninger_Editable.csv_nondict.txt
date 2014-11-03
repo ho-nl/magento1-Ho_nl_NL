@@ -1,0 +1,4 @@
+bedrijfsnaam
+faxnr
+ok
+telefoonnr

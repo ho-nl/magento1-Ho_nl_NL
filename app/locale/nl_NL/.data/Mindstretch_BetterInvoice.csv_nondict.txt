@@ -1,0 +1,17 @@
+
+btw
+factuuradres
+factuurnummer
+incl
+koptekst
+linksonder
+logo
+orderdatum
+overruled
+pdf
+qty
+subtotaal
+upload
+verwerkingskosten
+verzendadres
+voettekst

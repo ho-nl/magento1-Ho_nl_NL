@@ -1,0 +1,7 @@
+extensions
+jquery
+library
+mygento
+old
+plugins
+version

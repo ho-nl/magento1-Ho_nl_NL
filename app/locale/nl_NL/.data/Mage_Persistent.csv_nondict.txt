@@ -1,0 +1,17 @@
+
+account
+adresgegevens
+afleveradressen
+aub
+bedrijfsnaam
+betalingsproces
+etc
+factuuradres
+faxnummer
+login
+standaardwaarde
+uitloggen
+verzendadressen
+webshop
+winkelmand
+winkelwagen

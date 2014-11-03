@@ -1,0 +1,13 @@
+and
+block
+display
+grid
+images
+list
+names
+number
+of
+products
+template
+title
+to

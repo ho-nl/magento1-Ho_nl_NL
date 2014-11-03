@@ -1,0 +1,13 @@
+appears
+empty
+frontend
+help
+hint
+if
+in
+no
+pixels
+popup
+tekst
+tooltip
+width

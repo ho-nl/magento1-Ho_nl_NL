@@ -1,0 +1,12 @@
+
+-
+any
+backup
+bestellingsregel
+creditfactuur
+database
+delete
+downloadable
+id
+reset
+verwijerd

@@ -1,0 +1,10 @@
+prijsmelding
+prijsmeldingen
+prijswijziging
+prijswijzigingen
+productmeldingen
+starttijd
+template
+voorraadmelding
+voorraadmeldingen
+voorraadstatussen

@@ -1,0 +1,17 @@
+
+0
+api
+backorder
+backorders
+creditfactuur
+frontend
+identifier
+multi-update
+opklimmend
+producttype
+productvoorraad
+regelprijs
+voorraadgegevens
+voorraadopties
+voorraadstatus
+winkelwagen
