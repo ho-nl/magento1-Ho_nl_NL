@@ -66,10 +66,15 @@ case "$1" in
                                 uniq > $storage/${2}_words.txt)'
         ;;
 
-    (d) # DUH! for dictionary of course
+    (d) # Dutch dictionary search leaving non-dictionary words
         ${0:A} b $2
         cmd '$(fgrep -v -w -f $wordlist $storage/'${2}'_words.txt > '$storage/${2}'_nondict.txt)'
-
+        
+        # We can pass those words once more, now to the English lemma list
+        # of word frequencies or by alphabet or agains wordnet
+        # grep -E "^s.{2,3}th$" /usr/share/dict/american-english""
+        cmd '$(fgrep -v -w -f $storage/pkg/lemma.num.1col $storage/pkg/'${2}'_nonen.txt)'
+        #| awk -F" " '{print $3}')
         ;;
     
     (u) # find unusual constructions as not starting sentence with capitals, no closing periods etc
