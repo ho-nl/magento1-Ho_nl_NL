@@ -11,12 +11,11 @@ Use :gf of beter F8
 [x] ../AW_Ajaxcartpro.csv:0
 [x] ../AW_Checkoutpromo.csv:1
 [x] ../AW_Followupemail.csv:5
+[x] ../Mage_AdminNotification.csv:0
+[x] ../Mage_Api2.csv:0
+[x] ../Mage_Api.csv:0
+[x] ../Mage_Authorizenet.csv:2
 
-../Mage_AdminNotification.csv:0
-
-../Mage_Api2.csv:0
-../Mage_Api.csv:0
-../Mage_Authorizenet.csv:2
 ../Mage_Backup.csv:1
 ../Mage_BankPayment.csv:0
 ../Mage_Bundle.csv:0
