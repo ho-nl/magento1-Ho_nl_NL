@@ -129,6 +129,7 @@ app/locale/nl_NL/Mage_Usa.csv app/locale/nl_NL/Mage_Usa.csv
 app/locale/nl_NL/Mage_Weee.csv app/locale/nl_NL/Mage_Weee.csv
 app/locale/nl_NL/Mage_Widget.csv app/locale/nl_NL/Mage_Widget.csv
 app/locale/nl_NL/Mage_Wishlist.csv app/locale/nl_NL/Mage_Wishlist.csv
+app/locale/nl_NL/Mage_XmlConnect.csv app/locale/nl_NL/Mage_XmlConnect.csv
 app/locale/nl_NL/Magpleasure_Blog.csv app/locale/nl_NL/Magpleasure_Blog.csv
 app/locale/nl_NL/ManaPro_FilterAdmin.csv app/locale/nl_NL/ManaPro_FilterAdmin.csv
 app/locale/nl_NL/ManaPro_FilterAdvanced.csv app/locale/nl_NL/ManaPro_FilterAdvanced.csv
