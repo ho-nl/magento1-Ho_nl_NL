@@ -15,11 +15,13 @@ Use :gf of beter F8
 [x] ../Mage_Api2.csv:0
 [x] ../Mage_Api.csv:0
 [x] ../Mage_Authorizenet.csv:2
+[x] ../Mage_BankPayment.csv:0
+[x] ../Mage_Bundle.csv:0
 
-../Mage_Backup.csv:1
-../Mage_BankPayment.csv:0
-../Mage_Bundle.csv:0
-../Mage_Captcha.csv:0
+../Mage_Backup.csv:1 # backup of reservekopie?
+../Mage_Captcha.csv:0 # inloggen of aanmelden?
+
+
 ../Mage_Catalog.csv:13
 ../Mage_CatalogInventory.csv:0
 ../Mage_CatalogRule.csv:0
