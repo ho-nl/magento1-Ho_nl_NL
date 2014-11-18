@@ -17,13 +17,13 @@ Use :gf of beter F8
 [x] ../Mage_Authorizenet.csv:2
 [x] ../Mage_BankPayment.csv:0
 [x] ../Mage_Bundle.csv:0
+[x] ../Mage_CatalogInventory.csv:0
 
 ../Mage_Backup.csv:1 # backup of reservekopie?
 ../Mage_Captcha.csv:0 # inloggen of aanmelden?
 
-
 ../Mage_Catalog.csv:13
-../Mage_CatalogInventory.csv:0
+
 ../Mage_CatalogRule.csv:0
 ../Mage_CatalogSearch.csv:3
 ../Mage_Centinel.csv:1
@@ -177,3 +177,27 @@ Use :gf of beter F8
 ../Innoexts_Warehouse.csv:2
 
 ./Zen_Galerie.csv:0
+
+
+
+* backup of reservekopie? Al naargelang `Mage_Backup.csv` vooral
+* inloggen of aanmelden? Al naargelang `Mage_Captcha.csv` en verder
+
+Persoonlijk heb ik hier wel een lichte voorkeur voor de nl varianten, komt er in zinnen net wat beter uit denk ik. Opinie? :)
+
+**Major**
+
+Qty -> Hoeveelheid, geen aantal. We kunnen in Magento prima 5L van een of andere olie verkopen en dat is geen aantal in numerieke zin maar een duiding van hoeveelheid in volume eerder imho (komt in woordenboek vertaling ook voor aantal vermeldt)
+
+- Edit = [Bewerken](http://nl.wiktionary.org/wiki/bewerken/vervoeging)
+- Change (als het onderscheid tussen edit en change al EN juist gemaakt is) is meer [wijzigen](http://nl.wiktionary.org/wiki/wijzigen/vervoeging) maar kan dus net zo goed als 'edit' gebruikt zijn/worden.
+
+- View/show = [Weergeven](http://nl.wiktionary.org/wiki/weergeven/vervoeging) of [tonen]() ^??^ vanuit perspectief object of wellicht vanuit subject (bezoeker/klant/beheerder) [bekijken](http://nl.wiktionary.org/wiki/bekijken/vervoeging) van een object (een pagina, afbeelding, productgegevens and what not). View is in deze ook alleen als werkwoord, daarnaast natuurlijk ook een zelfstandig naamwoord als in "de view". View(ing) kan zowel aanzicht, als uitzicht, zicht, weergave, (uit/in/aan)kijk of beeld betekenen naast het gebruik veelal in technisch jargon (as in MVC). Maar aangezien Magento praktisch aan 'views' in die technische term invulling geeft (met blocks, en templates als view/controller componenten en thema's als gebruikte termen ipv traditioneel views, wordt die term ook niet echt actief gebezigd in de community lingo) kan het merendeel volstaan met een `weergave` (persoonlijk de voorkeur voor iets meer zakelijke boven `tonen` *Toon* wie? Tonny? Tonnie of "Onze Toontje e-Tycoontje" ... hehe 
+
+Vraag:
+
+Root categorie: stamcategorie of broncategorie (liever geen wortelcategorie) 
+
+Noot: [attribuutsets](http://www.woorden-boek.nl/woord/sets)
+
+.
