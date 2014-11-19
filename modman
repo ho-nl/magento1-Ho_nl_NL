@@ -164,11 +164,6 @@ app/locale/nl_NL/Ophirah_Qquoteadv_AdminHtml.csv app/locale/nl_NL/Ophirah_Qquote
 app/locale/nl_NL/Phoenix_Moneybookers.csv app/locale/nl_NL/Phoenix_Moneybookers.csv
 app/locale/nl_NL/Plieninger_Editable.csv app/locale/nl_NL/Plieninger_Editable.csv
 app/locale/nl_NL/README.md app/locale/nl_NL/README.md
-app/locale/nl_NL/TBT_Rewards.csv app/locale/nl_NL/TBT_Rewards.csv
-app/locale/nl_NL/TBT_RewardsOnly.csv app/locale/nl_NL/TBT_RewardsOnly.csv
-app/locale/nl_NL/TBT_RewardsPlat.csv app/locale/nl_NL/TBT_RewardsPlat.csv
-app/locale/nl_NL/TBT_RewardsReferral.csv app/locale/nl_NL/TBT_RewardsReferral.csv
-app/locale/nl_NL/TBT_Rewardssocial.csv app/locale/nl_NL/TBT_Rewardssocial.csv
 app/locale/nl_NL/Tansarc_EmailTemplateAdapter.csv app/locale/nl_NL/Tansarc_EmailTemplateAdapter.csv
 app/locale/nl_NL/Total_Buckaroo.csv app/locale/nl_NL/Total_Buckaroo.csv
 app/locale/nl_NL/Total_BuckarooCC.csv app/locale/nl_NL/Total_BuckarooCC.csv
