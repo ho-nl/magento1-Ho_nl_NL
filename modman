@@ -29,8 +29,7 @@ app/locale/nl_NL/template/email/sales/* app/locale/nl_NL/template/email/sales
 app/locale/nl_NL/template/email/sitemap_generate_warning.html app/locale/nl_NL/template/email/sitemap_generate_warning.html
 app/locale/nl_NL/template/email/token.html app/locale/nl_NL/template/email/token.html
 app/locale/nl_NL/template/email/track/* app/locale/nl_NL/template/email/track
-app/locale/nl_NL/template/email/webforms_results.html app/locale/nl_NL/template/email/webforms_results.html
-app/locale/nl_NL/template/email/webforms_results_customer.html app/locale/nl_NL/template/email/webforms_results_customer.html
+app/locale/nl_NL/template/email/webforms/* app/locale/nl_NL/template/email/webforms
 app/locale/nl_NL/template/email/webshopapps_log_email.html app/locale/nl_NL/template/email/webshopapps_log_email.html
 app/locale/nl_NL/template/email/wishlist_share.html app/locale/nl_NL/template/email/wishlist_share.html
 app/locale/nl_NL/AW_Advancednewsletter.csv app/locale/nl_NL/AW_Advancednewsletter.csv
