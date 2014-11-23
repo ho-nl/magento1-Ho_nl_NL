@@ -12,12 +12,6 @@ declare -a csva=($(find lib -type f -name \*.csv))
 
 case "$1" in
 
-    (c|copy)
-        $my ls      
-        #find . -type l -mtime -0 -exec mv -t . {} +
-
-        ;;
-
     (mk|make)
 
         for f in ${csva[@]}; do
@@ -27,12 +21,19 @@ case "$1" in
 
     (d|del|delete)
 
-        find . -type d \! -name . -prune -o -type l -print
+        find . -type l -exec rm {} +
         ;;
 
     (l|ls|list)
 
-        find . -type l -printf 'moved %l → %p\n'
+        find . -type l -printf '%p\n'
+        #find . -type l -printf '%l ☍  %p\n'
+        #find . -type l -printf 'moved %l → %p\n'
+        ;;
+
+    (u|undo|unlink)
+        find . -type l -exec rm {} +
+        find lib -type f -name \*.csv -exec mv -t $PWD {} +
         ;;
 
     (v|val|validate)

@@ -1,1 +1,3 @@
-lib/vendor/ManaPro/ManaPro_FilterClear.csv
+"Clear","Verwijderen"
+"If set, 'Clear' action appears near the name of applied filter","If set, 'Clear' action appears near the name of applied filter"
+"Show 'Clear' Action","Show 'Clear' Action"
