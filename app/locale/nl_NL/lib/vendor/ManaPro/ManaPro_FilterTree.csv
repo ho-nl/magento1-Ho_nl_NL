@@ -1,0 +1,8 @@
+"Category Tree","Category Tree"
+"Expand All Tree Items on Initial Page Load","Expand All Tree Items on Initial Page Load"
+"Tree","Tree"
+"Category tree requires all categories to have 'Is Anchor' set to 'Yes'.","Category tree requires all categories to have 'Is Anchor' set to 'Yes'."
+" or "," or "
+"Offer to Make All Categories Anchored if Category Tree Filter Is Selected","Offer to Make All Categories Anchored if Category Tree Filter Is Selected"
+"Make all categories anchored","Make all categories anchored"
+"Tree remembers collapsed/expanded state of each category, so on subsequent page loads remembered collapsed/expanded state is restored and not touched items are processed as specified here","Tree remembers collapsed/expanded state of each category, so on subsequent page loads remembered collapsed/expanded state is restored and not touched items are processed as specified here"

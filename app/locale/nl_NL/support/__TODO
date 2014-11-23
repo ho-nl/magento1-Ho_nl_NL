@@ -1,0 +1,201 @@
+
+# Use ,gf or better F8
+# Digits after suffix colon are hits on the u/uw/uwer regex
+# approximation density of initial review goal set forth
+
+[؟] ../Mage_Adminhtml.csv:5
+[؟] ../Mage_Backup.csv:1 # backup of reservekopie?
+[؟] ../Mage_Captcha.csv:0 # inloggen of aanmelden?
+[؟] ../Mage_Catalog.csv:13
+[؟] ../Mage_Checkout.csv:39
+
+[₁] ../Aoe_Scheduler.csv:0
+[₁] ../Appmerce_IdealAdvanced.csv:0
+[₁] ../Aschroder_SMTPPro.csv:7
+[₁] ../AW_Advancednewsletter.csv:4
+[₁] ../AW_Ajaxcartpro.csv:0 
+[₁] ../AW_Checkoutpromo.csv:1
+[₁] ../AW_Followupemail.csv:5
+[₁] ../Mage_AdminNotification.csv:0
+[₁] ../Mage_Api2.csv:0
+[₁] ../Mage_Api.csv:0
+[₁] ../Mage_Authorizenet.csv:2
+[₁] ../Mage_BankPayment.csv:0
+[₁] ../Mage_Bundle.csv:0
+[₁] ../Mage_CatalogInventory.csv:0
+[₁] ../Mage_CatalogRule.csv:0
+[₁] ../Mage_CatalogSearch.csv:3
+[₁] ../Mage_Centinel.csv:1
+[₁] ../Mage_Cms.csv:2
+[₁] ../Mage_Compiler.csv:0
+[₁] ../Mage_Connect.csv:0
+[₁] ../Mage_Contacts.csv:2
+
+[₀] ../Mage_Core.csv:12
+[₀] ../Mage_Cron.csv:0
+[₀] ../Mage_CurrencySymbol.csv:0
+[₀] ../Mage_Customer.csv:23
+[₀] ../Mage_Dataflow.csv:0
+[₀] ../Mage_Directory.csv:1
+[₀] ../Mage_Downloadable.csv:4
+[₀] ../Mage_Eav.csv:0
+[₀] ../Mage_GiftMessage.csv:5
+[₀] ../Mage_GoogleAnalytics.csv:0
+[₀] ../Mage_GoogleBase.csv:2
+[₀] ../Mage_GoogleCheckout.csv:2
+[₀] ../Mage_GoogleOptimizer.csv:0
+[₀] ../Mage_Ideal.csv:1
+[₀] ../Mage_ImportExport.csv:0
+[₀] ../Mage_Index.csv:0
+[₀] ../Mage_Install.csv:18
+[₀] ../Mage_Log.csv:0
+[₀] ../Mage_Media.csv:0
+[₀] ../Mage_Newsletter.csv:12
+[₀] ../Mage_Oauth.csv:6
+[₀] ../Mage_PageCache.csv:0
+[₀] ../Mage_Page.csv:1
+[₀] ../Mage_Paygate.csv:0
+[₀] ../Mage_Payment.csv:0
+[₀] ../Mage_Paypal.csv:10
+[₀] ../Mage_PaypalUk.csv:0
+[₀] ../Mage_Persistent.csv:8
+[₀] ../Mage_Poll.csv:1
+[₀] ../Mage_ProductAlert.csv:4
+[₀] ../Mage_Rating.csv:1
+[₀] ../Mage_Reports.csv:0
+[₀] ../Mage_Review.csv:7
+[₀] ../Mage_Rss.csv:0
+[₀] ../Mage_Rule.csv:0
+[₀] ../Mage_Sales.csv:26
+[₀] ../Mage_SalesRule.csv:3
+[₀] ../Mage_Sendfriend.csv:0
+[₀] ../Mage_Shipping.csv:1
+[₀] ../Mage_Sitemap.csv:1
+[₀] ../Mage_Strikeiron.csv:1
+[₀] ../Mage_Tag.csv:3
+[₀] ../Mage_Tax.csv:3
+[₀] ../Mage_Usa.csv:2
+[₀] ../Mage_Weee.csv:0
+[₀] ../Mage_Widget.csv:0
+[₀] ../Mage_Wishlist.csv:11
+[₀] ../MageWorx_Adminhtml.csv:0
+[₀] ../MageWorx_CustomOptions.csv:3
+[₀] ../Magpleasure_Blog.csv:5
+[₀] ../Magpleasure_Info.csv:0
+[₀] ../Mana_Admin.csv:0
+[₀] ../Mana_Ajax.csv:0
+[₀] ../Mana_AttributePage.csv:0
+[₀] ../Mana_Core.csv:0
+[₀] ../Mana_Db.csv:0
+[₀] ../Mana_Filters.csv:0
+[₀] ../ManaPage_AttributeOption.csv:0
+[₀] ../ManaPage_Bestseller.csv:0
+[₀] ../Mana_Page.csv:0
+[₀] ../ManaPage_Sale.csv:0
+[₀] ../ManaPro_FilterAdmin.csv:0
+[₀] ../ManaPro_FilterAdvanced.csv:0
+[₀] ../ManaPro_FilterAjax.csv:0
+[₀] ../ManaPro_FilterCheckboxes.csv:0
+[₀] ../ManaPro_FilterClear.csv:0
+[₀] ../ManaPro_FilterColors.csv:0
+[₀] ../ManaPro_FilterDropdown.csv:0
+[₀] ../ManaPro_FilterExpandCollapse.csv:0
+[₀] ../ManaPro_FilterGroup.csv:0
+[₀] ../ManaPro_FilterHelp.csv:0
+[₀] ../ManaPro_FilterPositioning.csv:2
+[₀] ../ManaPro_FilterRadios.csv:0
+[₀] ../ManaPro_FilterSeoLinks.csv:0
+[₀] ../ManaPro_FilterShowMore.csv:0
+[₀] ../ManaPro_FilterSlider.csv:0
+[₀] ../ManaPro_FilterSuperSlider.csv:0
+[₀] ../ManaPro_FilterTree.csv:0
+[₀] ../ManaPro_HorizontalLayeredNavigation.csv:2
+[₀] ../Mana_Seo.csv:0
+[₀] ../Mindstretch_Backend.csv:1
+[₀] ../Mindstretch_Betteraddress.csv:0
+[₀] ../Mindstretch_BetterInvoice.csv:4
+[₀] ../Mindstretch_Exportlogistics.csv:0
+[₀] ../Mindstretch_Tntpakjegemak.csv:2
+[₀] ../Mindstretch_Trackandtrace.csv:5
+[₀] ../Mindstretch_Track.csv:9
+[₀] ../Morningtime_IdealAdvanced.csv:1
+[₀] ../Morningtime_Internetkassa.csv:15
+[₀] ../Morningtime_Ogone.csv:15
+[₀] ../Mygento_JQueryLib.csv:0
+[₀] ../Netzarbeiter_GroupsCatalog2.csv:0
+[₀] ../Ophirah_Qquoteadv_AdminHtml.csv:0
+[₀] ../Ophirah_Qquoteadv.csv:8
+[₀] ../Phoenix_Moneybookers.csv:2
+[₀] ../Plieninger_Editable.csv:0
+[₀] ../Tansarc_EmailTemplateAdapter.csv:0
+[₀] ../TBT_Rewards.csv:28
+[₀] ../TBT_RewardsOnly.csv:0
+[₀] ../TBT_RewardsPlat.csv:2
+[₀] ../TBT_RewardsReferral.csv:3
+[₀] ../TBT_Rewardssocial.csv:28
+[₀] ../Total_BuckarooCashticket.csv:1
+[₀] ../Total_BuckarooCC.csv:1
+[₀] ../Total_BuckarooCollect.csv:1
+[₀] ../Total_Buckaroo.csv:1
+[₀] ../Total_BuckarooGiftcard.csv:1
+[₀] ../Total_BuckarooGiropay.csv:1
+[₀] ../Total_BuckarooiDeal.csv:2
+[₀] ../Total_BuckarooPaypal.csv:1
+[₀] ../Total_BuckarooPayperemail.csv:1
+[₀] ../Total_BuckarooPaysafecard.csv:1
+[₀] ../Total_BuckarooTransfer.csv:1
+[₀] ../Total_BuckarooTransferGarant.csv:3
+[₀] ../Unirgy_StoreLocator.csv:0
+[₀] ../VladimirPopov_WebForms.csv:0
+[₀] ../Webguys_CustomerNavigation.csv:0
+[₀] ../Webshopapps_Productmatrix.csv:0
+[₀] ../Xib_Zipcodevalidator.csv:0
+[₀] ../Xtento_GridActions.csv:0
+[₀] ../Yireo_DeleteAnyOrder.csv:1
+[₀] .../AW_Hometabspro.csv:0
+[₀] ../AW_Raf.csv:3
+[₀] ../AW_Referafriend.csv:3
+[₀] ../AW_Reviewrotator.csv:0
+[₀] ../AW_Rma.csv:2
+[₀] ../Cardgate_Cgp.csv:8
+[₀] ../Crosslabs_SR.csv:0
+[₀] ../F500_Afterpay.csv:7
+[₀] ../F500_Xibpayments.csv:4
+[₀] ../Find_Feed.csv:2
+[₀] ../Flagbit_Faq.csv:0
+[₀] ../Fooman_PdfCustomiser.csv:6
+[₀] ../Ho_AbcMail.csv:1
+[₀] ../Ho_Adminimprovements.csv:0
+[₀] ../Ho_Browsercompat.csv:2
+[₀] ../Idev_OneStepCheckout.csv:11
+[₀] ../IG_LightBox.csv:0
+[₀] ../Innoexts_AdvancedPricing.csv:1
+[₀] ../Innoexts_CustomerLocator.csv:0
+[₀] ../Innoexts_InnoCore.csv:0
+[₀] ../Innoexts_ShippingTablerate.csv:1
+[₀] ../Innoexts_Warehouse.csv:2
+[₀] ../Zen_Galerie.csv:0
+
+
+
+* backup of reservekopie? Al naargelang `Mage_Backup.csv` vooral
+* inloggen of aanmelden? Al naargelang `Mage_Captcha.csv` en verder
+
+Persoonlijk heb ik hier wel een lichte voorkeur voor de nl varianten, komt er in zinnen net wat beter uit denk ik. Opinie? :)
+
+**Major**
+
+Qty -> Hoeveelheid, geen aantal. We kunnen in Magento prima 5L van een of andere olie verkopen en dat is geen aantal in numerieke zin maar een duiding van hoeveelheid in volume eerder imho (komt in woordenboek vertaling ook voor aantal vermeldt)
+
+- Edit = [Bewerken](http://nl.wiktionary.org/wiki/bewerken/vervoeging)
+- Change (als het onderscheid tussen edit en change al EN juist gemaakt is) is meer [wijzigen](http://nl.wiktionary.org/wiki/wijzigen/vervoeging) maar kan dus net zo goed als 'edit' gebruikt zijn/worden.
+
+- View/show = [Weergeven](http://nl.wiktionary.org/wiki/weergeven/vervoeging) of [tonen]() ^??^ vanuit perspectief object of wellicht vanuit subject (bezoeker/klant/beheerder) [bekijken](http://nl.wiktionary.org/wiki/bekijken/vervoeging) van een object (een pagina, afbeelding, productgegevens and what not). View is in deze ook alleen als werkwoord, daarnaast natuurlijk ook een zelfstandig naamwoord als in "de view". View(ing) kan zowel aanzicht, als uitzicht, zicht, weergave, (uit/in/aan)kijk of beeld betekenen naast het gebruik veelal in technisch jargon (as in MVC). Maar aangezien Magento praktisch aan 'views' in die technische term invulling geeft (met blocks, en templates als view/controller componenten en thema's als gebruikte termen ipv traditioneel views, wordt die term ook niet echt actief gebezigd in de community lingo) kan het merendeel volstaan met een `weergave` (persoonlijk de voorkeur voor iets meer zakelijke boven `tonen` *Toon* wie? Tonny? Tonnie of "Onze Toontje e-Tycoontje" ... hehe 
+
+Vraag:
+
+Root categorie: stamcategorie of broncategorie (liever geen wortelcategorie) 
+
+Noot: [attribuutsets](http://www.woorden-boek.nl/woord/sets)
+
+.
