@@ -31,10 +31,10 @@
 [₁] ../Mage_Connect.csv:0
 [₁] ../Mage_Contacts.csv:2
 [₁] ../Mage_Core.csv:12
+[₁] ../Mage_Cron.csv:0
+[₁] ../Mage_CurrencySymbol.csv:0
+[₁] ../Mage_Customer.csv:23
 
-[₀] ../Mage_Cron.csv:0
-[₀] ../Mage_CurrencySymbol.csv:0
-[₀] ../Mage_Customer.csv:23
 [₀] ../Mage_Dataflow.csv:0
 [₀] ../Mage_Directory.csv:1
 [₀] ../Mage_Downloadable.csv:4
