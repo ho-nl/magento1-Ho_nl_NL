@@ -1,7 +1,17 @@
 
-# Use ,gf or better F8
 # Digits after suffix colon are hits on the u/uw/uwer regex
 # approximation density of initial review goal set forth
+
+# Vim keybindings:
+# digraphs <C-k k> OK, XX, ?+, 0s, 1s, 2s, etc
+#
+# " open vertical panel with the file opened under cursor (better :gf)
+# :map <F8> :vertical wincmd f<CR>
+#
+# " while in insert mode, press C-i to switch from 0 to 1st review
+# imap <C-i> <esc>0lxi₁
+
+# [review]  ../ filename : count polite forms (u|uw|uwer|uwen)
 
 [؟] ../Mage_Adminhtml.csv:5
 [؟] ../Mage_Backup.csv:1 # backup of reservekopie?
@@ -34,19 +44,19 @@
 [₁] ../Mage_Cron.csv:0
 [₁] ../Mage_CurrencySymbol.csv:0
 [₁] ../Mage_Customer.csv:23
+[₁] ../Mage_Dataflow.csv:0
+[₁] ../Mage_Directory.csv:1
+[₁] ../Mage_Downloadable.csv:4
+[₁] ../Mage_Eav.csv:0
+[₁] ../Mage_GiftMessage.csv:5
+[₁] ../Mage_GoogleAnalytics.csv:0
+[₁] ../Mage_GoogleBase.csv:2
+[₁] ../Mage_GoogleCheckout.csv:2
+[₁] ../Mage_GoogleOptimizer.csv:0
+[₁] ../Mage_Ideal.csv:1
+[₁] ../Mage_ImportExport.csv:0
+[₁] ../Mage_Index.csv:0
 
-[₀] ../Mage_Dataflow.csv:0
-[₀] ../Mage_Directory.csv:1
-[₀] ../Mage_Downloadable.csv:4
-[₀] ../Mage_Eav.csv:0
-[₀] ../Mage_GiftMessage.csv:5
-[₀] ../Mage_GoogleAnalytics.csv:0
-[₀] ../Mage_GoogleBase.csv:2
-[₀] ../Mage_GoogleCheckout.csv:2
-[₀] ../Mage_GoogleOptimizer.csv:0
-[₀] ../Mage_Ideal.csv:1
-[₀] ../Mage_ImportExport.csv:0
-[₀] ../Mage_Index.csv:0
 [₀] ../Mage_Install.csv:18
 [₀] ../Mage_Log.csv:0
 [₀] ../Mage_Media.csv:0
@@ -78,6 +88,8 @@
 [₀] ../Mage_Weee.csv:0
 [₀] ../Mage_Widget.csv:0
 [₀] ../Mage_Wishlist.csv:11
+
+# Lower priority atm
 [₀] ../MageWorx_Adminhtml.csv:0
 [₀] ../MageWorx_CustomOptions.csv:3
 [₀] ../Magpleasure_Blog.csv:5
