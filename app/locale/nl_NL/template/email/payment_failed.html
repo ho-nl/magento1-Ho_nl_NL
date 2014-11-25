@@ -1,7 +1,4 @@
-{* This is a comment block
-
-Use vars: {{var var_name}}
-*}<!--@subject Reminder: betaling mislukt @-->
+<!--@subject Reminder: betaling mislukt @-->
 <!--@vars
 {"var reason":"Transaction Failed Reason",
 "var checkoutType":"Checkout Type",
@@ -15,83 +12,57 @@ Use vars: {{var var_name}}
 "var paymentMethod":"Payment Method",
 "var dateAndTime":"Date and Time of Transaction"}
 @-->
-<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
+
+<table>
+    <thead>
     <tr>
-        <td align="center" valign="top" style="padding:20px 0 20px 0">
-            <!-- [ header starts here] -->
-            <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
-                <tr>
-                    <td valign="top">
-                        <a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{var logo_url}}" alt="{{var logo_alt}}" border="0"/></a>
-                    </td>
-                </tr>
-                <!-- [ middle starts here] -->
-                <tr>
-                    <td valign="top">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Er is een betaling mislukt.</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <p>
-                                            <b>Reden</b><br />
-                                            {{var reason}}
-                                        </p>
-                                        <p>
-                                            <b>Betaalvoorkeur</b><br />
-                                            {{var checkoutType}}
-                                        </p>
-                                        <p>
-                                            <b>Klant:</b><br />
-                                            <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
-                                        </p>
-                                        <p>
-                                            <b>Producten</b><br />
-                                            {{var items}}
-                                        </p>
-                                        <p>
-                                            <b>Totaal:</b><br />
-                                            {{var total}}
-                                        </p>
-                                        <p>
-                                            <b>Factuuradres:</b><br />
-                                            {{var billingAddress.format('html')}}
-                                        </p>
-                                        <p>
-                                            <b>Verzendadres:</b><br />
-                                            {{var shippingAddress.format('html')}}
-                                        </p>
-                                        <p>
-                                            <b>Verzendmethode:</b><br />
-                                            {{var shippingMethod}}
-                                        </p>
-                                        <p>
-                                            <b>Betaalwijze:</b><br />
-                                            {{var paymentMethod}}
-                                        </p>
-                                        <p>
-                                            <b>Date & Time:</b><br />
-                                            {{var dateAndTime}}
-                                        </p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </td>
-                </tr>
-                <tr>
-                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
-                </tr>
-            </table>
+        <th>Er is een betaling mislukt.</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <p>
+                <b>Reden:</b><br />
+                {{var reason}}
+            </p>
+            <p>
+                <b>Betaalvoorkeur:</b><br />
+                {{var checkoutType}}
+            </p>
+            <p>
+                <b>Klant:</b><br />
+                <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+            </p>
+            <p>
+                <b>Producten:</b><br />
+                {{var items}}
+            </p>
+            <p>
+                <b>Totaal:</b><br />
+                {{var total}}
+            </p>
+            <p>
+                <b>Factuuradres:</b><br />
+                {{var billingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Verzendadres:</b><br />
+                {{var shippingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Verzendwijze:</b><br />
+                {{var shippingMethod}}
+            </p>
+            <p>
+                <b>Betaalwijze:</b><br />
+                {{var paymentMethod}}
+            </p>
+            <p>
+                <b>Datum en tijd:</b><br />
+                {{var dateAndTime}}
+            </p>
         </td>
     </tr>
+    </tbody>
 </table>
-</div>
-
-

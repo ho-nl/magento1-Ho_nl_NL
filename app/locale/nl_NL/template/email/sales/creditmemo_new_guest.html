@@ -1,4 +1,4 @@
-<!--@subject {{var store.getFrontendName()}}: Credit Memo # {{var creditmemo.increment_id}} for Order # {{var order.increment_id}} @-->
+<!--@subject {{var store.getFrontendName()}}: Creditnota # {{var creditmemo.increment_id}} voor bestelling # {{var order.increment_id}} @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
@@ -26,8 +26,9 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="email-heading">
-                        <h1>Hartelijk dank voor uw bestelling bij {{var store.getFrontendName()}}.</h1>
-                        <p>U kunt uw order status controleren door <a href="{{store url="customer/account/"}}">in te loggen in uw account</a>.</p>
+                        <h1>Beste {{htmlescape var=$billing.getName()}},</h1>
+						<p>Bedankt voor uw bestelling bij {{var store.getFrontendName()}}.</p>
+                        <p>U kunt de status van uw bestelling controleren door in te loggen op<a href="{{store url="customer/account/"}}">uw account</a>.</p>
                     </td>
                     <td class="store-info">
                         <h4>Heeft u vragen over uw bestelling?</h4>
@@ -40,7 +41,7 @@
                             <span class="no-link">{{var store_hours}}</span><br>
                             {{/depend}}
                             {{depend store_email}}
-                            <b>Email:</b> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            <b>E-Mail:</b> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
                             {{/depend}}
                         </p>
                     </td>
@@ -50,8 +51,7 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Uw credit factuur<span class="no-link">#{{var creditmemo.increment_id}}</span></h3>
-            <p>Bestelling <span class="no-link">#{{var order.increment_id}}</span></p>
+            <h3>Creditnota #{{var creditmemo.increment_id}} voor Bestelling #{{var order.increment_id}}</h3>
         </td>
     </tr>
     <tr class="order-information">
@@ -67,12 +67,12 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="address-details">
-                        <h6>Factuur adres:</h6>
+                        <h6>Factuurgegevens:</h6>
                         <p><span class="no-link">{{var order.billing_address.format('html')}}</span></p>
                     </td>
                     {{depend order.getIsNotVirtual()}}
                     <td class="address-details">
-                        <h6>Verzend adres:</h6>
+                        <h6>Adresgegevens:</h6>
                         <p><span class="no-link">{{var order.shipping_address.format('html')}}</span></p>
                     </td>
                     {{/depend}}
@@ -80,12 +80,12 @@
                 <tr>
                     {{depend order.getIsNotVirtual()}}
                     <td class="method-info">
-                        <h6>Vderzend methode:</h6>
+                        <h6>Verzendwijze:</h6>
                         <p>{{var order.shipping_description}}</p>
                     </td>
                     {{/depend}}
                     <td class="method-info">
-                        <h6>Betaal methode:</h6>
+                        <h6>Betaalwijze:</h6>
                         {{var payment_html}}
                     </td>
                 </tr>

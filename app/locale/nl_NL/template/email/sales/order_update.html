@@ -1,4 +1,4 @@
-<!--@subject {{var store.getFrontendName()}}: Order # {{var order.increment_id}} update @-->
+<!--@subject {{var store.getFrontendName()}}: Update bestelling # {{var order.increment_id}} @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
@@ -22,8 +22,8 @@
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="action-content">
-                        <h1>{{htmlescape var=$order.getCustomerName()}},</h1>
-                        <p>Uw bestelling <span class="no-link">#{{var order.increment_id}}</span> is bijgewerkt naar: <strong>{{var order.getStatusLabel()}}</strong></p>
+                        <h1>Beste {{htmlescape var=$order.getCustomerName()}},</h1>
+                        <p>Uw bestelling met bestelnummer <span class="no-link">#{{var order.increment_id}}</span> staat nu op status: <strong>{{var order.getStatusLabel()}}</strong></p>
                         {{if comment}}
                         <table cellspacing="0" cellpadding="0" class="message-container">
                             <tr>
@@ -31,12 +31,11 @@
                             </tr>
                         </table>
                         {{/if}}
-                        <p>U kunt uw order status controleren door <a href="{{store url="customer/account/"}}">in te loggen in uw account</a>.</p>
-                        <p>
-                            Mocht u nog vragen hebben, aarzel dan niet om contact met ons op te nemen via
-                            <a href="mailto:{{var store_email}}">{{var store_email}}</a>
-                            {{depend store_phone}} of via telefoon <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
-                        </p>
+                        <p>U kunt de status van uw bestelling controleren door in te loggen op <a href="{{store url="customer/account/"}}">uw account</a>.</p>
+						<p>
+							Indien u nog vragen heeft, kunt u contact met ons opnemen via email door een bericht te sturen naar <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+							{{depend store_phone}} of telefonisch via <a href="tel:{{var phone}}">{{var store_phone}}</a>{{/depend}}.
+						</p>
                     </td>
                 </tr>
             </table>
