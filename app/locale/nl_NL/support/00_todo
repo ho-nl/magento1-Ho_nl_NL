@@ -2,16 +2,8 @@
 # Digits after suffix colon are hits on the u/uw/uwer regex
 # approximation density of initial review goal set forth
 
-# Vim keybindings:
-# digraphs <C-k k> OK, XX, ?+, 0s, 1s, 2s, etc
-#
-# " open vertical panel with the file opened under cursor (better :gf)
-# :map <F8> :vertical wincmd f<CR>
-#
-# " while in insert mode, press C-i to switch from 0 to 1st review
-# imap <C-i> <esc>0lxi₁
-
 # [review]  ../ filename : count polite forms (u|uw|uwer|uwen)
+
 
 [؟] ../Mage_Adminhtml.csv:5
 [؟] ../Mage_Backup.csv:1 # backup of reservekopie?
@@ -56,12 +48,12 @@
 [₁] ../Mage_Ideal.csv:1
 [₁] ../Mage_ImportExport.csv:0
 [₁] ../Mage_Index.csv:0
+[₁] ../Mage_Install.csv:18
+[₁] ../Mage_Log.csv:0
+[₁] ../Mage_Media.csv:0
+[₁] ../Mage_Newsletter.csv:12
+[₁] ../Mage_Oauth.csv:6
 
-[₀] ../Mage_Install.csv:18
-[₀] ../Mage_Log.csv:0
-[₀] ../Mage_Media.csv:0
-[₀] ../Mage_Newsletter.csv:12
-[₀] ../Mage_Oauth.csv:6
 [₀] ../Mage_PageCache.csv:0
 [₀] ../Mage_Page.csv:1
 [₀] ../Mage_Paygate.csv:0
@@ -211,3 +203,33 @@ Root categorie: stamcategorie of broncategorie (liever geen wortelcategorie)
 Noot: [attribuutsets](http://www.woorden-boek.nl/woord/sets)
 
 .
+# Vim keybindings:
+# digraphs <C-k k> OK, XX, ?+, 0s, 1s, 2s, etc
+#
+# " open vertical panel with the file opened under cursor (better :gf)
+# :map <F8> :vertical wincmd f<CR>
+#
+# " while in insert mode, press C-i to switch from 0 to 1st review
+# imap <C-i> <esc>0lxi₁
+
+# Method: Translate with Google
+# -----------------------------
+#
+# Print only the english column and drop the e.g. frenchie, german, russion column
+# cat somefile.csv | awk -F"," '{print $1}'
+#
+# WATCH out for column width on terminal #
+#
+# Go to Google Translate
+# Paste the english column and translate to e.g. dutch, then copy and paste in a new file
+# Make a new file pure english too e.g.
+# cat somefile.csv | awk -F"," '{print $1}' > somefile.csv.en
+#
+# Now merge:
+# paste -d"," BL_CustomGrid.csv.en BL_CustomGrid.csv.nl  > BL_CustomGrid.csv
+# 
+# Same line zipfile A,B next line A,B next line :)
+
+
+
+
