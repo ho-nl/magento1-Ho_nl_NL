@@ -54,13 +54,16 @@
 [₁] ../Mage_Newsletter.csv:12
 [₁] ../Mage_Oauth.csv:6
 
+[₁] ../Mage_Persistent.csv:8
+
 [₀] ../Mage_PageCache.csv:0
 [₀] ../Mage_Page.csv:1
 [₀] ../Mage_Paygate.csv:0
 [₀] ../Mage_Payment.csv:0
 [₀] ../Mage_Paypal.csv:10
 [₀] ../Mage_PaypalUk.csv:0
-[₀] ../Mage_Persistent.csv:8
+
+
 [₀] ../Mage_Poll.csv:1
 [₀] ../Mage_ProductAlert.csv:4
 [₀] ../Mage_Rating.csv:1
