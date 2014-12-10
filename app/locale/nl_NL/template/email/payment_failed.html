@@ -1,7 +1,4 @@
-{* This is a comment block
-
-Use vars: {{var var_name}}
-*}<!--@subject Reminder: betaling mislukt @-->
+<!--@subject Reminder: betaling mislukt @-->
 <!--@vars
 {"var reason":"Transaction Failed Reason",
 "var checkoutType":"Checkout Type",
@@ -18,54 +15,54 @@ Use vars: {{var var_name}}
 
 <table>
     <thead>
-        <tr>
-            <th>Er is een betaling mislukt.</th>
-        </tr>
+    <tr>
+        <th>Er is een betaling mislukt.</th>
+    </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>
-                <p>
-                    <b>Reden</b><br />
-                    {{var reason}}
-                </p>
-                <p>
-                    <b>Betaalvoorkeur</b><br />
-                    {{var checkoutType}}
-                </p>
-                <p>
-                    <b>Klant:</b><br />
-                    <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
-                </p>
-                <p>
-                    <b>Producten</b><br />
-                    {{var items}}
-                </p>
-                <p>
-                    <b>Totaal:</b><br />
-                    {{var total}}
-                </p>
-                <p>
-                    <b>Factuuradres:</b><br />
-                    {{var billingAddress.format('html')}}
-                </p>
-                <p>
-                    <b>Verzendadres:</b><br />
-                    {{var shippingAddress.format('html')}}
-                </p>
-                <p>
-                    <b>Verzendmethode:</b><br />
-                    {{var shippingMethod}}
-                </p>
-                <p>
-                    <b>Betaalwijze:</b><br />
-                    {{var paymentMethod}}
-                </p>
-                <p>
-                    <b>Date & Time:</b><br />
-                    {{var dateAndTime}}
-                </p>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            <p>
+                <b>Reden:</b><br />
+                {{var reason}}
+            </p>
+            <p>
+                <b>Betaalvoorkeur:</b><br />
+                {{var checkoutType}}
+            </p>
+            <p>
+                <b>Klant:</b><br />
+                <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
+            </p>
+            <p>
+                <b>Producten:</b><br />
+                {{var items}}
+            </p>
+            <p>
+                <b>Totaal:</b><br />
+                {{var total}}
+            </p>
+            <p>
+                <b>Factuuradres:</b><br />
+                {{var billingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Verzendadres:</b><br />
+                {{var shippingAddress.format('html')}}
+            </p>
+            <p>
+                <b>Verzendwijze:</b><br />
+                {{var shippingMethod}}
+            </p>
+            <p>
+                <b>Betaalwijze:</b><br />
+                {{var paymentMethod}}
+            </p>
+            <p>
+                <b>Datum en tijd:</b><br />
+                {{var dateAndTime}}
+            </p>
+        </td>
+    </tr>
     </tbody>
 </table>
