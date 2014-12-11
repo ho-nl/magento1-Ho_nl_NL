@@ -1,0 +1,64 @@
+#!/usr/bin/env zsh
+
+rootpath=/srv/http/current/htdocs
+locales=${rootpath}/app/locale
+langs=(nl_NL en_US)
+
+# Allows for easy comparison of the English (left-hand) side of Magento locale csv files.
+# This will show the difference between two versions or at least, what translation files
+# may be missing in terms of English strings that system will match on. Only the left
+# column is relevant so only new changes from Magento en_US are taken in.
+function new-sentences ()
+{
+    : ${filename:=${1:?Need a file name as first argument to check}}
+    : ${nlf:=${2:-":%dn: %L"}}
+    
+    function lhs ()
+    {
+        [[ -f $1 ]] || return 1
+        sed -nr 's/^"(.*)","(.*)"/\1/p' $1
+
+    }
+
+    # compose file paths for files to diff
+    file1=${locales}/${langs[1]}/${1:r}.csv
+    file2=${locales}/${langs[2]}/${1:r}.csv
+
+    # exit if either one of the files isn't found on the system'
+    test -f $file1 -a -f $file2 || { print -P "%F{red}✗%f file not found" ; kill -INT $$ }
+
+    # return the changed lines as ` :lineno: Text `
+    diff --unchanged-line-format="" --old-line-format="" --new-line-format="$nlf" --width=250 --left-column\
+        <(lhs $file1) <(lhs $file2)
+
+    unset nfl filename file1 file2
+}
+
+new-sentences $@
+
+# to print lines without line number, simply provide a second argument
+# new-sentences "$1" "%L"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#diff -i --unchanged-line-format="¥" --new-line-format=":%dn: %L" <(lhs $file1) <(lhs $file2) |\
+#    perl -pe 's/¥/\n/g' | perl -pe '$count++; if ($_ !~ /^\n$/){print "$count\t";}'
+
+#diff -y --width=400 --left-column  <(lhs $file1) <(lhs $file2)
+#diff --line-format='%3dn %L' --left-column <(lhs $file1) <(lhs $file2)
+#
+

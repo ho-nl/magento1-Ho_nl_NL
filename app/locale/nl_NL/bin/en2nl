@@ -1,0 +1,7 @@
+#!/usr/bin/env zsh
+
+thisdir=${0:A:h}
+${thisdir}/trans en:nl "$@" | head -n 1
+
+
+
