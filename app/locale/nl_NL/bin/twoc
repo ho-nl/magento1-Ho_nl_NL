@@ -11,13 +11,14 @@ langs=(nl_NL en_US)
 function new-sentences ()
 {
     : ${filename:=${1:?Need a file name as first argument to check}}
-    : ${nlf:=${2:-":%dn: %L"}}
+    : ${nlf:=${2:-"%dn؟%L"}}
     
+    # left hand side of the expressions
     function lhs ()
     {
         [[ -f $1 ]] || return 1
-        sed -nr 's/^"(.*)","(.*)"/\1/p' $1
-
+        #sed -nr 's/^"(.*)","(.*)"/"\1"/p' $1
+        sed -nr 's/^"(.*)","(.*)"/\x27\1\x27/p' $1
     }
 
     # compose file paths for files to diff
@@ -34,7 +35,19 @@ function new-sentences ()
     unset nfl filename file1 file2
 }
 
+function en2nl ()
+{
+    thisdir=${0:A:h}
+    ${thisdir}/trans en:nl -b "$@"
+}
+
+#typeset -A foo
+#: ${(@fAA)=linelist::="$(new-sentences $@)"}
+#foo=(${(f)$(new-sentences $@)})
+
 new-sentences $@
+
+#print -l ${foo[@]}
 
 # to print lines without line number, simply provide a second argument
 # new-sentences "$1" "%L"

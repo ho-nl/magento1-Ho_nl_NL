@@ -53,15 +53,18 @@
 [₁] ../Mage_Media.csv:0
 [₁] ../Mage_Newsletter.csv:12
 [₁] ../Mage_Oauth.csv:6
+[₁] ../Mage_Page.csv:1
+[₁] ../Mage_PageCache.csv:0
+[₁] ../Mage_Tag.csv:3
+
+[₀] ../Mage_PaypalUk.csv:0
+
 
 [₁] ../Mage_Persistent.csv:8
 
-[₀] ../Mage_PageCache.csv:0
-[₀] ../Mage_Page.csv:1
 [₀] ../Mage_Paygate.csv:0
 [₀] ../Mage_Payment.csv:0
 [₀] ../Mage_Paypal.csv:10
-[₀] ../Mage_PaypalUk.csv:0
 
 
 [₀] ../Mage_Poll.csv:1
@@ -77,7 +80,6 @@
 [₀] ../Mage_Shipping.csv:1
 [₀] ../Mage_Sitemap.csv:1
 [₀] ../Mage_Strikeiron.csv:1
-[₀] ../Mage_Tag.csv:3
 [₀] ../Mage_Tax.csv:3
 [₀] ../Mage_Usa.csv:2
 [₀] ../Mage_Weee.csv:0
