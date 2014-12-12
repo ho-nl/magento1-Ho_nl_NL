@@ -1,45 +1,93 @@
 #!/usr/bin/env zsh
 
+# Preamble# {{{
+
+# Usage / help instructions
+if (( ! $# )); then
+  echo "Usage: $0:t [subcmd...] [args...]"
+  return 1
+fi
+
+# Declare properly
+local -a subcmd
+
+# Path and language settings
 rootpath=/srv/http/current/htdocs
 locales=${rootpath}/app/locale
 langs=(nl_NL en_US)
+bindir=${0:A:h}
+# Fallback since ! $# == no args == ! $1 but also setter of variable name
+subcmd=${1:?A sub-command is required as first (1) argument to this call}
+if (( $# > 1 )); then shift; fi
+# }}}
 
-# Allows for easy comparison of the English (left-hand) side of Magento locale csv files.
-# This will show the difference between two versions or at least, what translation files
-# may be missing in terms of English strings that system will match on. Only the left
-# column is relevant so only new changes from Magento en_US are taken in.
+# Compare translations old/new Magento and show newly added strings # {{{
+# Allows for easy comparison of the English (left-hand) side of Magento locale 
+# csv files.  This will show the difference between two versions or at least,
+# what translation files may be missing in terms of English strings that system
+# will match on. Only the left column is relevant so only new changes from
+# Magento en_US are taken in.
 function new-sentences ()
 {
+    # fail hard and fast... set any patterns we require default (overridable)
     : ${filename:=${1:?Need a file name as first argument to check}}
     : ${nlf:=${2:-"%dn؟%L"}}
     
-    # left hand side of the expressions
+    # left hand side (lhs) of the file/expression
     function lhs ()
     {
         [[ -f $1 ]] || return 1
         #sed -nr 's/^"(.*)","(.*)"/"\1"/p' $1
+
+        # TODO: properly qq escape quotes, assoc array still bad k/v
         sed -nr 's/^"(.*)","(.*)"/\x27\1\x27/p' $1
     }
 
-    # compose file paths for files to diff
+    # facilitate lazy input .. main driving force ;)
     file1=${locales}/${langs[1]}/${1:r}.csv
     file2=${locales}/${langs[2]}/${1:r}.csv
 
-    # exit if either one of the files isn't found on the system'
-    test -f $file1 -a -f $file2 || { print -P "%F{red}✗%f file not found" ; kill -INT $$ }
+    # exit if either one of the files isn't found on the system
+    test -f $file1 -a -f $file2 || {
+        print -P "%F{red}✗%f file not found"
+        kill -INT $$
+    }
 
     # return the changed lines as ` :lineno: Text `
-    diff --unchanged-line-format="" --old-line-format="" --new-line-format="$nlf" --width=250 --left-column\
-        <(lhs $file1) <(lhs $file2)
+    diff --unchanged-line-format="" \
+         --old-line-format="" \
+         --new-line-format="$nlf" \
+         --width=250 --left-column \
+         <(lhs $file1) \
+         <(lhs $file2)
 
+    # clean up local members
     unset nfl filename file1 file2
 }
+# }}}
 
+# Google translate English to Dutch sentences, words.# {{{
 function en2nl ()
 {
-    thisdir=${0:A:h}
-    ${thisdir}/trans en:nl -b "$@"
+    ${bindir}/trans en:nl -b "$@"
 }
+# }}}
+
+case "$subcmd" in
+
+    (c|compare)
+
+        new-sentences $@ ;;
+
+    (t|translate)
+
+        en2nl $@ ;;
+
+    # Call paramless self = usage & exit
+    (*) $0 ;;
+
+
+esac
 
 #typeset -A foo
 #: ${(@fAA)=linelist::="$(new-sentences $@)"}
