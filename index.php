@@ -71,21 +71,21 @@
     /* ======================================================================================= */
     
 	/* Custom styles */
-    body 			{ padding:100px; }
-    table.csv td	{ padding:2px 10px; }
+    body         { padding:100px; }
+    table.csv td { padding:2px 10px; }
 
-    input.input-text 		{ padding:2px;height:24px;line-height:24px;width:600px;border:1px solid #ccc;font-size:13px; }
+    input.input-text        { padding:2px;height:24px;line-height:24px;width:600px;border:1px solid #ccc;font-size:13px; }
     input.input-text.search { width:300px; }
-    .label 					{ text-align: right; color:#999; border:none; }
-    button.button 			{ padding:10px; }
-    a.searchresult 			{ color:#999; text-decoration: none; }
-    a.searchresult:hover 	{ color:#999;text-decoration: underline; }
+    .label 		 { text-align: right; color:#999; border:none; }
+    button.button        { padding:10px; }
+    a.searchresult       { color:#999; text-decoration: none; }
+    a.searchresult:hover { color:#999;text-decoration: underline; }
 
-    .select-box		{ padding:20px; border:1px solid #ddd; display: inline-block; }
-    .select-box h2 	{ margin-bottom:20px; }
+    .select-box         { padding:20px; border:1px solid #ddd; display: inline-block; }
+    .select-box h2      { margin-bottom:20px; }
 
-    .search-box 	{ padding:20px; border:1px solid #ddd; float:left; }
-    .search-box h2 	{ margin-bottom:20px; }
+    .search-box         { padding:20px; border:1px solid #ddd; float:left; }
+    .search-box h2      { margin-bottom:20px; }
     </style>
 </head>
 <body>
@@ -103,10 +103,10 @@
     </div>
 
     <?php
-	    $dir 		= './app/locale/nl_NL/';
-	    $di 		= new RecursiveDirectoryIterator($dir);
-	    $count 		= 0;
-	    $matches 	= array();
+	    $dir        = './app/locale/nl_NL/';
+	    $di         = new RecursiveDirectoryIterator($dir);
+	    $count      = 0;
+	    $matches    = array();
 	    $searchthis = false;
 	    
 	    if (isset($_GET["keyword"])) {
@@ -218,13 +218,13 @@
     <tr><td>&nbsp;</td><td class="a-right"><button type="submit" class="button">Opslaan</button></td></tr>
 <?php
     while (($data = fgets($handle)) !== FALSE) {
-        $data 	= trim($data,' ');
-        $data 	= str_replace("\n", "", $data);
-        $data 	= str_replace("\r", "", $data);
-        $data 	= substr($data, 1,-1);
-        $data 	= str_replace('", "','","',$data);
-        $data 	= explode('","',$data);
-        $num 	= count($data);
+        $data   = trim($data,' ');
+        $data   = str_replace("\n", "", $data);
+        $data   = str_replace("\r", "", $data);
+        $data   = substr($data, 1,-1);
+        $data   = str_replace('", "','","',$data);
+        $data   = explode('","',$data);
+        $num    = count($data);
 ?>
 <tr>
 <?php
