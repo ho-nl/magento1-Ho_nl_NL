@@ -1,15 +1,8 @@
 {
-    "name": "ho-nl/ho_nl_nl",
+    "name": "threesixty/magento_nl",
+    "description": "Nederlandse vertalingen voor Magento",
+    "version": "0.1.0",
     "type": "magento-module",
-    "license":"OSL-3.0",
-    "description":"Nederlandse vertalingen voor Magento 1.7.0.2",
-    "homepage": "http://www.h-o.nl/blog/nederlandse-vertalingen-magento-17-inclusief-e-mailvertalingen/",
-    "authors":[
-        {
-            "name":"Paul Hachmang",
-            "email":"paul@h-o.nl"
-        }
-    ],
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
     }
