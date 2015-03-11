@@ -1,5 +1,5 @@
 {
-    "name": "threesixty/magento_nl",
+    "name": "threesixty/mage-dutch-translation",
     "description": "Nederlandse vertalingen voor Magento",
     "version": "0.1.0",
     "type": "magento-module",
