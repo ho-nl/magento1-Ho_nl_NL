@@ -18,7 +18,7 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                             <p><strong>Beste {{htmlescape var=$customer.name}}</strong>,</p>
                             <p>Bedankt voor uw aanmelding.</p>
 
-                            <p>Uw emailadres {{var customer.email}} moet worden bevestigd om in te kunnen loggen.</p>
+                            <p>Uw e-mailadres {{var customer.email}} moet worden bevestigd om in te kunnen loggen.</p>
 
                             <p>Klik om te bevestigen op <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}">deze bevestigingslink</a>. De link kan slechts één keer gebruikt worden.</p>
                             <p>Gebruik de volgende gegevens om in te loggen:</p>
