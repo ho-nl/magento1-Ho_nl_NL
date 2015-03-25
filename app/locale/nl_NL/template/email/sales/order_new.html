@@ -1,0 +1,83 @@
+<!--@subject {{var store.getFrontendName()}}: Nieuwe Order # {{var order.increment_id}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var store.getFrontendName()":"Store Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var order.increment_id":"Order Id",
+"var order.getCreatedAtFormated('long')":"Order Created At (datetime)",
+"var order.getBillingAddress().format('html')":"Billing Address",
+"var payment_html":"Payment Details",
+"var order.getShippingAddress().format('html')":"Shipping Address",
+"var order.getShippingDescription()":"Shipping Description",
+"layout handle=\"sales_email_order_items\" order=$order":"Order Items Grid",
+"var order.getEmailCustomerNote()":"Email Order Note"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+h3 { border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; }
+table.list th { padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em; background-color:#d9e5ee; }
+table.list td { padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5; }
+@-->
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{htmlescape var=$order.getCustomerName()}}</strong>,</p>
+                            <p>Bedankt voor uw bestelling bij {{config path="general/store_information/name"}}.</p>
+                            <p>U kunt de status van uw bestelling controleren door <a href="{{store url="customer/account/"}}">in te loggen op uw account</a>.</p>
+
+                            <h3>Uw bestelling #{{var order.increment_id}} geplaatst op {{var order.getCreatedAtFormated('long')}}</h3>
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th align="left" width="49%" bgcolor="#EAEAEA" style="font-size:13px; padding:5px 9px; line-height:1em;">Factuurgegevens:</th>
+                                        <th width="2%"></th>
+                                        <th align="left" width="49%" bgcolor="#EAEAEA" style="font-size:13px; padding:5px 9px; line-height:1em;">Betaalmethode:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" style="font-size:12px; padding: 9px; border:1px solid #EAEAEA; border-top: 0;">{{var order.getBillingAddress().format('html')}}</td>
+                                        <td>&nbsp;</td>
+                                        <td valign="top" style="font-size:12px; padding: 9px; border:1px solid #EAEAEA; border-top: 0;">{{var payment_html}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p/>
+
+                            {{depend order.getIsNotVirtual()}}
+                            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                                <thead>
+                                    <tr>
+                                        <th align="left" width="49%" bgcolor="#EAEAEA" style="font-size:13px; padding:5px 9px; line-height:1em;">Verzendinformatie:</th>
+                                        <th width="2%"></th>
+                                        <th align="left" width="49%" bgcolor="#EAEAEA" style="font-size:13px; padding:5px 9px; line-height:1em;">Verzendmethode:</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td valign="top" style="font-size:12px; padding: 9px; border:1px solid #EAEAEA; border-top: 0;">{{var order.getShippingAddress().format('html')}}</td>
+                                        <td>&nbsp;</td>
+                                        <td valign="top" style="font-size:12px; padding: 9px; border:1px solid #EAEAEA; border-top: 0;">{{var order.getShippingDescription()}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p/>
+                            {{/depend}}
+
+                            {{layout handle="sales_email_order_items" order=$order}}
+
+                            {{var items_html}}
+                            <p/>
+
+                            <p>{{var order.getEmailCustomerNote()}}</p>
+
+                            <p>Wanneer u vragen heeft, neem dan gerust contact met ons op. <a href="mailto:{{config path="trans_email/ident_general/email"}}">{{config path="trans_email/ident_general/email"}}</a> of telefonisch <span class="nobr">{{config path="general/store_information/phone"}}</span>.</p>
+
+                            <p>Met vriendelijke groet,</p>
+                            <p><strong>{{config path="general/store_information/name"}}</strong></p>
+
+{{customVar code=email_footer}}
+

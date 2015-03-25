@@ -1,0 +1,37 @@
+<!--@subject Bevestig uw account {{var customer.name}}  @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"store url=\"customer/account/\"":"Customer Account Url",
+"htmlescape var=$customer.name":"Customer Name",
+"var customer.email":"Customer Email",
+"store url=\"customer/account/confirm/\" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url":"Confirmation Url",
+"htmlescape var=$customer.password":"Customer password"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{htmlescape var=$customer.name}}</strong>,</p>
+                            <p>Dank u voor uw aanmelding.</p>
+
+                            <p>Uw emailadres {{var customer.email}} moet worden bevestigd om op de website te kunnen inloggen.</p>
+
+                            <p>Om te bevestigen klikt u <a href="{{store url="customer/account/confirm/" _query_id=$customer.id _query_key=$customer.confirmation _query_back_url=$back_url}}">deze bevestigingslink</a>. De link kan slechts één keer gebruikt worden.</p>
+                            <p>Gebruik de volgende waarden om in te loggen:</p>
+                            <ul>
+                            <li>E-mail: {{var customer.email}}</li>
+                            <li>Wachtwoord: {{htmlescape var=$customer.password}}</li>
+                            </ul>
+
+                            <p>Wanneer u vragen heeft, neem dan gerust contact met ons op. <a href="mailto:{{config path="trans_email/ident_general/email"}}">{{config path="trans_email/ident_general/email"}}</a> of telefonisch <span class="nobr">{{config path="general/store_information/phone"}}</span>.</p>
+
+                            <p>Met vriendelijke groet,</p>
+                            <p><strong>{{config path="general/store_information/name"}}</strong></p>
+                            <p><em>Heeft u zichzelf niet aangemeld? Geen paniek, u kunt deze email gewoon als niet verzonden beschouwen.</em></p>
+
+{{customVar code=email_footer}}
+

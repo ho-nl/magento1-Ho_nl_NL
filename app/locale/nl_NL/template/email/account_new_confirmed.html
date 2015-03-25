@@ -1,0 +1,36 @@
+<!--@subject Welkom {{var customer.firstname}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url"}
+@-->
+
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{htmlescape var=$customer.name}}</strong>,</p>
+                            <p>Dank u voor uw aanmelding bij onze online winkel. Om uw gegevens te bekijken kunt u bovenaan iedere pagina op onze website klikken op <a href="{{store url="customer/account/"}}">Inloggen</a> of <a href="{{store url="customer/account/"}}">Mijn rekening</a>. U hoeft alleen uw emailadres en wachtwoord in te vullen.</p>
+
+                            <p>Nadat u bent ingelogd kunt het volgende doen:</p>
+                            <ul>
+                                <li>Sneller door de kassa heen bij het afrekenen.</li>
+                                <li>De status van bestellingen bekijken.</li>
+                                <li>Uw eerdere bestelllingen bekijken.</li>
+                                <li>Wijzigingen aanbrengen in uw adresgegevens.</li>
+                                <li>Uw zelf opgeven voor de nieuwsbrief.</li>
+                                <li>Uw wachtwoord wijzigen.</li>
+                                <li>Verschillende verzendadressen opslaan.</li>
+                            </ul>
+
+                            <p>Wanneer u vragen heeft, neem dan gerust contact met ons op. <a href="mailto:{{config path="trans_email/ident_general/email"}}">{{config path="trans_email/ident_general/email"}}</a> of telefonisch <span class="nobr">{{config path="general/store_information/phone"}}</span>.</p>
+
+                            <p>Met vriendelijke groet,</p>
+                            <p><strong>{{config path="general/store_information/name"}}</strong></p>
+
+{{customVar code=email_footer}}
+

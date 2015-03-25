@@ -1,0 +1,29 @@
+<!--@subject {{var customer.name}} heeft u uitnodigd zijn/haar verlanglijst te bekijken @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"var message":"Wishlist Message",
+"var items":"Wishlist Items"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Hallo,</strong></p>
+                            <p>Deze producten heb ik op mijn verlanglijstje staan. </p>
+                            <p>{{var message}}</p>
+                            {{var items}}
+
+                            <ul>
+                            {{depend salable}}<li><a href="{{var addAllLink}}">Alle producten aan winkelwagen toevoegen.</a></li>{{/depend}} 
+                            <li><a href="{{var viewOnSiteLink}}" style="color:#1E7EC8;">Alle producten van de verlanglijst bekijken.</a></li>
+                            </ul>
+    
+                            <p>Bedankt,<p/>
+                            <p><strong>{{htmlescape var=$customer.name}}</strong></p>
+
+{{customVar code=email_footer}}
+

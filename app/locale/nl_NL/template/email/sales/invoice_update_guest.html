@@ -1,0 +1,31 @@
+<!--@subject {{var store.getFrontendName()}}: Factuur # {{var invoice.increment_id}} update @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"htmlescape var=$billing.getName()":"Guest Customer Name",
+"var order.increment_id":"Order Id",
+"var order.getStatusLabel()":"Order Status",
+"var comment":"Invoice Comment",
+"var store.getFrontendName()":"Store Name"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+h3 { border-bottom:2px solid #eee; font-size:1.05em; padding-bottom:1px; }
+table.list th { padding:5px 9px 6px 9px; border:1px solid #bebcb7; border-bottom:none; line-height:1em; background-color:#d9e5ee; }
+table.list td { padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0; background:#f8f7f5; }
+@-->
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{htmlescape var=$billing.getName()}}</strong>,</p>
+                            <p>Uw bestelling #{{var order.increment_id}} is aangepast: <strong>{{var order.getStatusLabel()}}</strong>.</p>
+                            <p>{{var comment}}</p>
+
+                            <p>Wanneer u vragen heeft, neem dan gerust contact met ons op. <a href="mailto:{{config path="trans_email/ident_general/email"}}">{{config path="trans_email/ident_general/email"}}</a> of telefonisch <span class="nobr">{{config path="general/store_information/phone"}}</span>.</p>
+
+                            <p>Met vriendelijke groet,</p>
+                            <p><strong>{{config path="general/store_information/name"}}</strong></p>
+
+{{customVar code=email_footer}}
+

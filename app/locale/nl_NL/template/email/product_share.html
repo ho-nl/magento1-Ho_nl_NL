@@ -1,0 +1,32 @@
+{* This is a comment block
+
+Available vars in this template:
+  - name            Recipient name
+  - email           Recipient Email address
+  - product_name    Product name
+  - product_url     Url for product
+  - product_image   Url for product small image (75 px)
+  - message         Sender custom message
+  - sender_name     Sender name
+  - sender_email    Sender email
+
+Use vars: {{var var_name}}
+*}<!--@subject {{var sender_name}} selecteerde {{var product_name}} voor u. @-->
+
+<style type="text/css">
+    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+</style>
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{var name}},</strong></p>
+                            <p>Het volgende product is door een vriend van u speciaal voor u geselecteerd.</p>
+                            <p>U kunt de link volgen voor meer informatie over dit artikel</p>
+                            <p><a href="{{var product_url}}"><img src="{{var product_image}}" alt="{{var product_name}}"/></a></p>
+                            <p><a href="{{var product_url}}">{{var product_name}}</a></p>
+                            <p><strong>Bericht van {{var sender_name}} ({{var sender_email}}):</strong>,</p>
+                            <p>{{var message}}</p>
+
+{{customVar code=email_footer}}
+

@@ -1,0 +1,15 @@
+<!--@subject Producten weer op voorraad @-->
+
+<style type="text/css">
+    body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+</style>
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{var customer.firstname}},</strong>,</p>
+                            <p>De volgende producten zijn weer op voorraad:</p>
+                            {{var alertGrid}}
+
+{{customVar code=email_footer}}
+

@@ -1,0 +1,26 @@
+<!--@subject Nieuwsbrief aanmelding bevestiging @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"skin url=\"images/logo_email.gif\" _area='frontend'":"Email Logo Image",
+"htmlescape var=$customer.name":"Customer Name",
+"var subscriber.getConfirmationLink()":"Subscriber Confirmation Url"}
+@-->
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+
+
+{{customVar code=email_header}}
+
+                            <p><strong>Beste {{htmlescape var=$customer.name}}</strong>,</p>
+                            <p>Bedankt voor uw interesse in onze nieuwsbrief.</p>
+                            <p><strong>Om de nieuwsbrief te ontvangen, dient u het abonnement te bevestigen door op de onderstaande link te klikken:</strong></p>
+                            <p><a href="{{var subscriber.getConfirmationLink()}}">{{var subscriber.getConfirmationLink()}}</a><p>
+
+                            <p>Wanneer u vragen heeft, neem dan gerust contact met ons op. <a href="mailto:{{config path="trans_email/ident_general/email"}}">{{config path="trans_email/ident_general/email"}}</a> of telefonisch <span class="nobr">{{config path="general/store_information/phone"}}</span>.</p>
+
+                            <p>Met vriendelijke groet,</p>
+                            <p><strong>{{config path="general/store_information/name"}}</strong></p>
+
+{{customVar code=email_footer}}
+
