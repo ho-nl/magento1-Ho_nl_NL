@@ -69,27 +69,24 @@
     .no-padding   { padding:0 !important; }
     .no-bg        { background:none !important; }
     /* ======================================================================================= */
+    
+	/* Custom styles */
+    body         { padding:100px; }
+    table.csv td { padding:2px 10px; }
 
+    input.input-text        { padding:2px;height:24px;line-height:24px;width:600px;border:1px solid #ccc;font-size:13px; }
+    input.input-text.search { width:300px; }
+    .label 		 { text-align: right; color:#999; border:none; }
+    button.button        { padding:10px; }
+    a.searchresult       { color:#999; text-decoration: none; }
+    a.searchresult:hover { color:#999;text-decoration: underline; }
 
-    body {padding:100px}
-    table.csv td{padding:2px 10px;}
+    .select-box         { padding:20px; border:1px solid #ddd; display: inline-block; }
+    .select-box h2      { margin-bottom:20px; }
 
-    input.input-text {padding:2px; height:24px; line-height: 24px; width:600px; border:1px solid #ccc; font-size:13px}
-    input.input-text.search {width:300px}
-        .label {text-align: right; color:#999; border:none}
-    button.button {padding:10px}
-    a.searchresult {color:#999; text-decoration: none}
-    a.searchresult:hover {color:#999;text-decoration: underline}
-
-    .select-box {padding:20px; border:1px solid #ddd; display: inline-block;}
-    .select-box h2 {margin-bottom:20px}
-
-    .search-box {padding:20px; border:1px solid #ddd; float:left}
-    .search-box h2 {margin-bottom:20px}
-
+    .search-box         { padding:20px; border:1px solid #ddd; float:left; }
+    .search-box h2      { margin-bottom:20px; }
     </style>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -106,74 +103,63 @@
     </div>
 
     <?php
-
-    $dir = './app/locale/nl_NL/';
-    $di = new RecursiveDirectoryIterator($dir);
-    $count = 0;
-    $matches = array();
-    $searchthis = false;
-    if (isset($_GET["keyword"])){
-        $searchthis = $_GET["keyword"];
-    }
-
-    foreach (new RecursiveIteratorIterator($di) as $filename) {
-        if(strstr($filename,'.csv',true)){
-            $handle = @fopen($filename, "r");
-            if ($handle)
-            {
-                while (!feof($handle))
-                {
-                    $buffer = fgets($handle);
-
-                    if($searchthis && strpos($buffer, $searchthis) !== false)
-                        $matches[] = str_replace($dir,'',$filename);
-                }
-                fclose($handle);
-            }
-        }
-    }
-
-    foreach (array_unique($matches) as $filename) {
-        echo '<a href="#" class="searchresult" rel="'.$dir.$filename.'">'.$filename.'</a><br/>';
-    }
-
+	    $dir        = './app/locale/nl_NL/';
+	    $di         = new RecursiveDirectoryIterator($dir);
+	    $count      = 0;
+	    $matches    = array();
+	    $searchthis = false;
+	    
+	    if (isset($_GET["keyword"])) {
+	        $searchthis = $_GET["keyword"];
+	    }
+	
+	    foreach (new RecursiveIteratorIterator($di) as $filename) {
+	        if (strstr($filename,'.csv',true)) {
+	            $handle = @fopen($filename, "r");
+	            if ($handle)
+	            {
+	                while (!feof($handle))
+	                {
+	                    $buffer = fgets($handle);
+	
+	                    if($searchthis && strpos($buffer, $searchthis) !== false)
+	                        $matches[] = str_replace($dir,'',$filename);
+	                }
+	                fclose($handle);
+	            }
+	        }
+	    }
+	
+	    foreach (array_unique($matches) as $filename) {
+	        echo '<a href="#" class="searchresult" rel="'.$dir.$filename.'">'.$filename.'</a><br/>';
+	    }
     ?>
 </div>
 
-
 <script type="text/javascript">
-
-    $(document).ready(function(){
-
+    $(function() {
         $('#file').change(function() {
             var file = $(this).find("option:selected").val();
-
             location.href = file;
         });
 
-        $('.searchresult').live("click", function(){
+        $('.searchresult').live("click", function() {
             var file = $(this).attr('rel');
             console.log(file);
         });
 
-
-        $('#search').click(function(){
+        $('#search').click(function() {
             var keyword = $('#keyword').val();
             console.log(keyword);
         });
-
-
-
-
     });
 </script>
 
-
 <?php
-$file = "";
-if (isset($_GET["translate-file"])){
-    $file = $_GET["translate-file"];
-}
+	$file = "";
+	if (isset($_GET["translate-file"])) {
+	    $file = $_GET["translate-file"];
+	}
 ?>
 
 <div class="select-box">
@@ -195,70 +181,59 @@ if (isset($_GET["translate-file"])){
         ?>
     </select>
 
-
     <?php if (isset($_GET["translate-file"])): ?>
     <div>
         <?php if (isset($_GET['ou']) && $_GET['ou'] == '1' ): ?>
-        Untranslated Strings <small><label><a href="?translate-file=<?php echo $file; ?>&ou=0">Show all strings</a></label></small>
+        Onvertaalde strings <small><label><a href="?translate-file=<?php echo $file; ?>&ou=0">Toon alle strings</a></label></small>
         <?php else: ?>
-        All Strings <small><label><a href="?translate-file=<?php echo $file; ?>&ou=1">Show only untranslated strings</a></label></small>
+        Alle strings <small><label><a href="?translate-file=<?php echo $file; ?>&ou=1">Enkel onvertaalde strings tonen</a></label></small>
         <?php endif; ?>
     </div>
     <?php endif; ?>
 </div>
 
 
-<?php if($_SERVER['REQUEST_METHOD'] == "POST"): ?>
-	<?php
-
-	$fp = fopen($dir.$file, 'w');
-	foreach($_POST['strings'] as $data)
-	{
-        $data['input'] = stripslashes($data['input']);
-        $data['output'] = stripcslashes($data['output']);
-
-		$row = array('"'.$data['input'].'"','"'.$data['output'].'"');
-		fwrite($fp, implode(',',$row) . "\n");
-	}
+<?php 
+	if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+		$fp = fopen($dir.$file, 'w');
+		foreach ($_POST['strings'] as $data)
+		{
+	        $data['input'] = stripslashes($data['input']);
+	        $data['output'] = stripcslashes($data['output']);
 	
-	fclose($fp);
-	?>
-<?php endif; ?>
-
+			$row = array('"'.$data['input'].'"','"'.$data['output'].'"');
+			fwrite($fp, implode(',',$row) . "\n");
+		}
+		
+		fclose($fp);
+	}
+?>
 
 <form method="post" name="translation" >
 <?php
-$row = 1;
-
-if ($file && ($handle = fopen($dir.$file, "r")) !== FALSE) {
+	$row = 1;
+	if ($file && ($handle = fopen($dir.$file, "r")) !== FALSE) {
 ?>
-
-
 <table border='0' cellpadding="4" cellspacing="1" class="csv">
-    
     <tr><td>&nbsp;</td><td class="a-right"><button type="submit" class="button">Opslaan</button></td></tr>
-
 <?php
     while (($data = fgets($handle)) !== FALSE) {
-
-        $data = trim($data,' ');
-        $data = str_replace("\n", "", $data);
-        $data = str_replace("\r", "", $data);
-        $data = substr($data, 1,-1);
-        $data = str_replace('", "','","',$data);
-        $data = explode('","',$data);
-        $num = count($data);
-        ?>
-        <tr <?php if($row==1){echo "";} else {echo "";} ?>>
-
-        <?php
-        for ($c=0; $c < $num; $c++) {
-            ?>
-
-            <?php if($c==0):?>
+        $data   = trim($data,' ');
+        $data   = str_replace("\n", "", $data);
+        $data   = str_replace("\r", "", $data);
+        $data   = substr($data, 1,-1);
+        $data   = str_replace('", "','","',$data);
+        $data   = explode('","',$data);
+        $num    = count($data);
+?>
+<tr>
+<?php
+	for ($c=0; $c < $num; $c++) {
+?>
+            <?php if ($c==0): ?>
             <td>
-                <input type="hidden" name='strings[<?php echo $row; ?>][input]' value='<?php echo htmlentities($data[0],ENT_QUOTES,$encoding = 'UTF-8'); ?>' />
-                <div class="label"><?php echo htmlentities($data[0],ENT_QUOTES,$encoding = 'UTF-8'); ?>
+                <input type="hidden" name='strings[<?php echo $row; ?>][input]' value='<?php echo htmlentities($data[0], ENT_QUOTES, $encoding = 'UTF-8'); ?>' />
+                <div class="label"><?php echo htmlentities($data[0], ENT_QUOTES, $encoding = 'UTF-8'); ?>
             </td>
             <?php elseif (isset($_GET['ou']) && $_GET['ou'] == '1'): ?>
                 <?php if ($data[0] == $data[1] || $data[1] == ''): ?>
@@ -273,30 +248,25 @@ if ($file && ($handle = fopen($dir.$file, "r")) !== FALSE) {
                 <?php endif; ?>
 
             <?php else: ?>
-            <td><input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1],ENT_QUOTES,$encoding = 'UTF-8'); ?>' /></td>
+            	<td><input type="text" class="input-text" name='strings[<?php echo $row; ?>][output]' value='<?php echo htmlentities($data[1], ENT_QUOTES, $encoding = 'UTF-8'); ?>' /></td>
             <?php endif; ?>
             <?php
         }
         ?>
-
         </tr>
         <?php
          $row++;
-    }
-    fclose($handle);
-    ?>
+	    }
+	    fclose($handle);
+	    ?>
     <tr><td>&nbsp;</td><td class="a-right"><button type="submit" class="button">Opslaan</button></td></tr>
-
 </table>
-
-
-    <?php
-}
+<?php
+	}
 ?>
-
-
 </form>
 
-
+<!-- jQuery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 </body>
 </html>
