@@ -18,6 +18,9 @@ Op dit moment is het niet mogelijk om te installeren via Magento Connect.
 ### Installatie via [modman](https://github.com/colinmollenhour/modman):
 - Navigeer naar je magento root via de shell en draai: `modman clone git@github.com:ho-nl/Ho_nl_NL.git`.
 
+### Installatie via [Magento Composer Installer](https://github.com/Cotya/magento-composer-installer):
+- Navigeer naar je magento root via de shell en draai: `composer require ho-nl/ho_nl_nl dev-master`.
+
 ## Eigen vertalingen toevoegen
 Vertalingen welke specifiek voor jouw webshop zijn en geen vertalingen zijn voor iedereen kan je beter niet direct aanpassen in de module (dus niet in app/locale/nl_NL), hiervoor kun je beter de Inline translator gebruiken of template vertalingen toevoegen.
 
