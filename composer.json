@@ -1,5 +1,5 @@
 {
-    "name": "threesixty/mage-translation",
+    "name": "threesixty/mage-translations",
     "description": "Translation pack for Magento",
     "type": "magento-module",
     "require": {
