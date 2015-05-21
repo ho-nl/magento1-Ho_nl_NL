@@ -1,0 +1,41 @@
+<!--@subject Willkommen, {{var customer.name}}! @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"htmlescape var=$customer.name":"Customer Name",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var customer.email":"Customer Email",
+"htmlescape var=$customer.password":"Customer Password"}
+@-->
+
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td class="action-content">
+            <h1>Herzlich willkommen bei {{var store.getFrontendName()}}.</h1>
+            <p>Um sich bei Ihrem nächsten Besuch in unserem Shop anzumelden, klicken Sie einfach auf <a href="{{store url="customer/account/"}}">Anmelden</a> oder <a href="{{store url="customer/account/"}}">Mein Benutzerkonto</a> im oberen Bereich jeder Seite und geben Sie Ihre E-Mail-Adresse sowie Ihr Passwort ein.</p>
+            <p class="highlighted-text">
+                <strong>E-Mail-Adresse:</strong> {{var customer.email}}<br/>
+                <strong>Passwort:</strong> {{htmlescape var=$customer.password}}
+                Mit folgenden Zugangsdaten können Sie sich anmelden:<br/>
+            </p>
+            <p>Nach erfolgreichem Login auf unserer Seite haben Sie die folgenden Möglichkeiten:</p>
+            <ul>
+                <li>Schnellerer Bezahlvorgang beim nächsten Einkauf,</li>
+                <li>Den Status laufender Bestellungen einsehen,</li>
+                <li>Bestellverlauf einsehen,</li>
+                <li>Ihre Kundendaten verwalten,</li>
+                <li>Ihr Passwort ändern,</li>
+                <li>Verschiedene Adressen für den Versand an Familienmitglieder und Freunde sowie Rechnungsadressen speichern.</li>
+            </ul>
+            {{template config_path="design/email/support"}}
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}

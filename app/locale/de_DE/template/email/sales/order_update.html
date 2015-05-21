@@ -1,0 +1,43 @@
+<!--@subject {{var store.getFrontendName()}}: Informationen zu Bestellung Nr. {{var order.increment_id}} @-->
+<!--@vars
+{"store url=\"\"":"Store Url",
+"var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
+"htmlescape var=$order.getCustomerName()":"Customer Name",
+"var order.increment_id":"Order Id",
+"var order.getStatusLabel()":"Order Status",
+"store url=\"customer/account/\"":"Customer Account Url",
+"var comment":"Order Comment",
+"var store.getFrontendName()":"Store Name"}
+@-->
+<!--@styles
+@-->
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="action-content">
+                        <h1>Hallo {{htmlescape var=$order.getCustomerName()}},</h1>
+                        <p>Ihre Bestellung Nr. <span class="no-link">#{{var order.increment_id}}</span> hat den Status <strong>{{var order.getStatusLabel()}}</strong>.</p>
+                        {{if comment}}
+                        <table cellspacing="0" cellpadding="0" class="message-container">
+                            <tr>
+                                <td>{{var comment}}</td>
+                            </tr>
+                        </table>
+                        {{/if}}
+                        <p>Sie können den Status Ihrer Bestellung jederzeit in <a href="{{store url="customer/account/"}}">Ihrem Benutzerkonto</a> einsehen.</p>
+                        {{template config_path="design/email/support"}}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer"}}
