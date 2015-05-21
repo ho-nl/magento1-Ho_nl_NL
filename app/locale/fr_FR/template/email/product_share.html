@@ -1,0 +1,26 @@
+{* Bloc de commentaire
+
+Variables disponibles dans ce gabarit :
+  - name            Nom du destinataire
+  - email           Email du destinataire
+  - product_name    Nom du produit
+  - product_url     Url du produit
+  - product_image   Url de la petite image du produit (75 px)
+  - message         Message personnalisé de l'expéditeur
+  - sender_name     Nom de l'expéditeur
+  - sender_email    Email de l'expéditeur
+
+Utilisez les variables : {{var var_name}}
+*}<!--@subject Bienvenue, {{var name}} @-->
+<!--@vars
+{"htmlescape var=$name":"Nom du destinataire",
+"var product_url":"Url pour le produit",
+"var product_name":"Nom du produit",
+"var message":"Message de l'expéditeur"}
+@-->
+
+Bonjour {{htmlescape var=$name}},<br /><br />
+
+{{htmlescape var=$sender_name}} a souhaité vous faire connaître le produit <a href="{{var product_url}}">{{var product_name}}</a>.<br /><br />
+Voici son message&nbsp;: <br />{{var message}}<br /><br />
+
