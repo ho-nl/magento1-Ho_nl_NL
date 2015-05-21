@@ -1,6 +1,6 @@
 {
-    "name": "threesixty/mage-dutch-translation",
-    "description": "Nederlandse vertalingen voor Magento",
+    "name": "threesixty/mage-translation",
+    "description": "Translation pack for Magento",
     "type": "magento-module",
     "require": {
         "magento-hackathon/magento-composer-installer": "*"
