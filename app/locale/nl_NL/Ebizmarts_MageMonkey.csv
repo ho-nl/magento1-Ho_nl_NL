@@ -1,6 +1,7 @@
 ;Config settings
 "MageMonkey - MailChimp integration by ebizmarts", "MageMonkey - MailChimp integratie door ebizmarts"
 "Get a free MailChimp account now","Verkrijg nu een gratis MailChimp account"
+"<a href=\"http://mailchimp.com/signup/?pid=ebizmart&source=website\" target=\"_blank\">Verkrijg nu een gratis MailChimp account</a>",""
 "Enabled","Ingeschakeld"
 "API Key","API sleutel"
 "Get API credentials","Verkrijg API gegevens"
