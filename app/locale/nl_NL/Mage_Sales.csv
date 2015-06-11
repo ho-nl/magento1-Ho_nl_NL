@@ -124,7 +124,7 @@
 "Carrier","Vervoerder"
 "Carrier/Method","Vervoeder/Methode"
 "Change status, add comments","Status wijzigen, opmerking toevoegen"
-"Changing address information will not recalculate shipping, tax or other order amount.","Het wijzigen van adresinformatie zal de verzending, btw of andere bedragen herberekenen."
+"Changing address information will not recalculate shipping, tax or other order amount.","Het wijzigen van adresinformatie zal de verzending, btw of andere bedragen niet herberekenen."
 "Checkout Totals Sort Order","Sorteervolgorde kassa-totalen"
 "City","Plaats"
 "Clear Shopping Cart","Leeg winkelwagen"
