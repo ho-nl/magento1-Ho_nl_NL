@@ -390,7 +390,7 @@
 "The customer ID and email did not match, skipping the record, line: %s","Het klant-ID en email komen niet overeen, record wordt overgeslagen, regel %s"
 "The customer does not have default billing address.","De klant heeft geen standaard factuuradres"
 "The customer email (%s) already exists, skipping the record, line: %s","Het emailadres van de klant (%s) bestaat al, record wordt overgeslagen, regel: %s"
-"The customer group has been deleted.","De klantgroeup is verwijderd."
+"The customer group has been deleted.","De klantgroep is verwijderd."
 "The customer group has been saved.","De klantgroep is opgeslagen."
 "The customer is currently assigned to Customer Group %s.","De klant is op dit moment gekoppeld aan klantgroep %s."
 "The first name cannot be empty.","De voornaam kan niet leeg zijn."

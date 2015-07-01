@@ -156,7 +156,7 @@
 "Range To should be equal or greater than Range From.","""Bereik tot"" moet gelijk zijn of groter dan ""Bereik van"""
 "Rate Percent should be a positive number.","Percentage moet een positief nummer zijn"
 "Subtotal only","Enkel subtotaal"
-"Warning tax configuration can result in rounding errors","Waarschuwing: BTW-conifguratie kan in afrondfouten resulteren"
+"Warning tax configuration can result in rounding errors","Waarschuwing: BTW-configuratie kan in afrondfouten resulteren"
 "Warning tax discount configuration might result in different discounts than a customer might expect","Waarschuwing: BTW korting configuratie kan resulteren in andere kortingen dan een klant zou verwachten."
 "Zip code should not contain characters other than digits.","Postcode mag niets anders bevatten dan cijfers"
 "for store(s)","voor winkel(s)"

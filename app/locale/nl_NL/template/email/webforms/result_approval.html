@@ -1,0 +1,48 @@
+<!--@subject Your "{{var webform_name}}" submission status has changed @-->
+<!--@vars
+{"var webform_subject":"Generated subject from field values",
+"var webform_name":"Web-form name",
+"var webform_result":"Detailed result html content",
+"var store_group":"Store Group",
+"var store_name":"Store Name",
+"var ip":"Customer IP address",
+"var customer_name":"Customer name",
+"var customer_email":"Customer email address",
+"var status":"Result status",
+"var result.field_id.name":"Field name with assigned id or code",
+"var result.field_id.value":"Field value with assigned id or code",
+"var result.field_id.result_label":"Field result label with assigned id or code"}
+@-->
+
+<!--@styles
+body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
+@-->
+
+<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
+    <table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
+        <tr>
+            <td align="center" valign="top" style="padding:20px 0 20px 0">
+                <!-- [ header starts here] -->
+                <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
+                    <!-- [ middle starts here] -->
+                    <tr>
+                        <td valign="top">
+                            <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;">UW reactie via "{{var webform_name}}" is veranderd naar de volgende status: "{{var status}}"</h1>
+
+                            <i>Op {{var result.date}} heeft u ons het volgende gemeld:</i>
+
+                            <blockquote>
+
+                                <p>{{var result.html}}</p>
+
+                            </blockquote>
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
