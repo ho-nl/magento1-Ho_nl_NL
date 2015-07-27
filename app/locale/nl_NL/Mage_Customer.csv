@@ -176,7 +176,7 @@
 "If there is an account associated with %s you will receive an email with a link to reset your password.","Als er een account is gevonden met %s zult u een e-mail ontvangen met een link om uw wachtwoord te resetten."
 "If you are a registered VAT customer, please click <a href=""%s"">here</a> to enter you billing address for proper VAT calculation","Als uw een BTW-geregistreerde klant bent, <a href=""%s"">vul a.u.b. uw factuuradres op</a> voor juiste BTW-berekening."
 "If you are a registered VAT customer, please click <a href=""%s"">here</a> to enter you shipping address for proper VAT calculation","Als uw een BTW-geregistreerde klant bent, <a href=""%s"">vul a.u.b. uw verzendadres op</a> voor juiste BTW-berekening."
-"If you believe this is an error, please contact us at %s","Als u geloofd dat dit een fout is, neem contact met ons op via %s."
+"If you believe this is an error, please contact us at %s","Als u gelooft dat dit een fout is, neem contact met ons op via %s."
 "If you have an account with us, please log in.","Als u een account bij ons hebt, log dan in a.u.b."
 "Invalid attribute option specified for attribute %s (%s), skipping the record.","Ongeldige attribuut-optie opgegeven voor attribuut %s (%s), record wordt overgeslagen."
 "Invalid attribute set specified, skipping the record.","Ongeldige attributenset opgegeven, record wordt overgeslagen."
