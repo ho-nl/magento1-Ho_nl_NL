@@ -18,7 +18,7 @@ Use vars: {{var var_name}}
 </style>
 
 
-{{customVar code=email_header}}
+{{template config_path="design/email/header"}} {{inlinecss file="email-inline.css"}}
 
                             <p><strong>Beste {{var name}},</strong></p>
                             <p>Het volgende product is door een vriend van u speciaal voor u geselecteerd.</p>
@@ -28,5 +28,5 @@ Use vars: {{var var_name}}
                             <p><strong>Bericht van {{var sender_name}} ({{var sender_email}}):</strong>,</p>
                             <p>{{var message}}</p>
 
-{{customVar code=email_footer}}
+{{template config_path="design/email/footer"}}
 

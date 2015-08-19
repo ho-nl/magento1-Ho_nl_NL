@@ -10,7 +10,7 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
 @-->
 
 
-{{customVar code=email_header}}
+{{template config_path="design/email/header"}} {{inlinecss file="email-inline.css"}}
 
                             <p><strong>Hallo,</strong></p>
                             <p>Deze producten heb ik op mijn verlanglijstje staan. </p>
@@ -25,5 +25,4 @@ body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif;
                             <p>Bedankt,<p/>
                             <p><strong>{{htmlescape var=$customer.name}}</strong></p>
 
-{{customVar code=email_footer}}
-
+{{template config_path="design/email/footer"}}

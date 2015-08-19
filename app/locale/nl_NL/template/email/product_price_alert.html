@@ -5,11 +5,11 @@
 </style>
 
 
-{{customVar code=email_header}}
+{{template config_path="design/email/header"}} {{inlinecss file="email-inline.css"}}
 
                             <p><strong>Beste {{var customer.firstname}},</strong>,</p>
                             <p>Graag geven wij de volgende prijswijzigingen aan u door:</p>
                             {{var alertGrid}}
 
-{{customVar code=email_footer}}
+{{template config_path="design/email/footer"}}
 

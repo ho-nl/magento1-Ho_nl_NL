@@ -22,7 +22,7 @@ table.list td { padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0;
 @-->
 
 
-{{customVar code=email_header}}
+{{template config_path="design/email/header"}} {{inlinecss file="email-inline.css"}}
 
                             <p><strong>Beste {{htmlescape var=$billing.getName()}}</strong>,</p>
                             <p>Bedankt voor uw bestelling bij {{config path="general/store_information/name"}}.</p>
@@ -76,5 +76,5 @@ table.list td { padding:7px 9px 9px 9px; border:1px solid #bebcb7; border-top:0;
                             <p>Met vriendelijke groet,</p>
                             <p><strong>{{config path="general/store_information/name"}}</strong></p>
 
-{{customVar code=email_footer}}
+{{template config_path="design/email/footer"}}
 
