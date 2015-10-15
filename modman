@@ -185,3 +185,7 @@ app/locale/nl_NL/Xtento_GridActions.csv app/locale/nl_NL/Xtento_GridActions.csv
 app/locale/nl_NL/Yireo_DeleteAnyOrder.csv app/locale/nl_NL/Yireo_DeleteAnyOrder.csv
 app/locale/nl_NL/Zen_Galerie.csv app/locale/nl_NL/Zen_Galerie.csv
 
+#custom
+app/locale/nl_NL/amasty_shopby.csv app/locale/nl_NL/amasty_shopby.csv
+
+
