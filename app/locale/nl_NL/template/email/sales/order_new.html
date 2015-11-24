@@ -1,4 +1,4 @@
-<!--@subject  {{var store.getFrontendName()}}: Invoice # {{var invoice.increment_id}} for Order # {{var order.increment_id}} @-->
+<!--@subject {{var store.getFrontendName()}}: New Order # {{var order.increment_id}} @-->
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
@@ -6,18 +6,17 @@
 "htmlescape var=$order.getCustomerName()":"Customer Name",
 "var store.getFrontendName()":"Store Name",
 "store url=\"customer/account/\"":"Customer Account Url",
-"var invoice.increment_id":"Invoice Id",
 "var order.increment_id":"Order Id",
-"var order.billing_address.format('html')":"Billing Address",
+"var order.getCreatedAtFormated('long')":"Order Created At (datetime)",
+"var order.getBillingAddress().format('html')":"Billing Address",
 "var payment_html":"Payment Details",
-"var order.shipping_address.format('html')":"Shipping Address",
-"var order.shipping_description":"Shipping Description",
-"layout area=\"frontend\" handle=\"sales_email_order_invoice_items\" invoice=$invoice order=$order":"Invoice Items Grid",
-"var comment":"Invoice Comment"}
+"var order.getShippingAddress().format('html')":"Shipping Address",
+"var order.getShippingDescription()":"Shipping Description",
+"layout handle=\"sales_email_order_items\" order=$order":"Order Items Grid",
+"var order.getEmailCustomerNote()":"Email Order Note"}
 @-->
 <!--@styles
 @-->
-
 
 {{template config_path="design/email/header"}}
 {{inlinecss file="email-inline.css"}}
@@ -29,7 +28,7 @@
                 <tr>
                     <td class="email-heading">
                         <h1>Hartelijk dank voor uw bestelling bij {{var store.getFrontendName()}}.</h1>
-                        <p>U kunt uw order status controleren door <a href="{{store url="customer/account/"}}">in te loggen in uw account</a>.</p>
+                        <p>Wanneer uw order wordt verzonden ontvangt u een email met de track gegevens. Uw bestelling overzicht staat hieronder. Nogmaals bedankt voor uw bestelling..</p>
                     </td>
                     <td class="store-info">
                         <h4>Heeft u vragen over uw bestelling?</h4>
@@ -52,30 +51,30 @@
     </tr>
     <tr>
         <td class="order-details">
-            <h3>Uw bestelling <span class="no-link">#{{var invoice.increment_id}}</span></h3>
-            <p>Order <span class="no-link">#{{var order.increment_id}}</span></p>
+            <h3>Uw bestelling <span class="no-link">#{{var order.increment_id}}</span></h3>
+            <p>Geplaatst op {{var order.getCreatedAtFormated('long')}}</p>
         </td>
     </tr>
     <tr class="order-information">
         <td>
-            {{if comment}}
+            {{if order.getEmailCustomerNote()}}
             <table cellspacing="0" cellpadding="0" class="message-container">
                 <tr>
-                    <td>{{var comment}}</td>
+                    <td>{{var order.getEmailCustomerNote()}}</td>
                 </tr>
             </table>
             {{/if}}
-            {{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}
+            {{layout handle="sales_email_order_items" order=$order}}
             <table cellpadding="0" cellspacing="0" border="0">
                 <tr>
                     <td class="address-details">
-                        <h6>Factuur adres</h6>
-                        <p><span class="no-link">{{var order.billing_address.format('html')}}</span></p>
+                        <h6>Factuur adres:</h6>
+                        <p><span class="no-link">{{var order.getBillingAddress().format('html')}}</span></p>
                     </td>
                     {{depend order.getIsNotVirtual()}}
                     <td class="address-details">
                         <h6>Verzend adres:</h6>
-                        <p><span class="no-link">{{var order.shipping_address.format('html')}}</span></p>
+                        <p><span class="no-link">{{var order.getShippingAddress().format('html')}}</span></p>
                     </td>
                     {{/depend}}
                 </tr>
