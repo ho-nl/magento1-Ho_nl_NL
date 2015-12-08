@@ -48,7 +48,7 @@
 "The stock item for Product is not valid.","De voorraadstatus is ongeldig."
 "This product is available for purchase in increments of %s only.","Dit product kan uitsluitend in veelvoud van %s besteld worden."
 "This product is currently out of stock.","Dit product is momenteel niet op voorraad"
-"This product is not available in the requested quantity. %s of the items will be backordered.","Dit product is niet beschikbaar in de gewenste hoeveelheid. %s items worden als backorder geplaatst."
+"This product is not available in the requested quantity. %s of the items will be backordered.","Van het gewenste aantal zijn %s artikel(en) niet beschikbaar, deze worden als backorder geplaatst."
 "To Fixed Value","Tot vast bedrag"
 "To Percentage","Naar percentage"
 "Undefined product type.","Producttype onbekend."
