@@ -2,6 +2,7 @@
 <!--@vars
 {"store url=\"\"":"Store Url",
 "var logo_url":"Email Logo Image Url",
+"var logo_alt":"Email Logo Image Alt",
 "htmlescape var=$billing.getName()":"Guest Customer Name",
 "var store.getFrontendName()":"Store Name",
 "var shipment.increment_id":"Shipment Id",
@@ -15,69 +16,85 @@
 "var comment":"Shipment Comment"}
 @-->
 <!--@styles
-body,td { color:#2f2f2f; font:11px/1.35em Verdana, Arial, Helvetica, sans-serif; }
 @-->
 
-<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
-<tr>
-    <td align="center" valign="top" style="padding:20px 0 20px 0">
-        <!-- [ header starts here] -->
-        <table bgcolor="#FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
-            <tr>
-                <td valign="top"><a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{var logo_url}}" alt="{{var logo_alt}}" border="0"/></a></td>
-            </tr>
-        <!-- [ middle starts here] -->
-            <tr>
-                <td valign="top">
-                    <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;">Beste {{htmlescape var=$billing.getName()}},</h1>
-                    <p style="font-size:12px; line-height:16px; margin:0;">Bedankt voor uw bestelling bij {{var store.getFrontendName()}}. Indien u vragen heeft kunt u contact met ons opnemen door een email te sturen naar <a href="mailto:{{config path='trans_email/ident_support/email'}}" style="color:#1E7EC8;">{{config path='trans_email/ident_support/email'}}</a> of ons per telefoon bereiken: {{config path='general/store_information/phone'}}.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <h2 style="font-size:18px; font-weight:normal; margin:0;">Verzending #{{var shipment.increment_id}} voor Bestelling #{{var order.increment_id}}</h2>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <table cellspacing="0" cellpadding="0" border="0" width="100%">
-                        <thead>
-                        <tr>
-                            <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px; padding:5px 9px 6px 9px; line-height:1em;">Verzendinformatie:</th>
-                            <th width="10"></th>
-                            <th align="left" width="325" bgcolor="#EAEAEA" style="font-size:13px; padding:5px 9px 6px 9px; line-height:1em;">Verzendmethode:</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td valign="top" style="font-size:12px; padding:7px 9px 9px 9px; border-left:1px solid #EAEAEA; border-bottom:1px solid #EAEAEA; border-right:1px solid #EAEAEA;">
-                                {{var order.shipping_address.format('html')}}
-                                &nbsp;
-                            </td>
-                            <td>&nbsp;</td>
-                            <td valign="top" style="font-size:12px; padding:7px 9px 9px 9px; border-left:1px solid #EAEAEA; border-bottom:1px solid #EAEAEA; border-right:1px solid #EAEAEA;">
-                                {{var order.shipping_description}}
-                                &nbsp;
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <br/>
-                    {{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
-                    {{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}
-                    {{depend comment}}<p style="font-size:12px; margin:0 10px 10px 0">{{var comment}}</p>{{/depend}}
-                    <p style="font-size:12px; margin:0 10px 10px 0">U kunt bovenstaand tracking-nummer invullen op de <a href="http://www.postnlpakketten.nl/klantenservice/tracktrace/">website van PostNL</a> (http://www.postnlpakketten.nl/klantenservice/tracktrace/) om uw pakket te volgen. Indien u als verzendadres een PostNL Pakjegemak afhaaladres heeft gekozen, vergeet dan niet uw legitimatie mee te nemen bij het afhalen van uw bestelling.</p>
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
 
-                </td>
-            </tr>
-            <tr>
-                <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
-            </tr>
-        </table>
-    </td>
-</tr>
+<table cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="email-heading">
+                        <h1>Beste {{htmlescape var=$billing.getName()}},</h1>
+                        <p>Bedankt voor uw bestelling bij {{var store.getFrontendName()}}.</p>
+                        <p>U kunt de status van uw bestelling controleren door in te loggen op <a href="{{store url="customer/account/"}}">uw account</a>.</p>
+                    </td>
+                    <td class="store-info">
+                        <h4>Heeft u vragen over uw bestelling?</h4>
+                        <p>
+                            {{depend store_phone}}
+                            <b>Bel ons:</b>
+                            <a href="tel:{{var phone}}">{{var store_phone}}</a><br>
+                            {{/depend}}
+                            {{depend store_hours}}
+                            <span class="no-link">{{var store_hours}}</span><br>
+                            {{/depend}}
+                            {{depend store_email}}
+                            <b>E-Mail:</b> <a href="mailto:{{var store_email}}">{{var store_email}}</a>
+                            {{/depend}}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+<tr>
+        <td class="order-details">
+            <h3>Uw verzending met verzendnummer <span class="no-link">#{{var shipment.increment_id}}</span></h3>
+            <p>Bestelling <span class="no-link">#{{var order.increment_id}}</span></p>
+        </td>
+    </tr>
+    <tr class="order-information">
+        <td>
+            {{if comment}}
+            <table cellspacing="0" cellpadding="0" class="message-container">
+                <tr>
+                    <td>{{var comment}}</td>
+                </tr>
+            </table>
+            {{/if}}
+            {{layout handle="sales_email_order_shipment_items" shipment=$shipment order=$order}}
+            <table cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                    <td class="address-details">
+                        <h6>Factuurgegevens:</h6>
+                        <p><span class="no-link">{{var order.billing_address.format('html')}}</span></p>
+                    </td>
+                    {{depend order.getIsNotVirtual()}}
+                    <td class="address-details">
+                        <h6>Adresgegevens:</h6>
+                        <p><span class="no-link">{{var order.shipping_address.format('html')}}</span></p>
+                    </td>
+                    {{/depend}}
+                </tr>
+                <tr>
+                    {{depend order.getIsNotVirtual()}}
+                    <td class="method-info">
+                        <h6>Verzendwijze:</h6>
+                        <p>{{var order.shipping_description}}</p>
+                    </td>
+                    {{/depend}}
+                    <td class="method-info">
+                        <h6>Betaalwijze:</h6>
+                        {{var payment_html}}
+                    </td>
+                </tr>
+            </table>
+            {{block type='core/template' area='frontend' template='email/order/shipment/track.phtml' shipment=$shipment order=$order}}
+        </td>
+    </tr>
 </table>
-</div>
-</body>
+
+{{template config_path="design/email/footer"}}

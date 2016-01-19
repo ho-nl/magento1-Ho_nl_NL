@@ -1,49 +1,30 @@
-{* This is a comment block
-
-Available vars in this template:
-  - name            Recipient name
-  - email           Recipient Email address
-  - product_name    Product name
-  - product_url     Url for product
-  - product_image   Url for product small image (75 px)
-  - message         Sender custom message
-  - sender_name     Sender name
-  - sender_email    Sender email
-
-Use vars: {{var var_name}}
-*}<!--@subject {{var sender_name}} heeft een product voor u geselecteerd @-->
+<!--@subject {{var sender_name}} heeft een product voor u geselecteerd @-->
 <!--@vars
 {"htmlescape var=$name":"Recipient Name",
+"var email":"Recipient Email address",
 "var product_url":"Url for Product",
 "var product_name":"Product Name",
+"var product_image":"Url for product small image (75 px)",
+"var sender_name":"Sender name",
+"var sender_email":"Sender email",
 "var message":"Sender Message"}
 @-->
-<body style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<div style="background:#F6F6F6; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; margin:0; padding:0;">
-<table cellspacing="0" cellpadding="0" border="0" height="100%" width="100%">
+
+{{template config_path="design/email/header"}}
+{{inlinecss file="email-inline.css"}}
+
+<table cellpadding="0" cellspacing="0" border="0">
     <tr>
-        <td align="center" valign="top" style="padding:20px 0 20px 0">
-            <!-- [ header starts here] -->
-            <table bgcolor="FFFFFF" cellspacing="0" cellpadding="10" border="0" width="650" style="border:1px solid #E0E0E0;">
+        <td class="action-content">
+            <h1>Beste {{htmlescape var=$name}},</h1>
+            <p>{{var sender_name}} heeft het volgende product voor u geselecteerd: <a href="{{var product_url}}">{{var product_name}}</a></p>
+            <table cellspacing="0" cellpadding="0" class="message-container">
                 <tr>
-                    <td valign="top">
-                        <a href="{{store url=""}}" style="color:#1E7EC8;"><img src="{{var logo_url}}" alt="{{var logo_alt}}" border="0"/></a>
-                    </td>
-                </tr>
-                <!-- [ middle starts here] -->
-                <tr>
-                    <td valign="top">
-                        <h1 style="font-size:22px; font-weight:normal; line-height:22px; margin:0 0 11px 0;">Beste {{htmlescape var=$name}},</h1>
-                        <p style="font-size:12px; line-height:16px; margin:0;">{{var sender_name}} heeft het volgende product voor u geselecteerd: <a href="{{var product_url}}">{{var product_name}}</a><p>
-                    	<p style="font-size:12px; line-height:16px; margin:0;">{{var message}}</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td bgcolor="#EAEAEA" align="center" style="background:#EAEAEA; text-align:center;"><center><p style="font-size:12px; margin:0;">Met vriendelijke groet, <strong>{{var store.getFrontendName()}}</strong></p></center></td>
+                    <td><strong>Bericht:</strong> {{var message}}</td>
                 </tr>
             </table>
         </td>
     </tr>
 </table>
-</div>
-</body>
+
+{{template config_path="design/email/footer"}}
