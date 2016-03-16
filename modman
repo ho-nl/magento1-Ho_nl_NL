@@ -14,6 +14,7 @@ app/locale/nl_NL/template/email/followupemail_variables_demo.html app/locale/nl_
 app/locale/nl_NL/template/email/html/* app/locale/nl_NL/template/email/html
 app/locale/nl_NL/template/email/log_clean_warning.html app/locale/nl_NL/template/email/log_clean_warning.html
 app/locale/nl_NL/template/email/moneybookers_activateemail.html app/locale/nl_NL/template/email/moneybookers_activateemail.html
+app/locale/nl_NL/template/email/mpblog/* app/locale/nl_NL/template/email/mpblog
 app/locale/nl_NL/template/email/newsletter_subscr_confirm.html app/locale/nl_NL/template/email/newsletter_subscr_confirm.html
 app/locale/nl_NL/template/email/newsletter_subscr_success.html app/locale/nl_NL/template/email/newsletter_subscr_success.html
 app/locale/nl_NL/template/email/newsletter_unsub_success.html app/locale/nl_NL/template/email/newsletter_unsub_success.html
