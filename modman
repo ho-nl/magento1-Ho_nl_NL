@@ -11,8 +11,10 @@ app/locale/nl_NL/template/email/awrma/* app/locale/nl_NL/template/email/awrma
 app/locale/nl_NL/template/email/contact_form.html app/locale/nl_NL/template/email/contact_form.html
 app/locale/nl_NL/template/email/currency_update_warning.html app/locale/nl_NL/template/email/currency_update_warning.html
 app/locale/nl_NL/template/email/followupemail_variables_demo.html app/locale/nl_NL/template/email/followupemail_variables_demo.html
+app/locale/nl_NL/template/email/html/* app/locale/nl_NL/template/email/html
 app/locale/nl_NL/template/email/log_clean_warning.html app/locale/nl_NL/template/email/log_clean_warning.html
 app/locale/nl_NL/template/email/moneybookers_activateemail.html app/locale/nl_NL/template/email/moneybookers_activateemail.html
+app/locale/nl_NL/template/email/mpblog/* app/locale/nl_NL/template/email/mpblog
 app/locale/nl_NL/template/email/newsletter_subscr_confirm.html app/locale/nl_NL/template/email/newsletter_subscr_confirm.html
 app/locale/nl_NL/template/email/newsletter_subscr_success.html app/locale/nl_NL/template/email/newsletter_subscr_success.html
 app/locale/nl_NL/template/email/newsletter_unsub_success.html app/locale/nl_NL/template/email/newsletter_unsub_success.html
@@ -37,6 +39,7 @@ app/locale/nl_NL/AW_Ajaxcartpro.csv app/locale/nl_NL/AW_Ajaxcartpro.csv
 app/locale/nl_NL/AW_Checkoutpromo.csv app/locale/nl_NL/AW_Checkoutpromo.csv
 app/locale/nl_NL/AW_Followupemail.csv app/locale/nl_NL/AW_Followupemail.csv
 app/locale/nl_NL/AW_Hometabspro.csv app/locale/nl_NL/AW_Hometabspro.csv
+app/locale/nl_NL/AW_Raf.csv app/locale/nl_NL/AW_Raf.csv
 app/locale/nl_NL/AW_Referafriend.csv app/locale/nl_NL/AW_Referafriend.csv
 app/locale/nl_NL/AW_Reviewrotator.csv app/locale/nl_NL/AW_Reviewrotator.csv
 app/locale/nl_NL/AW_Rma.csv app/locale/nl_NL/AW_Rma.csv
@@ -128,6 +131,10 @@ app/locale/nl_NL/Mage_Widget.csv app/locale/nl_NL/Mage_Widget.csv
 app/locale/nl_NL/Mage_Wishlist.csv app/locale/nl_NL/Mage_Wishlist.csv
 app/locale/nl_NL/Mage_XmlConnect.csv app/locale/nl_NL/Mage_XmlConnect.csv
 app/locale/nl_NL/Magpleasure_Blog.csv app/locale/nl_NL/Magpleasure_Blog.csv
+app/locale/nl_NL/Magpleasure_Info.csv app/locale/nl_NL/Magpleasure_Info.csv
+app/locale/nl_NL/ManaPage_AttributeOption.csv app/locale/nl_NL/ManaPage_AttributeOption.csv
+app/locale/nl_NL/ManaPage_Bestseller.csv app/locale/nl_NL/ManaPage_Bestseller.csv
+app/locale/nl_NL/ManaPage_Sale.csv app/locale/nl_NL/ManaPage_Sale.csv
 app/locale/nl_NL/ManaPro_FilterAdmin.csv app/locale/nl_NL/ManaPro_FilterAdmin.csv
 app/locale/nl_NL/ManaPro_FilterAdvanced.csv app/locale/nl_NL/ManaPro_FilterAdvanced.csv
 app/locale/nl_NL/ManaPro_FilterAjax.csv app/locale/nl_NL/ManaPro_FilterAjax.csv
@@ -148,9 +155,12 @@ app/locale/nl_NL/ManaPro_FilterTree.csv app/locale/nl_NL/ManaPro_FilterTree.csv
 app/locale/nl_NL/ManaPro_HorizontalLayeredNavigation.csv app/locale/nl_NL/ManaPro_HorizontalLayeredNavigation.csv
 app/locale/nl_NL/Mana_Admin.csv app/locale/nl_NL/Mana_Admin.csv
 app/locale/nl_NL/Mana_Ajax.csv app/locale/nl_NL/Mana_Ajax.csv
+app/locale/nl_NL/Mana_AttributePage.csv app/locale/nl_NL/Mana_AttributePage.csv
 app/locale/nl_NL/Mana_Core.csv app/locale/nl_NL/Mana_Core.csv
 app/locale/nl_NL/Mana_Db.csv app/locale/nl_NL/Mana_Db.csv
 app/locale/nl_NL/Mana_Filters.csv app/locale/nl_NL/Mana_Filters.csv
+app/locale/nl_NL/Mana_Page.csv app/locale/nl_NL/Mana_Page.csv
+app/locale/nl_NL/Mana_Seo.csv app/locale/nl_NL/Mana_Seo.csv
 app/locale/nl_NL/Morningtime_IdealAdvanced.csv app/locale/nl_NL/Morningtime_IdealAdvanced.csv
 app/locale/nl_NL/Morningtime_Internetkassa.csv app/locale/nl_NL/Morningtime_Internetkassa.csv
 app/locale/nl_NL/Morningtime_Ogone.csv app/locale/nl_NL/Morningtime_Ogone.csv
