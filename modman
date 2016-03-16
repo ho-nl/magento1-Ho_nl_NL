@@ -11,6 +11,7 @@ app/locale/nl_NL/template/email/awrma/* app/locale/nl_NL/template/email/awrma
 app/locale/nl_NL/template/email/contact_form.html app/locale/nl_NL/template/email/contact_form.html
 app/locale/nl_NL/template/email/currency_update_warning.html app/locale/nl_NL/template/email/currency_update_warning.html
 app/locale/nl_NL/template/email/followupemail_variables_demo.html app/locale/nl_NL/template/email/followupemail_variables_demo.html
+app/locale/nl_NL/template/email/html/* app/locale/nl_NL/template/email/html
 app/locale/nl_NL/template/email/log_clean_warning.html app/locale/nl_NL/template/email/log_clean_warning.html
 app/locale/nl_NL/template/email/moneybookers_activateemail.html app/locale/nl_NL/template/email/moneybookers_activateemail.html
 app/locale/nl_NL/template/email/newsletter_subscr_confirm.html app/locale/nl_NL/template/email/newsletter_subscr_confirm.html
