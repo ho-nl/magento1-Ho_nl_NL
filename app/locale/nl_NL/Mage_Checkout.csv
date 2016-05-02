@@ -347,3 +347,5 @@
 "Click <a href=""%s"" onclick=""this.target='_blank'"">here to print</a> a copy of your order confirmation.","<a href=""%s"" onclick=""this.target='_blank'"">Druk een kopie van uw bestelbevestiging af </a>."
 "No Payment Methods","Geen betaalmethoden"
 "My Cart Extra Actions","Winkelwagen > Extra acties "
+"Your order contains medical items, you'll have to be able to show your ID on delivery.","Uw bestelling bevat medische producten, U moet uw ID of paspoort kunnen tonen bij levering."
+"Medical products","Medische producten"
