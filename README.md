@@ -43,8 +43,7 @@ Kom je een probleem tegen, maak een issue aan via de [Issue tracker](https://git
 __H&O is expert in het oplossen van complexe Magento vraagstukken, maatwerk grafisch ontwerp en het bouwen
 van custom Magento modules.__
 
-Als je op zoek bent naar een partner die je kan helpen met het beantwoorden van moeilijke Magento vragen,
-een maatwerk productimport voor je ontwikkeld of een custom Magento module voor je schrijft die jouw
+Als je op zoek bent naar een partner die je kan helpen met het beantwoorden van moeilijke [Magento](https://www.h-o.nl/magento-webshops) vragen, een maatwerk productimport voor je ontwikkeld of een custom Magento module voor je schrijft die jouw
 assortiment met een andere webshop koppelt, dan ben je aan het juiste adres. H&O heeft zich sinds 2007
 verdiept in de techniek en ontwikkelingen van het e-commerce CMS, speelt een actieve rol in de community,
 heeft verschillende modules uitgebracht en heeft voor klanten uiteenlopende technische modules ontwikkeld.
