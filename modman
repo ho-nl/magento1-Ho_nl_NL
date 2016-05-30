@@ -172,6 +172,7 @@ app/locale/nl_NL/Phoenix_Moneybookers.csv app/locale/nl_NL/Phoenix_Moneybookers.
 app/locale/nl_NL/Plieninger_Editable.csv app/locale/nl_NL/Plieninger_Editable.csv
 app/locale/nl_NL/README.md app/locale/nl_NL/README.md
 app/locale/nl_NL/Tansarc_EmailTemplateAdapter.csv app/locale/nl_NL/Tansarc_EmailTemplateAdapter.csv
+app/locale/nl_NL/Techtwo_Mailplus.csv app/locale/nl_NL/Techtwo_Mailplus.csv
 app/locale/nl_NL/Total_Buckaroo.csv app/locale/nl_NL/Total_Buckaroo.csv
 app/locale/nl_NL/Total_BuckarooCC.csv app/locale/nl_NL/Total_BuckarooCC.csv
 app/locale/nl_NL/Total_BuckarooCashticket.csv app/locale/nl_NL/Total_BuckarooCashticket.csv
@@ -192,4 +193,3 @@ app/locale/nl_NL/Xib_Zipcodevalidator.csv app/locale/nl_NL/Xib_Zipcodevalidator.
 app/locale/nl_NL/Xtento_GridActions.csv app/locale/nl_NL/Xtento_GridActions.csv
 app/locale/nl_NL/Yireo_DeleteAnyOrder.csv app/locale/nl_NL/Yireo_DeleteAnyOrder.csv
 app/locale/nl_NL/Zen_Galerie.csv app/locale/nl_NL/Zen_Galerie.csv
-
