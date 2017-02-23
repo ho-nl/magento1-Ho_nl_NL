@@ -231,7 +231,7 @@
 "Nothing to fetch because of an empty configuration.","Nothing to fetch because of an empty configuration."
 "Notice that PayPal can handle up to 10 shipping options. That is why Magento will transfer only first 10 cheapest shipping options if there are more than 10 available.","Notice that PayPal can handle up to 10 shipping options. That is why Magento will transfer only first 10 cheapest shipping options if there are more than 10 available."
 "Notified customer about creditmemo #%s.","Klant ingelicht over creditfactuur #%s."
-"Notified customer about invoice #%s.","Klant ingelicht over facuur #%s."
+"Notified customer about invoice #%s.","Klant ingelicht over factuur #%s."
 "Now accepting PayPal (150 X 40)","Now accepting PayPal (150 X 40)"
 "Now accepting PayPal (150 X 60)","Now accepting PayPal (150 X 60)"
 "Number of Child Authorizations","Number of Child Authorizations"
